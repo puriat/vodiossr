@@ -188,7 +188,7 @@ export default class Movie extends React.Component {
                   </div>
                   <div className="movie-main-content-info">
                     <h1 className="single-product-title">
-                      {this.props.movieStore.movie.isHd ? <img className="hd-image" src='/static/HD.svg' alt="hd" /> : <img className="hd-image" src='/static/SD.svg' alt="sd" />}
+                      {this.props.movieStore.movie.isHd ? <img className="hd-image" src='/static/img/HD.svg' alt="hd" /> : <img className="hd-image" src='/static/img/SD.svg' alt="sd" />}
                       <span style={{ marginRight: "10px" }}>
                         {latinToPersian(this.props.movieStore.movie.title)}
                       </span>
@@ -249,7 +249,7 @@ export default class Movie extends React.Component {
                               className="purchase-button-container"
                             >
                               <img
-                                src='/static/Buy.svg'
+                                src='/static/img/Buy.svg'
                                 style={{
                                   width: "20px",
                                   marginRight: "15px",
@@ -266,7 +266,7 @@ export default class Movie extends React.Component {
                                 className="download-button-container"
                               >
                                 <img
-                                  src='/static/download.svg'
+                                  src='/static/img/download.svg'
                                   style={{
                                     width: "20px",
                                     marginRight: "15px",
@@ -292,7 +292,7 @@ export default class Movie extends React.Component {
                             className="single-product-add"
                           >
                             <img
-                              src='/static/Buy.svg'
+                              src='/static/img/Buy.svg'
                               style={{
                                 width: "20px",
                                 marginRight: "15px",
@@ -795,7 +795,7 @@ class Download extends React.Component {
               target="_blank"
             >
               <img
-                src='/static/quality/1080p.svg'
+                src='/static/img/quality/1080p.svg'
                 style={{
                   width: "30px",
                   marginRight: "15px",
@@ -820,7 +820,7 @@ class Download extends React.Component {
               target="_blank"
             >
               <img
-                src='/static/quality/720p.svg'
+                src='/static/img/quality/720p.svg'
                 style={{
                   width: "30px",
                   marginRight: "15px",
@@ -845,7 +845,7 @@ class Download extends React.Component {
               target="_blank"
             >
               <img
-                src='/static/quality/480p.svg'
+                src='/static/img/quality/480p.svg'
                 style={{
                   width: "30px",
                   marginRight: "15px",
@@ -870,7 +870,7 @@ class Download extends React.Component {
               target="_blank"
             >
               <img
-                src='/static/quality/360p.svg'
+                src='/static/img/quality/360p.svg'
                 style={{
                   width: "30px",
                   marginRight: "15px",

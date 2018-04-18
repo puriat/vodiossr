@@ -11,10 +11,9 @@ export default class Vodio extends React.Component {
   render() {
     return (
       <div className="vodio-container" style={{
-        paddingTop: '0px', color: 'white', width: '1000px',
-        marginLeft: 'calc(50% - 500px)'
+        paddingTop: '0px', color: 'white'
       }}>
-        <img src='/static/Cinema-Vodio.png' style={{
+        <img src='/static/img/Cinema-Vodio.png' style={{
           width: '500px',
           marginRight: 'calc(50% - 250px)',
           display: 'flex'
@@ -27,7 +26,7 @@ export default class Vodio extends React.Component {
             display: "inline-flex"
           }}
         >
-          <img src='/static' style={{
+          <img src='/static/img/Vodio-chist.svg' style={{
             width: '25px',
             height: '30px',
             marginLeft: '5px'

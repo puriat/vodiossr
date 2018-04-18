@@ -1,7 +1,7 @@
 import React from "react";
 import { inject, observer } from "mobx-react";
 import { MainUrl } from "../util/RequestHandler";
-import "../css/category.css";
+import categoryStylesheet from "styles/category.css";
 import $ from 'jquery'
 import Router from 'next/router'
 
@@ -103,11 +103,12 @@ export default class Category extends React.Component {
     }
     return (
       <div className="header-category">
+        <style dangerouslySetInnerHTML={{ __html: categoryStylesheet }} />
         <div className="header-category-show" id="header-category-show">
           <img style={{
             width: '13px',
             marginRight: '20px'
-          }} src="/static/category.svg" />
+          }} src="/static/img/category.svg" />
           <span>دسته‌بندی‌ها</span>
         </div>
         <div id="category-header" className="header-category-drop-down">

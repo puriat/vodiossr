@@ -2,8 +2,8 @@ import React, { Component } from "react"
 import FeaturedMovie from "./FeaturedMovie"
 import Slider from 'react-slick'
 import $ from 'jquery';
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+import slickSS from "styles/slick.css"
+import slickThemeSS from "styles/slick-theme.css"
 
 export default class FeaturedMovies extends React.Component {
     nextClicked() {
@@ -51,9 +51,11 @@ export default class FeaturedMovies extends React.Component {
 
         return (
             <div className="slide-overlay" style={{ marginRight: margin, marginLeft: margin, width: "100%" }}>
+                <style dangerouslySetInnerHTML={{ __html: slickSS }} />
+                <style dangerouslySetInnerHTML={{ __html: slickThemeSS }} />
                 <div className="featured-container">
                     <div className="featured-title-container">
-                        <img src='/static/movieListFeatured.svg' style={{
+                        <img src='/static/img/movieListFeatured.svg' style={{
                             width: '15px',
                             position: 'absolute',
                             right: '12.5%',

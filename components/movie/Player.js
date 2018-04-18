@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { MainUrl } from "../../util/RequestHandler";
 import Hls from "hls.js";
-import "../../css/video-loading.css";
-import "../../css/controls.css";
+import videoSS from "styles/video-loading.css";
+import controlsSS from "styles/controls.css";
 import { latinToPersian, persianToLatin } from "../../util/util";
 import { inject, observer } from "mobx-react";
 import createReactClass from 'create-react-class'
@@ -162,13 +162,15 @@ export default class Player extends React.Component {
             : "player-container-fullscreen"
         }
       >
+        <style dangerouslySetInnerHTML={{ __html: videoSS }} />
+        <style dangerouslySetInnerHTML={{ __html: controlsSS }} />
         <div id="player" className="fullscreen">
           {this.props.isTrailer ? (
             null || !Hls.isSupported()
           ) : (
               <div className="close-animatedModal">
                 <img
-                  src='/static/exit.svg'
+                  src='/static/img/exit.svg'
                   className="closemodal"
                   onClick={this.close.bind(this)}
                 />
@@ -653,7 +655,7 @@ var InitialPlay = createReactClass({
       >
         <img
           onClick={this.props.initialPlay}
-          src='/static/play-icon.png'
+          src='/static/img/play-icon.png'
           style={{
             width: "80px",
             height: "80px"

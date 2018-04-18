@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Link from 'next/link'
 import { latinToPersian } from "../util/util";
 import { MainUrl } from "../util/RequestHandler";
-import "../css/loading-fading.css";
+import lfStyleSheet from "styles/loading-fading.css";
 
 export default class Footer extends React.Component {
     constructor() {
@@ -60,6 +60,7 @@ export default class Footer extends React.Component {
     render() {
         return (
             <footer id="footer">
+                <style dangerouslySetInnerHTML={{ __html: lfStyleSheet }} />
                 <a id="#top-float" className="float-top-header">
                     <span className="icon-angle-up" />
                 </a>
@@ -68,16 +69,16 @@ export default class Footer extends React.Component {
                         <strong className="footer-title">لینک‌ها</strong>
                         <ul>
                             <li>
-                                <Link href={{ pathname: "/vodio" }}>درباره ما</Link>
+                                <Link href={{ pathname: "/vodio" }}><a>درباره ما</a></Link>
                             </li>
                             <li>
-                                <Link href={{ pathname: "/rules" }}>قوانین سایت</Link>
+                                <Link href={{ pathname: "/rules" }}><a>قوانین سایت</a></Link>
                             </li>
                             <li>
-                                <Link href={{ pathname: "/faq" }}>پرسش های متداول</Link>
+                                <Link href={{ pathname: "/faq" }}><a>پرسش های متداول</a></Link>
                             </li>
                             <li>
-                                <Link href={{ pathname: "/complaint" }}>ثبت شکایت</Link>
+                                <Link href={{ pathname: "/complaint" }}><a>ثبت شکایت</a></Link>
                             </li>
                         </ul>
                     </div>

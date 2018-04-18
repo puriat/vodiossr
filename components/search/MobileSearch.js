@@ -102,7 +102,7 @@ export default class MobileSearch extends React.Component {
               left: "0px",
               float: "left"
             }}
-            src='/static/search.svg'
+            src='/static/img/search.svg'
             onClick={this.onClick.bind(this)}
           />
         </div>

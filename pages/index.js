@@ -9,6 +9,7 @@ import fetch from 'isomorphic-unfetch'
 import { MainUrl } from "../util/RequestHandler"
 import Layout from '../components/Layout'
 
+
 export default class main extends React.Component {
 
   static async getInitialProps({ req }) {
@@ -24,7 +25,7 @@ export default class main extends React.Component {
     return {
       searchStore: searchStore.toJson(),
       sessionStore: sessionStore.toJson(),
-      movieStore:movieStore.toJson(),
+      movieStore: movieStore.toJson(),
       isServer,
       main: main
     }
@@ -32,9 +33,9 @@ export default class main extends React.Component {
 
   constructor(props) {
     super(props)
-    this.movieStore = initMovieStore(props.isServer,props.movieStore)
-    this.sessionStore = initSessionStore(props.isServer,props.sessionStore)
-    this.searchStore = initSearchStore(props.isServer,props.searchStore)
+    this.movieStore = initMovieStore(props.isServer, props.movieStore)
+    this.sessionStore = initSessionStore(props.isServer, props.sessionStore)
+    this.searchStore = initSearchStore(props.isServer, props.searchStore)
   }
 
   render() {

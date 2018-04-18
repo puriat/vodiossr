@@ -10,8 +10,6 @@ class Main extends React.Component {
 
   componentDidMount() {
     document.title = "ودیو مرجع فیلم مستقل"
-
-
   }
 
   render() {

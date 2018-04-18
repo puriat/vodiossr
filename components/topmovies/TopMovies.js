@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import TopMovie from "./TopMovie";
 import $ from 'jquery';
 import Slider from 'react-slick'
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+import slickSS from "styles/slick.css"
+import slickThemeSS from "styles/slick-theme.css"
 
 
 export default class TopMovies extends React.Component {
@@ -61,13 +61,15 @@ export default class TopMovies extends React.Component {
 
     return (
       <div className="slide-overlay" style={{ marginRight: margin, marginLeft: margin }}>
+        <style dangerouslySetInnerHTML={{ __html: slickSS }} />
+        <style dangerouslySetInnerHTML={{ __html: slickThemeSS }} />
         <div style={{
           position: 'relative',
           height: '30px',
           display: 'inline-flex',
           width: '100%'
         }}>
-          <img src='/static/movieList.svg' style={{
+          <img src='/static/img/movieList.svg' style={{
             width: '15px',
             position: 'absolute',
             right: '5px',

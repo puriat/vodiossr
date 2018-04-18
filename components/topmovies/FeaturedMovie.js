@@ -180,42 +180,42 @@ export default class FeaturedMovie extends React.Component {
         }
 
         return (
-            <div id={"div" + this.props.elementId} className={"top-moviez-inner" + this.props.elementId} >
+            <div id={"div" + this.props.elementId} className={"top-moviez-inner" + this.props.elementId + " featured-movie-box"} >
                 <Link as={`/movie/${this.props.movie.id}`} href={`/movie?id=${this.props.movie.id}`} shallow>
-                    <div id={this.props.elementId} style={{ position: "relative", width: "fit-content", cursor: "pointer" }}>
-                        <div
-                            className={"featured-movies-post-overlay" + this.props.elementId}
-                            style={style}
-                        >
+                        <div id={this.props.elementId} style={{ position: "relative", width: "fit-content", cursor: "pointer" }}>
                             <div
-                                className={"featured-movies-post-title" + this.props.elementId}
-                                style={titleStyle}
+                                className={"featured-movies-post-overlay" + this.props.elementId}
+                                style={style}
                             >
-                                {latinToPersian(this.props.movie.title)}
-                            </div>
-                            {this.props.movie.directors && (
                                 <div
-                                    className={"featured-movies-post-director" + this.props.elementId}
-                                    style={directorStyle}
+                                    className={"featured-movies-post-title" + this.props.elementId}
+                                    style={titleStyle}
                                 >
-                                    {this.props.movie.directors[0].name}
+                                    {latinToPersian(this.props.movie.title)}
                                 </div>
-                            )}
+                                {this.props.movie.directors && (
+                                    <div
+                                        className={"featured-movies-post-director" + this.props.elementId}
+                                        style={directorStyle}
+                                    >
+                                        {this.props.movie.directors[0].name}
+                                    </div>
+                                )}
+                            </div>
+                            {this.state.width != 0 &&
+                                <img
+                                    src={
+                                        MainUrl +
+                                        "/image.ashx?file=" +
+                                        this.props.movie.thumbnail.url +
+                                        "&height=" +
+                                        this.state.height +
+                                        "&width=" +
+                                        this.state.width
+                                    }
+                                    className="featured-movies-post-image"
+                                />}
                         </div>
-                        {this.state.width != 0 &&
-                            <img
-                                src={
-                                    MainUrl +
-                                    "/image.ashx?file=" +
-                                    this.props.movie.thumbnail.url +
-                                    "&height=" +
-                                    this.state.height +
-                                    "&width=" +
-                                    this.state.width
-                                }
-                                className="featured-movies-post-image"
-                            />}
-                    </div>
                 </Link>
             </div>
         )
@@ -262,7 +262,9 @@ var Director = createReactClass({
                             className="inline-class"
                             to={{ pathname: "/agent/" + director.id }}
                         >
-                            {director.name}
+                            <a>
+                                {director.name}
+                            </a>
                         </Link>
                         {this.props.directors.agents.length - 1 != l ? (
                             <p className="inline-class"> , </p>

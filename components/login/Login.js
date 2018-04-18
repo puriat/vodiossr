@@ -1,5 +1,5 @@
 import React from "react"
-import "../../css/login.css"
+import loginSS from "styles/login.css"
 import { inject, observer } from "mobx-react"
 import { latinToPersian, persianToLatin } from "../../util/util"
 import Loading from "../loading/Loading"
@@ -348,6 +348,7 @@ export default class Login extends React.Component {
   render() {
     return (
       <div className="foodmoodbg" onClick={this.closeLogin.bind(this)}>
+        <style dangerouslySetInnerHTML={{ __html: loginSS }} />
         {this.state.showLoading && <Loading />}
         <div className="container">
           <div className="foodmoodcontent">
@@ -364,7 +365,7 @@ export default class Login extends React.Component {
                       height: "18px",
                       marginLeft: "5px"
                     }}
-                    src='/static/edit.svg'
+                    src='/static/img/edit.svg'
                   />
                   <span
                     style={{
@@ -380,13 +381,13 @@ export default class Login extends React.Component {
               )}
               <div className="close-animatedModal">
                 <img
-                  src='/static/exit.svg'
+                  src='/static/img/exit.svg'
                   className="closemodal"
                   onClick={this.closeLogin.bind(this)}
                 />
               </div>
               <div className="foodmoodlogo">
-                <img src='/static/login-logo.png' />
+                <img src='/static/img/login-logo.png' />
               </div>
               <div id="error-message" className="wrong-code">
                 {this.state.errorMessage}
@@ -463,7 +464,7 @@ export default class Login extends React.Component {
                       <p style={{ textAlign: "center", color: "white" }}>
                         لطفا منتظر بمانید
                       <img
-                          src='/static/Timer.svg'
+                          src='/static/img/Timer.svg'
                           style={{
                             width: "15px",
                             marginRight: "5px",
@@ -479,9 +480,9 @@ export default class Login extends React.Component {
               </div>
             </div>
             <div className="foodmoodpicture">
-              <img src='/static/vodio.png' className="foodmoodpicture-img" />
+              <img src='/static/img/vodio.png' className="foodmoodpicture-img" />
               <div className="vodio-caption">
-                <img src='/static/pointer.png' className="pointer" />
+                <img src='/static/img/pointer.png' className="pointer" />
                 <p
                   style={{
                     color: "white",

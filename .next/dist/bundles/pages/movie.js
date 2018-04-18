@@ -67,7 +67,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -82,12 +82,14 @@ module.exports =
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_mobx_react__ = __webpack_require__("mobx-react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_mobx_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_mobx_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_RequestHandler__ = __webpack_require__("./util/RequestHandler.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__css_category_css__ = __webpack_require__("./css/category.css");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__css_category_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__css_category_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__styles_category_css__ = __webpack_require__("./styles/category.css");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__styles_category_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__styles_category_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery__ = __webpack_require__("jquery");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_jquery__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_next_router__ = __webpack_require__("next/router");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_next_router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_next_router__);
+
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _dec,
@@ -222,19 +224,24 @@ var Category = (_dec = Object(__WEBPACK_IMPORTED_MODULE_1_mobx_react__["inject"]
             lineNumber: 105
           }
         },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("style", { dangerouslySetInnerHTML: { __html: __WEBPACK_IMPORTED_MODULE_3__styles_category_css___default.a }, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 106
+          }
+        }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           "div",
           { className: "header-category-show", id: "header-category-show", __source: {
               fileName: _jsxFileName,
-              lineNumber: 106
+              lineNumber: 107
             }
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { style: {
               width: '13px',
               marginRight: '20px'
-            }, src: "/static/category.svg", __source: {
+            }, src: "/static/img/category.svg", __source: {
               fileName: _jsxFileName,
-              lineNumber: 107
+              lineNumber: 108
             }
           }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -242,7 +249,7 @@ var Category = (_dec = Object(__WEBPACK_IMPORTED_MODULE_1_mobx_react__["inject"]
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 111
+                lineNumber: 112
               }
             },
             "\u062F\u0633\u062A\u0647\u200C\u0628\u0646\u062F\u06CC\u200C\u0647\u0627"
@@ -252,7 +259,7 @@ var Category = (_dec = Object(__WEBPACK_IMPORTED_MODULE_1_mobx_react__["inject"]
           "div",
           { id: "category-header", className: "header-category-drop-down", __source: {
               fileName: _jsxFileName,
-              lineNumber: 113
+              lineNumber: 114
             }
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
@@ -261,14 +268,14 @@ var Category = (_dec = Object(__WEBPACK_IMPORTED_MODULE_1_mobx_react__["inject"]
             onClick: this.closeMainMenu.bind(this),
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 114
+              lineNumber: 115
             }
           }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             "div",
             { className: "header-category-drop-down-main-menu", __source: {
                 fileName: _jsxFileName,
-                lineNumber: 119
+                lineNumber: 120
               }
             },
             this.props.categories != null ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -280,7 +287,7 @@ var Category = (_dec = Object(__WEBPACK_IMPORTED_MODULE_1_mobx_react__["inject"]
                 },
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 121
+                  lineNumber: 122
                 }
               },
               this.props.categories.map(function (category) {
@@ -292,7 +299,7 @@ var Category = (_dec = Object(__WEBPACK_IMPORTED_MODULE_1_mobx_react__["inject"]
                     className: "header-category-drop-down-main-menu-item",
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 128
+                      lineNumber: 129
                     }
                   },
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -303,7 +310,7 @@ var Category = (_dec = Object(__WEBPACK_IMPORTED_MODULE_1_mobx_react__["inject"]
                       onClick: _this3.onCategoryClicked.bind(_this3, category, null),
                       __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 133
+                        lineNumber: 134
                       }
                     },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: __WEBPACK_IMPORTED_MODULE_2__util_RequestHandler__["a" /* MainUrl */] + "/image.ashx?file=" + category.url, style: {
@@ -314,7 +321,7 @@ var Category = (_dec = Object(__WEBPACK_IMPORTED_MODULE_1_mobx_react__["inject"]
                         objectFit: 'contain'
                       }, __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 142
+                        lineNumber: 143
                       }
                     }),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -322,7 +329,7 @@ var Category = (_dec = Object(__WEBPACK_IMPORTED_MODULE_1_mobx_react__["inject"]
                       {
                         __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 151
+                          lineNumber: 152
                         }
                       },
                       category.name
@@ -334,7 +341,7 @@ var Category = (_dec = Object(__WEBPACK_IMPORTED_MODULE_1_mobx_react__["inject"]
                     onClose: _this3.closeMainMenu.bind(_this3),
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 153
+                      lineNumber: 154
                     }
                   })
                 );
@@ -350,12 +357,12 @@ var Category = (_dec = Object(__WEBPACK_IMPORTED_MODULE_1_mobx_react__["inject"]
                 },
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 162
+                  lineNumber: 163
                 }
               },
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "loader", __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 170
+                  lineNumber: 171
                 }
               })
             )
@@ -426,7 +433,7 @@ var SubCategory = (_dec2 = Object(__WEBPACK_IMPORTED_MODULE_1_mobx_react__["inje
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 222
+              lineNumber: 223
             }
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -435,7 +442,7 @@ var SubCategory = (_dec2 = Object(__WEBPACK_IMPORTED_MODULE_1_mobx_react__["inje
               onClick: this.onGenreClicked.bind(this, this.props.category, null),
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 223
+                lineNumber: 224
               }
             },
             "\u0647\u0645\u0647"
@@ -447,7 +454,7 @@ var SubCategory = (_dec2 = Object(__WEBPACK_IMPORTED_MODULE_1_mobx_react__["inje
         "ul",
         { id: this.props.identifier, __source: {
             fileName: _jsxFileName,
-            lineNumber: 233
+            lineNumber: 234
           }
         },
         allGenres,
@@ -456,7 +463,7 @@ var SubCategory = (_dec2 = Object(__WEBPACK_IMPORTED_MODULE_1_mobx_react__["inje
             "li",
             { key: genre.id, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 236
+                lineNumber: 237
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -465,7 +472,7 @@ var SubCategory = (_dec2 = Object(__WEBPACK_IMPORTED_MODULE_1_mobx_react__["inje
                 onClick: _this5.onGenreClicked.bind(_this5, _this5.props.category, genre),
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 237
+                  lineNumber: 238
                 }
               },
               genre.name
@@ -492,8 +499,10 @@ var SubCategory = (_dec2 = Object(__WEBPACK_IMPORTED_MODULE_1_mobx_react__["inje
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_link___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_next_link__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_util__ = __webpack_require__("./util/util.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_RequestHandler__ = __webpack_require__("./util/RequestHandler.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__css_loading_fading_css__ = __webpack_require__("./css/loading-fading.css");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__css_loading_fading_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__css_loading_fading_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__styles_loading_fading_css__ = __webpack_require__("./styles/loading-fading.css");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__styles_loading_fading_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__styles_loading_fading_css__);
+
+
 var _jsxFileName = "C:\\Users\\Mahan\\Desktop\\next.js-canary\\with-mobx\\components\\Footer.js";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -584,16 +593,21 @@ var Footer = function (_React$Component) {
                         lineNumber: 62
                     }
                 },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("style", { dangerouslySetInnerHTML: { __html: __WEBPACK_IMPORTED_MODULE_4__styles_loading_fading_css___default.a }, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 63
+                    }
+                }),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     "a",
                     { id: "#top-float", className: "float-top-header", __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 63
+                            lineNumber: 64
                         }
                     },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", { className: "icon-angle-up", __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 64
+                            lineNumber: 65
                         }
                     })
                 ),
@@ -601,21 +615,21 @@ var Footer = function (_React$Component) {
                     "div",
                     { className: "footer-content", __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 66
+                            lineNumber: 67
                         }
                     },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         "div",
                         { className: "footer-links", __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 67
+                                lineNumber: 68
                             }
                         },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "strong",
                             { className: "footer-title", __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 68
+                                    lineNumber: 69
                                 }
                             },
                             "\u0644\u06CC\u0646\u06A9\u200C\u0647\u0627"
@@ -625,7 +639,7 @@ var Footer = function (_React$Component) {
                             {
                                 __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 69
+                                    lineNumber: 70
                                 }
                             },
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -633,17 +647,26 @@ var Footer = function (_React$Component) {
                                 {
                                     __source: {
                                         fileName: _jsxFileName,
-                                        lineNumber: 70
+                                        lineNumber: 71
                                     }
                                 },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     __WEBPACK_IMPORTED_MODULE_1_next_link___default.a,
                                     { href: { pathname: "/vodio" }, __source: {
                                             fileName: _jsxFileName,
-                                            lineNumber: 71
+                                            lineNumber: 72
                                         }
                                     },
-                                    "\u062F\u0631\u0628\u0627\u0631\u0647 \u0645\u0627"
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        "a",
+                                        {
+                                            __source: {
+                                                fileName: _jsxFileName,
+                                                lineNumber: 72
+                                            }
+                                        },
+                                        "\u062F\u0631\u0628\u0627\u0631\u0647 \u0645\u0627"
+                                    )
                                 )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -651,17 +674,26 @@ var Footer = function (_React$Component) {
                                 {
                                     __source: {
                                         fileName: _jsxFileName,
-                                        lineNumber: 73
+                                        lineNumber: 74
                                     }
                                 },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     __WEBPACK_IMPORTED_MODULE_1_next_link___default.a,
                                     { href: { pathname: "/rules" }, __source: {
                                             fileName: _jsxFileName,
-                                            lineNumber: 74
+                                            lineNumber: 75
                                         }
                                     },
-                                    "\u0642\u0648\u0627\u0646\u06CC\u0646 \u0633\u0627\u06CC\u062A"
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        "a",
+                                        {
+                                            __source: {
+                                                fileName: _jsxFileName,
+                                                lineNumber: 75
+                                            }
+                                        },
+                                        "\u0642\u0648\u0627\u0646\u06CC\u0646 \u0633\u0627\u06CC\u062A"
+                                    )
                                 )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -669,17 +701,26 @@ var Footer = function (_React$Component) {
                                 {
                                     __source: {
                                         fileName: _jsxFileName,
-                                        lineNumber: 76
+                                        lineNumber: 77
                                     }
                                 },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     __WEBPACK_IMPORTED_MODULE_1_next_link___default.a,
                                     { href: { pathname: "/faq" }, __source: {
                                             fileName: _jsxFileName,
-                                            lineNumber: 77
+                                            lineNumber: 78
                                         }
                                     },
-                                    "\u067E\u0631\u0633\u0634 \u0647\u0627\u06CC \u0645\u062A\u062F\u0627\u0648\u0644"
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        "a",
+                                        {
+                                            __source: {
+                                                fileName: _jsxFileName,
+                                                lineNumber: 78
+                                            }
+                                        },
+                                        "\u067E\u0631\u0633\u0634 \u0647\u0627\u06CC \u0645\u062A\u062F\u0627\u0648\u0644"
+                                    )
                                 )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -687,17 +728,26 @@ var Footer = function (_React$Component) {
                                 {
                                     __source: {
                                         fileName: _jsxFileName,
-                                        lineNumber: 79
+                                        lineNumber: 80
                                     }
                                 },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     __WEBPACK_IMPORTED_MODULE_1_next_link___default.a,
                                     { href: { pathname: "/complaint" }, __source: {
                                             fileName: _jsxFileName,
-                                            lineNumber: 80
+                                            lineNumber: 81
                                         }
                                     },
-                                    "\u062B\u0628\u062A \u0634\u06A9\u0627\u06CC\u062A"
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        "a",
+                                        {
+                                            __source: {
+                                                fileName: _jsxFileName,
+                                                lineNumber: 81
+                                            }
+                                        },
+                                        "\u062B\u0628\u062A \u0634\u06A9\u0627\u06CC\u062A"
+                                    )
                                 )
                             )
                         )
@@ -706,14 +756,14 @@ var Footer = function (_React$Component) {
                         "div",
                         { className: "footer-contact", __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 84
+                                lineNumber: 85
                             }
                         },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "strong",
                             { className: "footer-title", __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 85
+                                    lineNumber: 86
                                 }
                             },
                             "\u062A\u0645\u0627\u0633\u200C\u0628\u0627\u200C\u0645\u0627"
@@ -722,7 +772,7 @@ var Footer = function (_React$Component) {
                             "div",
                             { className: "footer-contact-content", __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 86
+                                    lineNumber: 87
                                 }
                             },
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -730,7 +780,7 @@ var Footer = function (_React$Component) {
                                 {
                                     __source: {
                                         fileName: _jsxFileName,
-                                        lineNumber: 87
+                                        lineNumber: 88
                                     }
                                 },
                                 "\u0645\u062C\u06CC\u062F\u06CC\u0647 \u0634\u0645\u0627\u0644\u06CC \u060C \u062E\u06CC\u0627\u0628\u0627\u0646 \u06A9\u0645\u0627\u0644\u06CC\u060C \u0628\u0646 \u0628\u0633\u062A \u0633\u0639\u06CC\u062F\u060C \u067E\u0644\u0627\u06A9 \u06F4"
@@ -740,7 +790,7 @@ var Footer = function (_React$Component) {
                                 {
                                     __source: {
                                         fileName: _jsxFileName,
-                                        lineNumber: 88
+                                        lineNumber: 89
                                     }
                                 },
                                 Object(__WEBPACK_IMPORTED_MODULE_2__util_util__["b" /* latinToPersian */])("تلفن: 02126141571")
@@ -749,7 +799,7 @@ var Footer = function (_React$Component) {
                                 "p",
                                 { style: { marginBottom: "5px" }, __source: {
                                         fileName: _jsxFileName,
-                                        lineNumber: 89
+                                        lineNumber: 90
                                     }
                                 },
                                 "\u0627\u06CC\u0645\u06CC\u0644: Info@vodio.com"
@@ -758,7 +808,7 @@ var Footer = function (_React$Component) {
                                 "a",
                                 { href: "https://t.me/vodioir", style: { fontFamily: "irsansbold", color: "#00a69c" }, __source: {
                                         fileName: _jsxFileName,
-                                        lineNumber: 90
+                                        lineNumber: 91
                                     }
                                 },
                                 "\u067E\u0634\u062A\u06CC\u0628\u0627\u0646\u06CC \u062F\u0631 \u062A\u0644\u06AF\u0631\u0627\u0645"
@@ -767,19 +817,19 @@ var Footer = function (_React$Component) {
                                 "div",
                                 { className: "footer-contact-content-socail", __source: {
                                         fileName: _jsxFileName,
-                                        lineNumber: 91
+                                        lineNumber: 92
                                     }
                                 },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     "a",
                                     { href: "https://t.me/vodiochannel", className: "telegram", __source: {
                                             fileName: _jsxFileName,
-                                            lineNumber: 92
+                                            lineNumber: 93
                                         }
                                     },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", { className: "icon-paper-plane-empty", __source: {
                                             fileName: _jsxFileName,
-                                            lineNumber: 93
+                                            lineNumber: 94
                                         }
                                     })
                                 ),
@@ -787,12 +837,12 @@ var Footer = function (_React$Component) {
                                     "a",
                                     { href: "http://instagram.com/vodio.ir", className: "instagram", __source: {
                                             fileName: _jsxFileName,
-                                            lineNumber: 95
+                                            lineNumber: 96
                                         }
                                     },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", { className: "icon-instagram-1", __source: {
                                             fileName: _jsxFileName,
-                                            lineNumber: 96
+                                            lineNumber: 97
                                         }
                                     })
                                 ),
@@ -800,12 +850,12 @@ var Footer = function (_React$Component) {
                                     "a",
                                     { href: "http://twitter.com/vodio_ir", className: "twitter", __source: {
                                             fileName: _jsxFileName,
-                                            lineNumber: 98
+                                            lineNumber: 99
                                         }
                                     },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", { className: "icon-twitter", __source: {
                                             fileName: _jsxFileName,
-                                            lineNumber: 99
+                                            lineNumber: 100
                                         }
                                     })
                                 ),
@@ -816,12 +866,12 @@ var Footer = function (_React$Component) {
                                         className: "facebook",
                                         __source: {
                                             fileName: _jsxFileName,
-                                            lineNumber: 101
+                                            lineNumber: 102
                                         }
                                     },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", { className: "icon-facebook", __source: {
                                             fileName: _jsxFileName,
-                                            lineNumber: 105
+                                            lineNumber: 106
                                         }
                                     })
                                 )
@@ -832,14 +882,14 @@ var Footer = function (_React$Component) {
                         "div",
                         { className: "footer-url-finder-download", __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 110
+                                lineNumber: 111
                             }
                         },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "strong",
                             { className: "footer-title", __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 111
+                                    lineNumber: 112
                                 }
                             },
                             "\xA9 \u062A\u0645\u0627\u0645 \u062D\u0642\u0648\u0642 \u0627\u06CC\u0646 \u0633\u0627\u06CC\u062A \u0645\u062A\u0639\u0644\u0642 \u0628\u0647 \u0648\u062F\u06CC\u0648 \u0645\u06CC\u200C\u0628\u0627\u0634\u062F."
@@ -848,7 +898,7 @@ var Footer = function (_React$Component) {
                             "div",
                             { className: "footer-url-finder-download-content", __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 114
+                                    lineNumber: 115
                                 }
                             },
                             "\u062A\u0645\u0627\u0645\u064A \u0643\u0627\u0644\u0627\u0647\u0627 \u0648 \u062E\u062F\u0645\u0627\u062A \u0627\u064A\u0646 \u0633\u0627\u06CC\u062A\u060C \u062D\u0633\u0628 \u0645\u0648\u0631\u062F\u060C \u062F\u0627\u0631\u0627\u064A \u0645\u062C\u0648\u0632\u0647\u0627\u064A \u0644\u0627\u0632\u0645 \u0627\u0632 \u0645\u0631\u0627\u062C\u0639 \u0645\u0631\u0628\u0648\u0637\u0647 \u0645\u064A\u200C\u0628\u0627\u0634\u0646\u062F."
@@ -858,14 +908,14 @@ var Footer = function (_React$Component) {
                         "div",
                         { className: "footer-news-letter", __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 119
+                                lineNumber: 120
                             }
                         },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "strong",
                             { className: "footer-title", __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 120
+                                    lineNumber: 121
                                 }
                             },
                             "\u062E\u0628\u0631\u0646\u0627\u0645\u0647"
@@ -874,7 +924,7 @@ var Footer = function (_React$Component) {
                             "div",
                             { className: "footer-news-letter-content", __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 121
+                                    lineNumber: 122
                                 }
                             },
                             "\u0645\u0627 \u0647\u0631 \u0631\u0648\u0632\u0647 \u0628\u0631\u0627\u06CC \u0634\u0645\u0627 \u0622\u062E\u0631\u06CC\u0646 \u0641\u06CC\u0644\u0645 \u0648 \u0633\u0631\u06CC\u0627\u0644 \u0647\u0627\u06CC \u0631\u0648\u0632 \u0631\u0627 \u062F\u0631 \u0627\u06CC\u0645\u06CC\u0644\u062A\u0627\u0646 \u0627\u0631\u0633\u0627\u0644 \u0645\u06CC\u06A9\u0646\u06CC\u0645!"
@@ -883,14 +933,14 @@ var Footer = function (_React$Component) {
                             "div",
                             { className: "footer-news-letter-form", __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 125
+                                    lineNumber: 126
                                 }
                             },
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 "div",
                                 { className: "footer-news-letter-form-input-bg", __source: {
                                         fileName: _jsxFileName,
-                                        lineNumber: 126
+                                        lineNumber: 127
                                     }
                                 },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", {
@@ -901,7 +951,7 @@ var Footer = function (_React$Component) {
                                     onChange: this.emailChanged.bind(this),
                                     __source: {
                                         fileName: _jsxFileName,
-                                        lineNumber: 127
+                                        lineNumber: 128
                                     }
                                 }),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -909,7 +959,7 @@ var Footer = function (_React$Component) {
                                     {
                                         __source: {
                                             fileName: _jsxFileName,
-                                            lineNumber: 134
+                                            lineNumber: 135
                                         }
                                     },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -923,7 +973,7 @@ var Footer = function (_React$Component) {
                                                 height: '50px'
                                             }, __source: {
                                                 fileName: _jsxFileName,
-                                                lineNumber: 135
+                                                lineNumber: 136
                                             }
                                         },
                                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "spinner", style: {
@@ -931,7 +981,7 @@ var Footer = function (_React$Component) {
                                                 height: '50px'
                                             }, __source: {
                                                 fileName: _jsxFileName,
-                                                lineNumber: 143
+                                                lineNumber: 144
                                             }
                                         })
                                     ),
@@ -942,12 +992,12 @@ var Footer = function (_React$Component) {
                                             onClick: this.submitEmail.bind(this),
                                             __source: {
                                                 fileName: _jsxFileName,
-                                                lineNumber: 149
+                                                lineNumber: 150
                                             }
                                         },
                                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", { className: "icon-paper-plane-empty", __source: {
                                                 fileName: _jsxFileName,
-                                                lineNumber: 153
+                                                lineNumber: 154
                                             }
                                         })
                                     )
@@ -958,7 +1008,7 @@ var Footer = function (_React$Component) {
                             "div",
                             { style: { color: 'red', fontSize: '13px', position: 'absolute' }, __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 159
+                                    lineNumber: 160
                                 }
                             },
                             this.state.errorInfo
@@ -967,7 +1017,7 @@ var Footer = function (_React$Component) {
                             "div",
                             { style: { color: 'green', fontSize: '13px', position: 'absolute' }, __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 162
+                                    lineNumber: 163
                                 }
                             },
                             this.state.successInfo
@@ -1005,6 +1055,8 @@ var Footer = function (_React$Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_jquery__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_isomorphic_unfetch__ = __webpack_require__("isomorphic-unfetch");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_isomorphic_unfetch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_isomorphic_unfetch__);
+
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _dec,
@@ -1135,24 +1187,33 @@ var Header = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])(
                                 lineNumber: 87
                             }
                         },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-                            className: "vodio-logo",
-                            src: "/static/Vodio-Logo.svg",
-                            alt: "\u0648\u0648\u062F\u06CC\u0648",
-                            __source: {
-                                fileName: _jsxFileName,
-                                lineNumber: 88
-                            }
-                        })
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "a",
+                            {
+                                __source: {
+                                    fileName: _jsxFileName,
+                                    lineNumber: 88
+                                }
+                            },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+                                className: "vodio-logo",
+                                src: "/static/img/Vodio-Logo.svg",
+                                alt: "\u0648\u0648\u062F\u06CC\u0648",
+                                __source: {
+                                    fileName: _jsxFileName,
+                                    lineNumber: 89
+                                }
+                            })
+                        )
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", { className: "show-main-menu-btn icon-menu-1", __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 94
+                            lineNumber: 96
                         }
                     }),
                     this.props.session.categories != null && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__Category__["a" /* default */], { categories: this.props.session.categories, __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 95
+                            lineNumber: 97
                         }
                     }),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -1161,7 +1222,7 @@ var Header = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])(
                                 paddingLeft: '10px'
                             }, __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 96
+                                lineNumber: 98
                             }
                         },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -1174,27 +1235,21 @@ var Header = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])(
                                 },
                                 __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 115
+                                    lineNumber: 117
                                 }
                             },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__search_Search__["a" /* default */], {
-                                __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 122
-                                }
-                            }),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 "div",
                                 { className: "header-left-meta", __source: {
                                         fileName: _jsxFileName,
-                                        lineNumber: 123
+                                        lineNumber: 125
                                     }
                                 },
                                 this.props.session.session != null && this.props.session.session != "" ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     "div",
                                     { className: "header-sign-out-panel", __source: {
                                             fileName: _jsxFileName,
-                                            lineNumber: 126
+                                            lineNumber: 128
                                         }
                                     },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", (_React$createElement = {
@@ -1202,20 +1257,20 @@ var Header = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])(
                                         id: "sign-out"
                                     }, _defineProperty(_React$createElement, "className", "header-sign-out"), _defineProperty(_React$createElement, "__source", {
                                         fileName: _jsxFileName,
-                                        lineNumber: 127
+                                        lineNumber: 129
                                     }), _React$createElement)),
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         "div",
                                         { id: "myDropdown", className: "dropdown-content", __source: {
                                                 fileName: _jsxFileName,
-                                                lineNumber: 132
+                                                lineNumber: 134
                                             }
                                         },
                                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                             "a",
                                             { onClick: this.purchaseList.bind(this), __source: {
                                                     fileName: _jsxFileName,
-                                                    lineNumber: 133
+                                                    lineNumber: 135
                                                 }
                                             },
                                             "\u062E\u0631\u06CC\u062F\u0647\u0627"
@@ -1224,7 +1279,7 @@ var Header = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])(
                                             "a",
                                             { onClick: this.factorList.bind(this), __source: {
                                                     fileName: _jsxFileName,
-                                                    lineNumber: 134
+                                                    lineNumber: 136
                                                 }
                                             },
                                             "\u0641\u0627\u06A9\u062A\u0648\u0631\u0647\u0627"
@@ -1233,7 +1288,7 @@ var Header = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])(
                                             "a",
                                             { onClick: this.signOutClicked.bind(this), __source: {
                                                     fileName: _jsxFileName,
-                                                    lineNumber: 136
+                                                    lineNumber: 138
                                                 }
                                             },
                                             "\u062E\u0631\u0648\u062C"
@@ -1242,7 +1297,7 @@ var Header = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])(
                                 ) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__login_HeaderLogin__["a" /* default */], {
                                     __source: {
                                         fileName: _jsxFileName,
-                                        lineNumber: 140
+                                        lineNumber: 142
                                     }
                                 })
                             )
@@ -1275,8 +1330,14 @@ var Header = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])(
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__util_RequestHandler__ = __webpack_require__("./util/RequestHandler.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__util_util__ = __webpack_require__("./util/util.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__loading_Loading__ = __webpack_require__("./components/loading/Loading.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__css_style_css__ = __webpack_require__("./css/style.css");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__css_style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__css_style_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__styles_style_css__ = __webpack_require__("./styles/style.css");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__styles_style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__styles_style_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__styles_icons_css__ = __webpack_require__("./styles/icons.css");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__styles_icons_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__styles_icons_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__styles_font_css__ = __webpack_require__("./styles/font.css");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__styles_font_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__styles_font_css__);
+
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _dec,
@@ -1288,6 +1349,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
 
 
 
@@ -1417,32 +1481,47 @@ var Layout = (_dec = Object(__WEBPACK_IMPORTED_MODULE_4_mobx_react__["inject"])(
                 {
                     __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 139
+                        lineNumber: 143
                     }
                 },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('style', { dangerouslySetInnerHTML: { __html: __WEBPACK_IMPORTED_MODULE_9__styles_style_css___default.a }, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 144
+                    }
+                }),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('style', { dangerouslySetInnerHTML: { __html: __WEBPACK_IMPORTED_MODULE_11__styles_font_css___default.a }, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 145
+                    }
+                }),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('style', { dangerouslySetInnerHTML: { __html: __WEBPACK_IMPORTED_MODULE_10__styles_icons_css___default.a }, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 146
+                    }
+                }),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Header__["a" /* default */], {
                     __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 140
+                        lineNumber: 147
                     }
                 }),
                 this.props.children,
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Footer__["a" /* default */], {
                     __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 142
+                        lineNumber: 149
                     }
                 }),
                 this.props.session.showLogin && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__login_Login__["a" /* default */], {
                     __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 143
+                        lineNumber: 150
                     }
                 }),
                 this.props.session.showLoading && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8__loading_Loading__["a" /* default */], {
                     __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 144
+                        lineNumber: 151
                     }
                 })
             );
@@ -1463,8 +1542,10 @@ var Layout = (_dec = Object(__WEBPACK_IMPORTED_MODULE_4_mobx_react__["inject"])(
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Loading; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_loading_css__ = __webpack_require__("./css/loading.css");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_loading_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__css_loading_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_loading_css__ = __webpack_require__("./styles/loading.css");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_loading_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__styles_loading_css__);
+
+
 var _jsxFileName = "C:\\Users\\Mahan\\Desktop\\next.js-canary\\with-mobx\\components\\loading\\Loading.js";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -1497,31 +1578,36 @@ var Loading = function (_React$Component) {
             lineNumber: 7
           }
         },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("style", { dangerouslySetInnerHTML: { __html: __WEBPACK_IMPORTED_MODULE_1__styles_loading_css___default.a }, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 8
+          }
+        }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           "div",
           { className: "cssload-thecube", __source: {
               fileName: _jsxFileName,
-              lineNumber: 8
+              lineNumber: 9
             }
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "cssload-cube cssload-c1", __source: {
               fileName: _jsxFileName,
-              lineNumber: 9
+              lineNumber: 10
             }
           }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "cssload-cube cssload-c2", __source: {
               fileName: _jsxFileName,
-              lineNumber: 10
+              lineNumber: 11
             }
           }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "cssload-cube cssload-c4", __source: {
               fileName: _jsxFileName,
-              lineNumber: 11
+              lineNumber: 12
             }
           }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "cssload-cube cssload-c3", __source: {
               fileName: _jsxFileName,
-              lineNumber: 12
+              lineNumber: 13
             }
           })
         )
@@ -1551,6 +1637,8 @@ var Loading = function (_React$Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_mobx_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_mobx_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_jquery__ = __webpack_require__("jquery");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_jquery__);
+
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _dec,
@@ -1780,8 +1868,8 @@ var HeaderLogin = (_dec = Object(__WEBPACK_IMPORTED_MODULE_4_mobx_react__["injec
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Login; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_login_css__ = __webpack_require__("./css/login.css");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_login_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__css_login_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_login_css__ = __webpack_require__("./styles/login.css");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_login_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__styles_login_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_mobx_react__ = __webpack_require__("mobx-react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_mobx_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_mobx_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_util__ = __webpack_require__("./util/util.js");
@@ -1789,6 +1877,8 @@ var HeaderLogin = (_dec = Object(__WEBPACK_IMPORTED_MODULE_4_mobx_react__["injec
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__util_RequestHandler__ = __webpack_require__("./util/RequestHandler.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery__ = __webpack_require__("jquery");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_jquery__);
+
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _dec,
@@ -2121,31 +2211,36 @@ var Login = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])("
             lineNumber: 350
           }
         },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("style", { dangerouslySetInnerHTML: { __html: __WEBPACK_IMPORTED_MODULE_1__styles_login_css___default.a }, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 351
+          }
+        }),
         this.state.showLoading && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__loading_Loading__["a" /* default */], {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 351
+            lineNumber: 352
           }
         }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           "div",
           { className: "container", __source: {
               fileName: _jsxFileName,
-              lineNumber: 352
+              lineNumber: 353
             }
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             "div",
             { className: "foodmoodcontent", __source: {
                 fileName: _jsxFileName,
-                lineNumber: 353
+                lineNumber: 354
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               "div",
               { className: "foodmoodform", __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 354
+                  lineNumber: 355
                 }
               },
               this.state.showMobileNumber && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -2155,7 +2250,7 @@ var Login = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])("
                   onClick: this.editClicked.bind(this),
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 356
+                    lineNumber: 357
                   }
                 },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
@@ -2165,10 +2260,10 @@ var Login = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])("
                     height: "18px",
                     marginLeft: "5px"
                   },
-                  src: "/static/edit.svg",
+                  src: "/static/img/edit.svg",
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 360
+                    lineNumber: 361
                   }
                 }),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -2182,7 +2277,7 @@ var Login = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])("
                     },
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 369
+                      lineNumber: 370
                     }
                   },
                   Object(__WEBPACK_IMPORTED_MODULE_3__util_util__["b" /* latinToPersian */])(this.state.mobileNumber)
@@ -2192,16 +2287,16 @@ var Login = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])("
                 "div",
                 { className: "close-animatedModal", __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 381
+                    lineNumber: 382
                   }
                 },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-                  src: "/static/exit.svg",
+                  src: "/static/img/exit.svg",
                   className: "closemodal",
                   onClick: this.closeLogin.bind(this),
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 382
+                    lineNumber: 383
                   }
                 })
               ),
@@ -2209,12 +2304,12 @@ var Login = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])("
                 "div",
                 { className: "foodmoodlogo", __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 388
+                    lineNumber: 389
                   }
                 },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "/static/login-logo.png", __source: {
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "/static/img/login-logo.png", __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 389
+                    lineNumber: 390
                   }
                 })
               ),
@@ -2222,7 +2317,7 @@ var Login = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])("
                 "div",
                 { id: "error-message", className: "wrong-code", __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 391
+                    lineNumber: 392
                   }
                 },
                 this.state.errorMessage
@@ -2231,7 +2326,7 @@ var Login = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])("
                 "div",
                 { className: "login", __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 394
+                    lineNumber: 395
                   }
                 },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", {
@@ -2243,14 +2338,14 @@ var Login = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])("
                   placeholder: "\u0634\u0645\u0627\u0631\u0647 \u0645\u0648\u0628\u0627\u06CC\u0644",
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 395
+                    lineNumber: 396
                   }
                 }),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   "p",
                   { style: { textAlign: "center", color: "white", direction: "rtl" }, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 404
+                      lineNumber: 405
                     }
                   },
                   "\u0628\u0631\u0627\u06CC \u0639\u0636\u0648\u06CC\u062A \u062F\u0631 \u0648\u062F\u06CC\u0648 \u0634\u0645\u0627\u0631\u0647 \u0645\u0648\u0628\u0627\u06CC\u0644 \u062E\u0648\u062F \u0631\u0627 \u0648\u0627\u0631\u062F \u06A9\u0646\u06CC\u062F."
@@ -2262,7 +2357,7 @@ var Login = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])("
                     onClick: this.sendMobileNumber.bind(this),
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 407
+                      lineNumber: 408
                     }
                   },
                   "\u0627\u0631\u0633\u0627\u0644"
@@ -2272,14 +2367,14 @@ var Login = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])("
                 "div",
                 { className: "register", __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 414
+                    lineNumber: 415
                   }
                 },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   "div",
                   { className: "wrong-code", __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 415
+                      lineNumber: 416
                     }
                   },
                   this.state.wrongCodeMessage
@@ -2293,14 +2388,14 @@ var Login = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])("
                   placeholder: "\u06A9\u062F \u0641\u0639\u0627\u0644 \u0633\u0627\u0632\u06CC",
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 416
+                    lineNumber: 417
                   }
                 }),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   "p",
                   { style: { textAlign: "center", color: "white", direction: "rtl" }, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 424
+                      lineNumber: 425
                     }
                   },
                   "\u06A9\u062F \u0641\u0639\u0627\u0644 \u0633\u0627\u0632\u06CC \u0628\u0631\u0627\u06CC \u0634\u0645\u0627 \u0627\u0631\u0633\u0627\u0644 \u0634\u062F."
@@ -2312,7 +2407,7 @@ var Login = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])("
                     onClick: this.sendOtpCode.bind(this),
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 427
+                      lineNumber: 428
                     }
                   },
                   "\u0648\u0631\u0648\u062F"
@@ -2328,7 +2423,7 @@ var Login = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])("
                     },
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 433
+                      lineNumber: 434
                     }
                   },
                   this.state.showCountDown == false ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -2336,7 +2431,7 @@ var Login = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])("
                     {
                       __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 442
+                        lineNumber: 443
                       }
                     },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -2344,7 +2439,7 @@ var Login = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])("
                       {
                         __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 443
+                          lineNumber: 444
                         }
                       },
                       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -2354,7 +2449,7 @@ var Login = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])("
                           onClick: this.resendCode.bind(this, 0),
                           __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 444
+                            lineNumber: 445
                           }
                         },
                         "\u0627\u0631\u0633\u0627\u0644 \u062F\u0648\u0628\u0627\u0631\u0647 \u06A9\u062F \u0641\u0639\u0627\u0644 \u0633\u0627\u0632\u06CC"
@@ -2365,7 +2460,7 @@ var Login = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])("
                       {
                         __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 452
+                          lineNumber: 453
                         }
                       },
                       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -2375,7 +2470,7 @@ var Login = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])("
                           onClick: this.resendCode.bind(this, 1),
                           __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 453
+                            lineNumber: 454
                           }
                         },
                         "\u0628\u0631\u0642\u0631\u0627\u0631\u06CC \u062A\u0645\u0627\u0633 \u0635\u0648\u062A\u06CC"
@@ -2385,12 +2480,12 @@ var Login = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])("
                     "p",
                     { style: { textAlign: "center", color: "white" }, __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 463
+                        lineNumber: 464
                       }
                     },
                     "\u0644\u0637\u0641\u0627 \u0645\u0646\u062A\u0638\u0631 \u0628\u0645\u0627\u0646\u06CC\u062F",
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-                      src: "/static/Timer.svg",
+                      src: "/static/img/Timer.svg",
                       style: {
                         width: "15px",
                         marginRight: "5px",
@@ -2398,7 +2493,7 @@ var Login = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])("
                       },
                       __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 465
+                        lineNumber: 466
                       }
                     }),
                     this.state.showCountDown == true ? this.state.countDownText : null
@@ -2410,24 +2505,24 @@ var Login = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])("
               "div",
               { className: "foodmoodpicture", __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 481
+                  lineNumber: 482
                 }
               },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "/static/vodio.png", className: "foodmoodpicture-img", __source: {
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "/static/img/vodio.png", className: "foodmoodpicture-img", __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 482
+                  lineNumber: 483
                 }
               }),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "div",
                 { className: "vodio-caption", __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 483
+                    lineNumber: 484
                   }
                 },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "/static/pointer.png", className: "pointer", __source: {
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "/static/img/pointer.png", className: "pointer", __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 484
+                    lineNumber: 485
                   }
                 }),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -2442,7 +2537,7 @@ var Login = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])("
                     },
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 485
+                      lineNumber: 486
                     }
                   },
                   "A Trip to the Moon"
@@ -2452,7 +2547,7 @@ var Login = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])("
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 498
+                lineNumber: 499
               }
             })
           )
@@ -2477,6 +2572,8 @@ var Login = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])("
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util_RequestHandler__ = __webpack_require__("./util/RequestHandler.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_mobx_react__ = __webpack_require__("mobx-react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_mobx_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_mobx_react__);
+
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _dec,
@@ -2695,6 +2792,8 @@ var Comment = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_create_react_class___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_create_react_class__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_jquery__ = __webpack_require__("jquery");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_jquery__);
+
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _dec,
@@ -2957,11 +3056,11 @@ var Movie = (_dec = Object(__WEBPACK_IMPORTED_MODULE_6_mobx_react__["inject"])("
                           lineNumber: 190
                         }
                       },
-                      this.props.movieStore.movie.isHd ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "hd-image", src: "/static/HD.svg", alt: "hd", __source: {
+                      this.props.movieStore.movie.isHd ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "hd-image", src: "/static/img/HD.svg", alt: "hd", __source: {
                           fileName: _jsxFileName,
                           lineNumber: 191
                         }
-                      }) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "hd-image", src: "/static/SD.svg", alt: "sd", __source: {
+                      }) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "hd-image", src: "/static/img/SD.svg", alt: "sd", __source: {
                           fileName: _jsxFileName,
                           lineNumber: 191
                         }
@@ -3078,7 +3177,7 @@ var Movie = (_dec = Object(__WEBPACK_IMPORTED_MODULE_6_mobx_react__["inject"])("
                             }
                           },
                           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-                            src: "/static/Buy.svg",
+                            src: "/static/img/Buy.svg",
                             style: {
                               width: "20px",
                               marginRight: "15px",
@@ -3110,7 +3209,7 @@ var Movie = (_dec = Object(__WEBPACK_IMPORTED_MODULE_6_mobx_react__["inject"])("
                             }
                           },
                           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-                            src: "/static/download.svg",
+                            src: "/static/img/download.svg",
                             style: {
                               width: "20px",
                               marginRight: "15px",
@@ -3149,7 +3248,7 @@ var Movie = (_dec = Object(__WEBPACK_IMPORTED_MODULE_6_mobx_react__["inject"])("
                           }
                         },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-                          src: "/static/Buy.svg",
+                          src: "/static/img/Buy.svg",
                           style: {
                             width: "20px",
                             marginRight: "15px",
@@ -4293,7 +4392,7 @@ var Download = (_dec2 = Object(__WEBPACK_IMPORTED_MODULE_6_mobx_react__["inject"
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-              src: "/static/quality/1080p.svg",
+              src: "/static/img/quality/1080p.svg",
               style: {
                 width: "30px",
                 marginRight: "15px",
@@ -4326,7 +4425,7 @@ var Download = (_dec2 = Object(__WEBPACK_IMPORTED_MODULE_6_mobx_react__["inject"
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-              src: "/static/quality/720p.svg",
+              src: "/static/img/quality/720p.svg",
               style: {
                 width: "30px",
                 marginRight: "15px",
@@ -4359,7 +4458,7 @@ var Download = (_dec2 = Object(__WEBPACK_IMPORTED_MODULE_6_mobx_react__["inject"
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-              src: "/static/quality/480p.svg",
+              src: "/static/img/quality/480p.svg",
               style: {
                 width: "30px",
                 marginRight: "15px",
@@ -4392,7 +4491,7 @@ var Download = (_dec2 = Object(__WEBPACK_IMPORTED_MODULE_6_mobx_react__["inject"
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-              src: "/static/quality/360p.svg",
+              src: "/static/img/quality/360p.svg",
               style: {
                 width: "30px",
                 marginRight: "15px",
@@ -4435,6 +4534,8 @@ var Download = (_dec2 = Object(__WEBPACK_IMPORTED_MODULE_6_mobx_react__["inject"
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_mobx_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_mobx_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_util__ = __webpack_require__("./util/util.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__util_RequestHandler__ = __webpack_require__("./util/RequestHandler.js");
+
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _dec,
@@ -4663,7 +4764,7 @@ var MovieComment = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inje
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Search; });
+/* unused harmony export default */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util_RequestHandler__ = __webpack_require__("./util/RequestHandler.js");
@@ -4673,6 +4774,8 @@ var MovieComment = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inje
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_jquery__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_next_router__ = __webpack_require__("next/router");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_next_router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_next_router__);
+
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _dec,
@@ -4868,7 +4971,7 @@ var Search = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])(
             height: "30px",
             padding: "5px"
           },
-          src: "/static/search.svg",
+          src: "/static/img/search.svg",
           onClick: this.onClick.bind(this),
           __source: {
             fileName: _jsxFileName,
@@ -4993,6 +5096,8 @@ var Search = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])(
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_create_react_class___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_create_react_class__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery__ = __webpack_require__("jquery");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_jquery__);
+
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _dec,
@@ -5100,38 +5205,39 @@ var TopMovie = (_dec = Object(__WEBPACK_IMPORTED_MODULE_4_mobx_react__["inject"]
       flag = 0;
       var x = 0;
       var y = 0;
-      __WEBPACK_IMPORTED_MODULE_6_jquery___default()("#div" + this.props.elementId).on('click auxclick contextmenu mousedown mouseup', function (e) {
-        e.preventDefault();
+      // $("#div" + this.props.elementId).on('click auxclick contextmenu mousedown mouseup', function (e) {
+      //   e.preventDefault();
 
-        if (e.type == "contextmenu") {
-          return;
-        }
-        if (e.type == "mousedown") {
-          flag = 0;
-          x = e.pageX;
-          y = e.pageY;
-        } else if (e.type == "mouseup") {
-          switch (e.which) {
-            case 1:
-              if (e.ctrlKey) {
-                var win = window;
-                window.open("/movie", '_blank');
-                win.focus();
-              } else {
-                var d = Math.sqrt(Math.pow(e.pageX - x, 2) + Math.pow(e.pageY - y, 2));
-                if (d < 4) {
-                  e.stopPropagation();
-                }
-              }
-              break;
-            case 2:
-              return;
-              break;
-            case 3:
-              break;
-          }
-        }
-      }.bind(this));
+      //   if (e.type == "contextmenu") {
+      //     return;
+      //   }
+      //   if (e.type == "mousedown") {
+      //     flag = 0;
+      //     x = e.pageX
+      //     y = e.pageY
+      //   } else if (e.type == "mouseup") {
+      //     switch (e.which) {
+      //       case 1:
+      //         if (e.ctrlKey) {
+      //           var win = window;
+      //           window.open("/movie", '_blank');
+      //           win.focus();
+
+      //         } else {
+      //           var d = Math.sqrt(Math.pow(e.pageX - x, 2) + Math.pow(e.pageY - y, 2));
+      //           if (d < 4) {
+      //             e.stopPropagation();
+      //           }
+      //         }
+      //         break;
+      //       case 2:
+      //         return;
+      //         break;
+      //       case 3:
+      //         break;
+      //     }
+      //   }
+      // }.bind(this));
     }
   }, {
     key: "movieClicked",
@@ -5344,13 +5450,22 @@ var Director = __WEBPACK_IMPORTED_MODULE_5_create_react_class___default()({
                 lineNumber: 269
               }
             },
-            director.name
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "a",
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 273
+                }
+              },
+              director.name
+            )
           ),
           _this3.props.directors.agents.length - 1 != l ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             "p",
             { className: "inline-class", __source: {
                 fileName: _jsxFileName,
-                lineNumber: 276
+                lineNumber: 278
               }
             },
             " , "
@@ -5375,10 +5490,12 @@ var Director = __WEBPACK_IMPORTED_MODULE_5_create_react_class___default()({
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_jquery__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_slick__ = __webpack_require__("react-slick");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_slick___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_slick__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_slick_carousel_slick_slick_css__ = __webpack_require__("./node_modules/slick-carousel/slick/slick.css");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_slick_carousel_slick_slick_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_slick_carousel_slick_slick_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_slick_carousel_slick_slick_theme_css__ = __webpack_require__("./node_modules/slick-carousel/slick/slick-theme.css");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_slick_carousel_slick_slick_theme_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_slick_carousel_slick_slick_theme_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__styles_slick_css__ = __webpack_require__("./styles/slick.css");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__styles_slick_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__styles_slick_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__styles_slick_theme_css__ = __webpack_require__("./styles/slick-theme.css");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__styles_slick_theme_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__styles_slick_theme_css__);
+
+
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _jsxFileName = "C:\\Users\\Mahan\\Desktop\\next.js-canary\\with-mobx\\components\\topmovies\\TopMovies.js";
@@ -5472,6 +5589,16 @@ var TopMovies = function (_React$Component) {
             lineNumber: 63
           }
         },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("style", { dangerouslySetInnerHTML: { __html: __WEBPACK_IMPORTED_MODULE_4__styles_slick_css___default.a }, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 64
+          }
+        }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("style", { dangerouslySetInnerHTML: { __html: __WEBPACK_IMPORTED_MODULE_5__styles_slick_theme_css___default.a }, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 65
+          }
+        }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           "div",
           { style: {
@@ -5481,24 +5608,24 @@ var TopMovies = function (_React$Component) {
               width: '100%'
             }, __source: {
               fileName: _jsxFileName,
-              lineNumber: 64
+              lineNumber: 66
             }
           },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "/static/movieList.svg", style: {
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "/static/img/movieList.svg", style: {
               width: '15px',
               position: 'absolute',
               right: '5px',
               top: '13px'
             }, __source: {
               fileName: _jsxFileName,
-              lineNumber: 70
+              lineNumber: 72
             }
           }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             "h5",
             { className: "top-moviez-slide-title", __source: {
                 fileName: _jsxFileName,
-                lineNumber: 76
+                lineNumber: 78
               }
             },
             this.props.title
@@ -5508,12 +5635,12 @@ var TopMovies = function (_React$Component) {
           "div",
           { className: "slide-next-container", __source: {
               fileName: _jsxFileName,
-              lineNumber: 78
+              lineNumber: 80
             }
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "slide-next", onClick: this.nextClicked.bind(this), __source: {
               fileName: _jsxFileName,
-              lineNumber: 79
+              lineNumber: 81
             }
           })
         ),
@@ -5523,7 +5650,7 @@ var TopMovies = function (_React$Component) {
               return _this2.slider = c;
             }, className: "max-width-banner" }, settings, { style: { display: 'flex' }, __source: {
               fileName: _jsxFileName,
-              lineNumber: 81
+              lineNumber: 83
             }
           }),
           this.props.movies.map(function (movie, l) {
@@ -5537,7 +5664,7 @@ var TopMovies = function (_React$Component) {
               elementId: movie.id + _this2.props.elementId,
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 83
+                lineNumber: 85
               }
             });
           })
@@ -5546,12 +5673,12 @@ var TopMovies = function (_React$Component) {
           "div",
           { className: "slide-prev-container", __source: {
               fileName: _jsxFileName,
-              lineNumber: 94
+              lineNumber: 96
             }
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "slide-prev", onClick: this.prevClicked.bind(this), __source: {
               fileName: _jsxFileName,
-              lineNumber: 95
+              lineNumber: 97
             }
           })
         )
@@ -5561,55 +5688,6 @@ var TopMovies = function (_React$Component) {
 
   return TopMovies;
 }(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
-
-
-
-/***/ }),
-
-/***/ "./css/category.css":
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ "./css/loading-fading.css":
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ "./css/loading.css":
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ "./css/login.css":
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ "./css/style.css":
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ "./node_modules/slick-carousel/slick/slick-theme.css":
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ "./node_modules/slick-carousel/slick/slick.css":
-/***/ (function(module, exports) {
 
 
 
@@ -5635,6 +5713,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_isomorphic_unfetch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_isomorphic_unfetch__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__util_RequestHandler__ = __webpack_require__("./util/RequestHandler.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_Layout__ = __webpack_require__("./components/Layout.js");
+
+
 
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -5815,6 +5895,8 @@ var movie = function (_React$Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_util__ = __webpack_require__("./util/util.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery__ = __webpack_require__("jquery");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_jquery__);
+
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _desc, _value, _class, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _descriptor19, _descriptor20, _descriptor21;
@@ -6268,6 +6350,8 @@ function initMovieStore(isServer, json) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_util__ = __webpack_require__("./util/util.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery__ = __webpack_require__("jquery");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_jquery__);
+
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _desc, _value, _class, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14;
@@ -6585,6 +6669,8 @@ function initSearchStore(isServer, json) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_mobx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_mobx__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util_RequestHandler__ = __webpack_require__("./util/RequestHandler.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_util__ = __webpack_require__("./util/util.js");
+
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _desc, _value, _class, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _descriptor19, _descriptor20, _descriptor21, _descriptor22, _descriptor23, _descriptor24, _descriptor25, _descriptor26, _descriptor27, _descriptor28, _descriptor29, _descriptor30, _descriptor31, _descriptor32, _descriptor33, _descriptor34;
@@ -7104,11 +7190,130 @@ function initSessionStore(isServer, json) {
 
 /***/ }),
 
+/***/ "./styles/category.css":
+/***/ (function(module, exports) {
+
+;
+
+(function () {
+  "use strict";
+
+  module.exports = "\r\n.header-category {\r\n  height: 45px;\r\n  float: right;\r\n  margin-top: 27px;\r\n  margin-right: -9px;\r\n}\r\n\r\n.header-category-show {\r\n  width: 120px;\r\n  height: 45px;\r\n  border-radius: 45px;\r\n  cursor: pointer;\r\n  transition: all 0.3s cubic-bezier(0, 0, 0.68, -0.07);\r\n  direction: rtl;\r\n  display: flex;\r\n}\r\n\r\n.header-category-show:hover {\r\n  background-color: #e2e2e2;\r\n}\r\n\r\n.header-category-drop-down {\r\n  display: none;\r\n  overflow: hidden;\r\n  background: #fff;\r\n  position: absolute;\r\n  right: 100px;\r\n  z-index: 10000000000000001;\r\n  box-shadow: rgba(0, 0, 0, 0.2) 0 15px 30px;\r\n  border-radius: 5px;\r\n  box-sizing: border-box;\r\n  top: 75px;\r\n}\r\n\r\n.shadow-item {\r\n  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n.header-category-drop-down-main-menu {\r\n  display: block;\r\n  width: 100%;\r\n  position: relative;\r\n  padding-bottom: 20px;\r\n  direction: rtl;\r\n}\r\n\r\n.header-category-drop-down-main-menu .header-category-drop-down-main-menu-item {\r\n  display: block;\r\n  list-style: none;\r\n  width: 100px;\r\n  height: 85px;\r\n  float: right;\r\n  border-bottom: solid 2px #eee;\r\n}\r\n\r\n.header-category-drop-down-main-menu .header-category-drop-down-main-menu-item:hover {\r\n  border-color: #fb2b5b;\r\n}\r\n\r\n.header-category-drop-down-main-menu-item a {\r\n  display: block;\r\n  width: 100%;\r\n  height: 85px;\r\n  cursor: pointer;\r\n}\r\n\r\n.category-item {\r\n  display: block;\r\n  width: 100%;\r\n  color: black;\r\n  cursor: pointer;\r\n}\r\n\r\n.header-category-drop-down-main-menu .header-category-drop-down-main-menu-item:hover a {\r\n  color: #fb2b5b;\r\n}\r\n\r\n.header-category-drop-down-main-menu .header-category-drop-down-main-menu-item:hover ul li a {\r\n  color: #b3b3b3;\r\n  cursor: pointer;\r\n}\r\n\r\n/* .header-category-drop-down-main-menu\r\n  .header-category-drop-down-main-menu-item:hover\r\n  ul {\r\n  display: block;\r\n} */\r\n\r\n.header-category-drop-down-main-menu .header-category-drop-down-main-menu-item a strong {\r\n  display: block;\r\n  width: 100%;\r\n  text-align: center;\r\n  font: 13px \"IRSansBold\", Sans-serif;\r\n  overflow-x: hidden;\r\n}\r\n\r\n.header-category-drop-down-main-menu .header-category-drop-down-main-menu-item ul {\r\n  display: none;\r\n  position: absolute;\r\n  width: 560px;\r\n  overflow: hidden;\r\n  left: 0;\r\n  right: 20px;\r\n  padding-top: 20px;\r\n}\r\n\r\n.header-category-drop-down-main-menu .header-category-drop-down-main-menu-item ul li {\r\n  display: block;\r\n  float: right;\r\n  width: 16.6666666666667%;\r\n  height: 40px;\r\n  box-sizing: border-box;\r\n  font: 300 0.75em/40px \"IRSans\", Sans-serif;\r\n}\r\n\r\n.header-category-drop-down-main-menu .header-category-drop-down-main-menu-item ul li a {\r\n  display: block;\r\n  width: 100%;\r\n  height: 40px;\r\n  border-radius: 5px;\r\n  padding-right: 20px;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.header-category-drop-down-main-menu .header-category-drop-down-main-menu-item ul li a:hover {\r\n  background: #f7f7f7;\r\n}\r\n\r\n.header-category-show span {\r\n  display: block;\r\n  font: 300 0.75em/45px \"IRSans\", Sans-serif;\r\n  color: #eb0089;\r\n  margin-right: 5px;\r\n}\r\n\r\n@media all and (max-width: 520px) {\r\n  .header-category {\r\n    margin-top: 10px;\r\n    margin-right: 0px;\r\n  }\r\n}\r\n\r\n@media all and (max-width: 750px) {\r\n  .header-category-drop-down {\r\n    top: 0;\r\n    right: 0;\r\n    width: 70%;\r\n    position: fixed;\r\n    max-width: auto;\r\n  }\r\n  .header-category-drop-down-main-menu .header-category-drop-down-main-menu-item ul li {\r\n    width: 100%;\r\n  }\r\n  .header-category-drop-down-main-menu {\r\n    height: 100vh;\r\n    overflow-x: scroll;\r\n  }\r\n  .header-category-drop-down-main-menu .header-category-drop-down-main-menu-item, .header-category-drop-down-main-menu .header-category-drop-down-main-menu-item ul {\r\n    float: none;\r\n    width: 100px;\r\n  }\r\n  .header-category-drop-down-main-menu .header-category-drop-down-main-menu-item ul {\r\n    right: 115px;\r\n    top: 0;\r\n    width: auto;\r\n  }\r\n  .closemainmenu {\r\n    display: block;\r\n  }\r\n}";
+})();
+
+/***/ }),
+
+/***/ "./styles/font.css":
+/***/ (function(module, exports) {
+
+;
+
+(function () {
+  "use strict";
+
+  module.exports = "@font-face {\r\n\tfont-family: IRSans;\r\n\tfont-style: normal;\r\n\tfont-weight: 500;\r\n\tsrc: url('/static/font/IRANSansWeb_Light.eot');\r\n\tsrc: url('/static/font/IRANSansWeb_Light.eot?#iefix') format('embedded-opentype'), /* IE6-8 */\r\n\turl('/static/font/IRANSansWeb_Light.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/\r\n\turl('/static/font/IRANSansWeb_Light.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/\r\n\turl('/static/font/IRANSansWeb_Light.ttf') format('truetype');\r\n}\r\n\r\n@font-face {\r\n\tfont-family: IRSansBold;\r\n\tfont-style: normal;\r\n\tfont-weight: 500;\r\n\tsrc: url('/static/font/IRANSansWeb_Medium.eot');\r\n\tsrc: url('/static/font/IRANSansWeb_Medium.eot?#iefix') format('embedded-opentype'), /* IE6-8 */\r\n\turl('/static/font/IRANSansWeb_Medium.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/\r\n\turl('/static/font/IRANSansWeb_Medium.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/\r\n\turl('/static/font/IRANSansWeb_Medium.ttf') format('truetype');\r\n}";
+})();
+
+/***/ }),
+
+/***/ "./styles/icons.css":
+/***/ (function(module, exports) {
+
+;
+
+(function () {
+  "use strict";
+
+  module.exports = "@font-face {\n  font-family: 'icons';\n  src: url('static/font/icons.eot?42549681');\n  src: url('static/font/icons.eot?42549681#iefix') format('embedded-opentype'),\n       url('static/font/icons.woff2?42549681') format('woff2'),\n       url('static/font/icons.woff?42549681') format('woff'),\n       url('static/font/icons.ttf?42549681') format('truetype'),\n       url('static/font/icons.svg?42549681#icons') format('svg');\n  font-weight: normal;\n  font-style: normal;\n}\n/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */\n/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */\n/*\n@media screen and (-webkit-min-device-pixel-ratio:0) {\n  @font-face {\n    font-family: 'icons';\n    src: url('../font/icons.svg?42549681#icons') format('svg');\n  }\n}\n*/\n[class^=\"icon-\"]:before, [class*=\" icon-\"]:before {\n  font-family: \"icons\";\n  font-style: normal;\n  font-weight: normal;\n  speak: none;\n \n  display: inline-block;\n  text-decoration: inherit;\n  width: 1em;\n  margin-right: .2em;\n  text-align: center;\n  /* opacity: .8; */\n \n  /* For safety - reset parent styles, that can break glyph codes*/\n  font-variant: normal;\n  text-transform: none;\n \n  /* fix buttons height, for twitter bootstrap */\n  line-height: 1em;\n \n  /* Animation center compensation - margins should be symmetric */\n  /* remove if not needed */\n  margin-left: .2em;\n \n  /* you can be more comfortable with increased icons size */\n  /* font-size: 120%; */\n \n  /* Font smoothing. That was taken from TWBS */\n \n  /* Uncomment for 3D effect */\n  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */\n}\n.icon-twitter:before { content: '\\e800'; }\n/* '' */\n.icon-user-outline:before { content: '\\e801'; }\n/* '' */\n.icon-key:before { content: '\\e802'; }\n/* '' */\n.icon-lock:before { content: '\\e803'; }\n/* '' */\n.icon-mail:before { content: '\\e804'; }\n/* '' */\n.icon-search:before { content: '\\e805'; }\n/* '' */\n.icon-trash-empty:before { content: '\\e806'; }\n/* '' */\n.icon-calendar:before { content: '\\e807'; }\n/* '' */\n.icon-phone:before { content: '\\e808'; }\n/* '' */\n.icon-right-big:before { content: '\\e809'; }\n/* '' */\n.icon-left-big:before { content: '\\e80a'; }\n/* '' */\n.icon-up-big:before { content: '\\e80b'; }\n/* '' */\n.icon-down-big:before { content: '\\e80c'; }\n/* '' */\n.icon-align-left:before { content: '\\e80d'; }\n/* '' */\n.icon-align-center:before { content: '\\e80e'; }\n/* '' */\n.icon-align-right:before { content: '\\e80f'; }\n/* '' */\n.icon-align-justify:before { content: '\\e810'; }\n/* '' */\n.icon-lock-1:before { content: '\\e811'; }\n/* '' */\n.icon-list:before { content: '\\e812'; }\n/* '' */\n.icon-tags:before { content: '\\e813'; }\n/* '' */\n.icon-th-large:before { content: '\\e814'; }\n/* '' */\n.icon-comment:before { content: '\\e815'; }\n/* '' */\n.icon-th:before { content: '\\e816'; }\n/* '' */\n.icon-location:before { content: '\\e817'; }\n/* '' */\n.icon-basket:before { content: '\\e818'; }\n/* '' */\n.icon-cog-alt:before { content: '\\e819'; }\n/* '' */\n.icon-th-list:before { content: '\\e81a'; }\n/* '' */\n.icon-ok-circled:before { content: '\\e81b'; }\n/* '' */\n.icon-cog:before { content: '\\e81c'; }\n/* '' */\n.icon-ok-circled2:before { content: '\\e81d'; }\n/* '' */\n.icon-inbox:before { content: '\\e81e'; }\n/* '' */\n.icon-globe:before { content: '\\e81f'; }\n/* '' */\n.icon-credit-card:before { content: '\\e820'; }\n/* '' */\n.icon-chart-bar:before { content: '\\e821'; }\n/* '' */\n.icon-drive:before { content: '\\e822'; }\n/* '' */\n.icon-th-1:before { content: '\\e823'; }\n/* '' */\n.icon-th-large-1:before { content: '\\e824'; }\n/* '' */\n.icon-gmail:before { content: '\\e825'; }\n/* '' */\n.icon-th-2:before { content: '\\e826'; }\n/* '' */\n.icon-article-alt:before { content: '\\e827'; }\n/* '' */\n.icon-gplus:before { content: '\\e828'; }\n/* '' */\n.icon-dot-3:before { content: '\\e829'; }\n/* '' */\n.icon-shopping-cart:before { content: '\\e82a'; }\n/* '' */\n.icon-play-button:before { content: '\\e82b'; }\n/* '' */\n.icon-bag-icon:before { content: '\\e82c'; }\n/* '' */\n.icon-television:before { content: '\\e82d'; }\n/* '' */\n.icon-pussy-cat-cartoon-outline-variant:before { content: '\\e82e'; }\n/* '' */\n.icon-user-3:before { content: '\\e82f'; }\n/* '' */\n.icon-video-camera:before { content: '\\e830'; }\n/* '' */\n.icon-musical-note:before { content: '\\e831'; }\n/* '' */\n.icon-folded-newspaper:before { content: '\\e832'; }\n/* '' */\n.icon-delivery-truck:before { content: '\\e833'; }\n/* '' */\n.icon-discount:before { content: '\\e834'; }\n/* '' */\n.icon-credit-cards:before { content: '\\e835'; }\n/* '' */\n.icon-star-empty:before { content: '\\e836'; }\n/* '' */\n.icon-star:before { content: '\\e837'; }\n/* '' */\n.icon-star-empty-1:before { content: '\\e838'; }\n/* '' */\n.icon-star-1:before { content: '\\e839'; }\n/* '' */\n.icon-download:before { content: '\\e83a'; }\n/* '' */\n.icon-download-outline:before { content: '\\e83b'; }\n/* '' */\n.icon-video:before { content: '\\e83c'; }\n/* '' */\n.icon-add-to-card:before { content: '\\e83d'; }\n/* '' */\n.icon-arrow-pointing-to-right:before { content: '\\e83e'; }\n/* '' */\n.icon-arrow-pointing-to-left:before { content: '\\e83f'; }\n/* '' */\n.icon-play:before { content: '\\e840'; }\n/* '' */\n.icon-play-1:before { content: '\\e841'; }\n/* '' */\n.icon-play-2:before { content: '\\e842'; }\n/* '' */\n.icon-googleplay:before { content: '\\e843'; }\n/* '' */\n.icon-stop:before { content: '\\e844'; }\n/* '' */\n.icon-play-circled2:before { content: '\\e845'; }\n/* '' */\n.icon-pause:before { content: '\\e846'; }\n/* '' */\n.icon-record:before { content: '\\e847'; }\n/* '' */\n.icon-search-1:before { content: '\\e848'; }\n/* '' */\n.icon-search-3:before { content: '\\e849'; }\n/* '' */\n.icon-cancel:before { content: '\\e84a'; }\n/* '' */\n.icon-cancel-1:before { content: '\\e84b'; }\n/* '' */\n.icon-cancel-2:before { content: '\\e84c'; }\n/* '' */\n.icon-gamepad:before { content: '\\e84d'; }\n/* '' */\n.icon-gamepad-2:before { content: '\\e84e'; }\n/* '' */\n.icon-game-pad-3:before { content: '\\e84f'; }\n/* '' */\n.icon-menu-1:before { content: '\\f008'; }\n/* '' */\n.icon-th-list-1:before { content: '\\f009'; }\n/* '' */\n.icon-th-thumb:before { content: '\\f00a'; }\n/* '' */\n.icon-globe-1:before { content: '\\f018'; }\n/* '' */\n.icon-globe-inv:before { content: '\\f019'; }\n/* '' */\n.icon-download-1:before { content: '\\f02e'; }\n/* '' */\n.icon-chat:before { content: '\\f03d'; }\n/* '' */\n.icon-user-4:before { content: '\\f061'; }\n/* '' */\n.icon-facebook:before { content: '\\f09a'; }\n/* '' */\n.icon-rss:before { content: '\\f09e'; }\n/* '' */\n.icon-hdd:before { content: '\\f0a0'; }\n/* '' */\n.icon-menu:before { content: '\\f0c9'; }\n/* '' */\n.icon-mail-alt:before { content: '\\f0e0'; }\n/* '' */\n.icon-download-cloud:before { content: '\\f0ed'; }\n/* '' */\n.icon-angle-double-left:before { content: '\\f100'; }\n/* '' */\n.icon-angle-double-right:before { content: '\\f101'; }\n/* '' */\n.icon-angle-double-up:before { content: '\\f102'; }\n/* '' */\n.icon-angle-double-down:before { content: '\\f103'; }\n/* '' */\n.icon-angle-left:before { content: '\\f104'; }\n/* '' */\n.icon-angle-right:before { content: '\\f105'; }\n/* '' */\n.icon-angle-up:before { content: '\\f106'; }\n/* '' */\n.icon-angle-down:before { content: '\\f107'; }\n/* '' */\n.icon-desktop:before { content: '\\f108'; }\n/* '' */\n.icon-laptop:before { content: '\\f109'; }\n/* '' */\n.icon-tablet:before { content: '\\f10a'; }\n/* '' */\n.icon-mobile:before { content: '\\f10b'; }\n/* '' */\n.icon-folder-empty:before { content: '\\f114'; }\n/* '' */\n.icon-smile:before { content: '\\f118'; }\n/* '' */\n.icon-frown:before { content: '\\f119'; }\n/* '' */\n.icon-meh:before { content: '\\f11a'; }\n/* '' */\n.icon-code:before { content: '\\f121'; }\n/* '' */\n.icon-direction:before { content: '\\f124'; }\n/* '' */\n.icon-instagram-1:before { content: '\\f16d'; }\n/* '' */\n.icon-apple:before { content: '\\f179'; }\n/* '' */\n.icon-paper-plane:before { content: '\\f1d8'; }\n/* '' */\n.icon-paper-plane-empty:before { content: '\\f1d9'; }\n/* '' */\n.icon-toggle-off:before { content: '\\f204'; }\n/* '' */\n.icon-bus:before { content: '\\f207'; }\n/* '' */\n.icon-cart-plus:before { content: '\\f217'; }\n/* '' */\n.icon-cart-arrow-down:before { content: '\\f218'; }\n/* '' */\n.icon-television-1:before { content: '\\f26c'; }\n/* '' */\n.icon-instagram:before { content: '\\f31e'; }\n/* '' */\n.icon-comment-1:before { content: '\\f4ac'; }\n/* '' */";
+})();
+
+/***/ }),
+
+/***/ "./styles/loading-fading.css":
+/***/ (function(module, exports) {
+
+;
+
+(function () {
+  "use strict";
+
+  module.exports = "\r\n\r\n.spinner {\r\n    width: 40px;\r\n    height: 40px;\r\n    background-color: #333;\r\n  \r\n    border-radius: 100%;  \r\n    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;\r\n    animation: sk-scaleout 1.0s infinite ease-in-out;\r\n  }\r\n  \r\n  @-webkit-keyframes sk-scaleout {\r\n    0% { -webkit-transform: scale(0) }\r\n    100% {\r\n      -webkit-transform: scale(1.0);\r\n      opacity: 0;\r\n    }\r\n  }\r\n  \r\n  @keyframes sk-scaleout {\r\n    0% { \r\n      -webkit-transform: scale(0);\r\n      transform: scale(0);\r\n    } 100% {\r\n      -webkit-transform: scale(1.0);\r\n      transform: scale(1.0);\r\n      opacity: 0;\r\n    }\r\n  }";
+})();
+
+/***/ }),
+
+/***/ "./styles/loading.css":
+/***/ (function(module, exports) {
+
+;
+
+(function () {
+  "use strict";
+
+  module.exports = "\r\n\r\n.cssload-thecube-container {\r\n  margin:0;\r\n  position: fixed;\r\n  background: rgba(0, 0, 0, 0.753);\r\n  z-index: 99999999;\r\n  padding: 0;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n}\r\n\r\n.cssload-thecube {\r\n  width: 66px;\r\n  height: 66px;\r\n  margin: auto;\r\n  position: fixed;\r\n  top: 50%;\r\n  left: 50%; \r\n  margin-top: -33px;\r\n  margin-left: -33px;\r\n  transform: rotateZ(45deg);\r\n  -o-transform: rotateZ(45deg);\r\n  -ms-transform: rotateZ(45deg);\r\n  -webkit-transform: rotateZ(45deg);\r\n  -moz-transform: rotateZ(45deg);\r\n}\r\n\r\n.cssload-thecube-container-list {\r\n  width: 100%;\r\n  padding-top: 150%;\r\n}\r\n\r\n.cssload-thecube-list {\r\n  width: 66px;\r\n  height: 66px;\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  margin: 0 auto;\r\n  margin-top: -33px;\r\n  margin-left: -33px;\r\n  transform: rotateZ(45deg);\r\n  -o-transform: rotateZ(45deg);\r\n  -ms-transform: rotateZ(45deg);\r\n  -webkit-transform: rotateZ(45deg);\r\n  -moz-transform: rotateZ(45deg);\r\n}\r\n\r\n.cssload-thecube .cssload-cube {\r\n  position: relative;\r\n  transform: rotateZ(45deg);\r\n  -o-transform: rotateZ(45deg);\r\n  -ms-transform: rotateZ(45deg);\r\n  -webkit-transform: rotateZ(45deg);\r\n  -moz-transform: rotateZ(45deg);\r\n}\r\n\r\n.cssload-thecube .cssload-cube {\r\n  float: left;\r\n  width: 50%;\r\n  height: 50%;\r\n  position: relative;\r\n  transform: scale(1.1);\r\n  -o-transform: scale(1.1);\r\n  -ms-transform: scale(1.1);\r\n  -webkit-transform: scale(1.1);\r\n  -moz-transform: scale(1.1);\r\n}\r\n\r\n.cssload-thecube .cssload-cube:before {\r\n  content: \"\";\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  background-color: #7a2365;\r\n  animation: cssload-fold-thecube 1.92s infinite linear both;\r\n  -o-animation: cssload-fold-thecube 1.92s infinite linear both;\r\n  -ms-animation: cssload-fold-thecube 1.92s infinite linear both;\r\n  -webkit-animation: cssload-fold-thecube 1.92s infinite linear both;\r\n  -moz-animation: cssload-fold-thecube 1.92s infinite linear both;\r\n  transform-origin: 100% 100%;\r\n  -o-transform-origin: 100% 100%;\r\n  -ms-transform-origin: 100% 100%;\r\n  -webkit-transform-origin: 100% 100%;\r\n  -moz-transform-origin: 100% 100%;\r\n}\r\n\r\n.cssload-thecube .cssload-c2 {\r\n  transform: scale(1.1) rotateZ(90deg);\r\n  -o-transform: scale(1.1) rotateZ(90deg);\r\n  -ms-transform: scale(1.1) rotateZ(90deg);\r\n  -webkit-transform: scale(1.1) rotateZ(90deg);\r\n  -moz-transform: scale(1.1) rotateZ(90deg);\r\n}\r\n\r\n.cssload-thecube .cssload-c3 {\r\n  transform: scale(1.1) rotateZ(180deg);\r\n  -o-transform: scale(1.1) rotateZ(180deg);\r\n  -ms-transform: scale(1.1) rotateZ(180deg);\r\n  -webkit-transform: scale(1.1) rotateZ(180deg);\r\n  -moz-transform: scale(1.1) rotateZ(180deg);\r\n}\r\n\r\n.cssload-thecube .cssload-c4 {\r\n  transform: scale(1.1) rotateZ(270deg);\r\n  -o-transform: scale(1.1) rotateZ(270deg);\r\n  -ms-transform: scale(1.1) rotateZ(270deg);\r\n  -webkit-transform: scale(1.1) rotateZ(270deg);\r\n  -moz-transform: scale(1.1) rotateZ(270deg);\r\n}\r\n\r\n.cssload-thecube .cssload-c2:before {\r\n  animation-delay: 0.235s;\r\n  -o-animation-delay: 0.235s;\r\n  -ms-animation-delay: 0.235s;\r\n  -webkit-animation-delay: 0.235s;\r\n  -moz-animation-delay: 0.235s;\r\n}\r\n\r\n.cssload-thecube .cssload-c3:before {\r\n  animation-delay: 0.48s;\r\n  -o-animation-delay: 0.48s;\r\n  -ms-animation-delay: 0.48s;\r\n  -webkit-animation-delay: 0.48s;\r\n  -moz-animation-delay: 0.48s;\r\n}\r\n\r\n.cssload-thecube .cssload-c4:before {\r\n  animation-delay: 0.715s;\r\n  -o-animation-delay: 0.715s;\r\n  -ms-animation-delay: 0.715s;\r\n  -webkit-animation-delay: 0.715s;\r\n  -moz-animation-delay: 0.715s;\r\n}\r\n\r\n.cssload-thecube-list .cssload-cube {\r\n  position: relative;\r\n  transform: rotateZ(45deg);\r\n  -o-transform: rotateZ(45deg);\r\n  -ms-transform: rotateZ(45deg);\r\n  -webkit-transform: rotateZ(45deg);\r\n  -moz-transform: rotateZ(45deg);\r\n}\r\n\r\n.cssload-thecube-list .cssload-cube {\r\n  float: left;\r\n  width: 50%;\r\n  height: 50%;\r\n  position: relative;\r\n  transform: scale(1.1);\r\n  -o-transform: scale(1.1);\r\n  -ms-transform: scale(1.1);\r\n  -webkit-transform: scale(1.1);\r\n  -moz-transform: scale(1.1);\r\n}\r\n\r\n.cssload-thecube-list .cssload-cube:before {\r\n  content: \"\";\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  background-color: #7a2365;\r\n  animation: cssload-fold-thecube 1.92s infinite linear both;\r\n  -o-animation: cssload-fold-thecube 1.92s infinite linear both;\r\n  -ms-animation: cssload-fold-thecube 1.92s infinite linear both;\r\n  -webkit-animation: cssload-fold-thecube 1.92s infinite linear both;\r\n  -moz-animation: cssload-fold-thecube 1.92s infinite linear both;\r\n  transform-origin: 100% 100%;\r\n  -o-transform-origin: 100% 100%;\r\n  -ms-transform-origin: 100% 100%;\r\n  -webkit-transform-origin: 100% 100%;\r\n  -moz-transform-origin: 100% 100%;\r\n}\r\n\r\n.cssload-thecube-list .cssload-c2 {\r\n  transform: scale(1.1) rotateZ(90deg);\r\n  -o-transform: scale(1.1) rotateZ(90deg);\r\n  -ms-transform: scale(1.1) rotateZ(90deg);\r\n  -webkit-transform: scale(1.1) rotateZ(90deg);\r\n  -moz-transform: scale(1.1) rotateZ(90deg);\r\n}\r\n\r\n.cssload-thecube-list .cssload-c3 {\r\n  transform: scale(1.1) rotateZ(180deg);\r\n  -o-transform: scale(1.1) rotateZ(180deg);\r\n  -ms-transform: scale(1.1) rotateZ(180deg);\r\n  -webkit-transform: scale(1.1) rotateZ(180deg);\r\n  -moz-transform: scale(1.1) rotateZ(180deg);\r\n}\r\n\r\n.cssload-thecube-list .cssload-c4 {\r\n  transform: scale(1.1) rotateZ(270deg);\r\n  -o-transform: scale(1.1) rotateZ(270deg);\r\n  -ms-transform: scale(1.1) rotateZ(270deg);\r\n  -webkit-transform: scale(1.1) rotateZ(270deg);\r\n  -moz-transform: scale(1.1) rotateZ(270deg);\r\n}\r\n\r\n.cssload-thecube-list .cssload-c2:before {\r\n  animation-delay: 0.235s;\r\n  -o-animation-delay: 0.235s;\r\n  -ms-animation-delay: 0.235s;\r\n  -webkit-animation-delay: 0.235s;\r\n  -moz-animation-delay: 0.235s;\r\n}\r\n\r\n.cssload-thecube-list .cssload-c3:before {\r\n  animation-delay: 0.48s;\r\n  -o-animation-delay: 0.48s;\r\n  -ms-animation-delay: 0.48s;\r\n  -webkit-animation-delay: 0.48s;\r\n  -moz-animation-delay: 0.48s;\r\n}\r\n\r\n.cssload-thecube-list .cssload-c4:before {\r\n  animation-delay: 0.715s;\r\n  -o-animation-delay: 0.715s;\r\n  -ms-animation-delay: 0.715s;\r\n  -webkit-animation-delay: 0.715s;\r\n  -moz-animation-delay: 0.715s;\r\n}\r\n\r\n@keyframes cssload-fold-thecube {\r\n  0%,\r\n  10% {\r\n    -webkit-transform: perspective(122px) rotateX(-180deg);\r\n            transform: perspective(122px) rotateX(-180deg);\r\n    opacity: 0;\r\n  }\r\n  25%,\r\n  75% {\r\n    -webkit-transform: perspective(122px) rotateX(0deg);\r\n            transform: perspective(122px) rotateX(0deg);\r\n    opacity: 1;\r\n  }\r\n  90%,\r\n  100% {\r\n    -webkit-transform: perspective(122px) rotateY(180deg);\r\n            transform: perspective(122px) rotateY(180deg);\r\n    opacity: 0;\r\n  }\r\n}\r\n\r\n@-webkit-keyframes cssload-fold-thecube {\r\n  0%,\r\n  10% {\r\n    -webkit-transform: perspective(122px) rotateX(-180deg);\r\n    opacity: 0;\r\n  }\r\n  25%,\r\n  75% {\r\n    -webkit-transform: perspective(122px) rotateX(0deg);\r\n    opacity: 1;\r\n  }\r\n  90%,\r\n  100% {\r\n    -webkit-transform: perspective(122px) rotateY(180deg);\r\n    opacity: 0;\r\n  }\r\n}";
+})();
+
+/***/ }),
+
+/***/ "./styles/login.css":
+/***/ (function(module, exports) {
+
+;
+
+(function () {
+  "use strict";
+
+  module.exports = "@font-face {\r\n\tfont-family: IRSans;\r\n\tfont-style: normal;\r\n\tfont-weight: 500;\r\n\tsrc: url('/static/font/IRANSansWeb_Light.eot');\r\n\tsrc: url('/static/font/IRANSansWeb_Light.eot?#iefix') format('embedded-opentype'), /* IE6-8 */\r\n\turl('/static/font/IRANSansWeb_Light.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/\r\n\turl('/static/font/IRANSansWeb_Light.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/\r\n\turl('/static/font/IRANSansWeb_Light.ttf') format('truetype');\r\n}\r\n\r\n@font-face {\r\n\tfont-family: IRSansBold;\r\n\tfont-style: normal;\r\n\tfont-weight: 500;\r\n\tsrc: url('/static/font/IRANSansWeb_Medium.eot');\r\n\tsrc: url('/static/font/IRANSansWeb_Medium.eot?#iefix') format('embedded-opentype'), /* IE6-8 */\r\n\turl('/static/font/IRANSansWeb_Medium.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/\r\n\turl('/static/font/IRANSansWeb_Medium.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/\r\n\turl('/static/font/IRANSansWeb_Medium.ttf') format('truetype');\r\n}\r\n\r\n.foodmoodbg {\r\n  position: fixed;\r\n  right: 0;\r\n  left: 0;\r\n  top: 0;\r\n  bottom: 0;\r\n  z-index: 1000;\r\n  background-color: rgba(0, 0, 0, 0.7);\r\n}\r\n\r\n.foodmoodcontent {\r\n  position: absolute;\r\n  background: #ffffff;\r\n  border-radius: 3px;\r\n  width: 100%;\r\n  max-width: 970px;\r\n  max-height: 519px;\r\n  display: block;\r\n  right: 0;\r\n  left: 0;\r\n  top: 0;\r\n  bottom: 0;\r\n  margin: auto;\r\n  box-shadow: 0 8px 33px rgba(0, 0, 0, 0.3);\r\n  background: #7a2364;\r\n}\r\n\r\n.foodmoodform {\r\n  position: relative;\r\n  width: 45%;\r\n  float: right;\r\n}\r\n\r\n.closemodal {\r\n  width: 30px;\r\n  margin-top: 20px;\r\n  margin-right: 20px;\r\n}\r\n\r\n.closemodal:path {\r\n  fill: red;\r\n}\r\n\r\n.closemodal:hover {\r\n  border-radius: 40px;\r\n  background: rgba(0, 0, 0, 0.15);\r\n}\r\n\r\n.register {\r\n  display: none;\r\n}\r\n\r\n.retry-after-one-muinute{\r\n  display: none;\r\n}\r\n\r\n.close-foodmood {\r\n  position: absolute;\r\n  right: 5px;\r\n  top: 5px;\r\n  background: none;\r\n  width: 30px;\r\n  height: 30px;\r\n  border: 1px solid #8a8a8a;\r\n  border-radius: 100%;\r\n  color: #8a8a8a;\r\n  cursor: pointer;\r\n}\r\n\r\n.close-foodmood:hover {\r\n  background: #ff5a5f;\r\n  color: #ffffff;\r\n}\r\n\r\n.foodmoodform p {\r\n  color: #858585;\r\n  margin: 10px 2%;\r\n}\r\n\r\n.register p button {\r\n  color: #03c8fa;\r\n  background: none;\r\n  border: none;\r\n  cursor: pointer;\r\n}\r\n\r\n.login p,\r\n.register p {\r\n  font: 500 0.75em/27px \"IRSans\", Sans-serif;\r\n}\r\n\r\n.login p button {\r\n  color: #ee541c;\r\n  background: none;\r\n  border: none;\r\n  cursor: pointer;\r\n  font-family: \"IRSans\";\r\n}\r\n\r\n.foodmoodlogo {\r\n  text-align: center;\r\n  display: block;\r\n  max-width: 205px;\r\n  margin-top: 50px;\r\n  margin: 2% auto;\r\n  padding-top: 70px;\r\n}\r\n\r\n.foodmoodlogo img {\r\n  width: 100%;\r\n  max-width: 140px;\r\n  margin-bottom: 40px;\r\n}\r\n\r\n.foodmoodform input {\r\n  direction: ltr;\r\n  display: block;\r\n  width: 100%;\r\n  max-width: 295px;\r\n  border: 1px solid #d1d1d1;\r\n  border-radius: 3px;\r\n  color: #858585;\r\n  margin: 2% auto;\r\n  text-align: right;\r\n  padding: 10px;\r\n  font-family: \"IRSans\";\r\n  text-align: center;\r\n}\r\n\r\n.foodmoodform input:hover,\r\n.foodmoodform input:focus,\r\n.foodmoodform button:focus {\r\n  outline: none;\r\n}\r\n\r\n.pttdemail {\r\n  font-size: 12px;\r\n  float: right;\r\n  color: #3575d3;\r\n  margin-right: 10%;\r\n}\r\n\r\n.submitfoodmood {\r\n  display: block;\r\n  background: #24a59c;\r\n  color: #ffffff;\r\n  width: 175px;\r\n  border: none;\r\n  border-radius: 3px;\r\n  padding: 10px;\r\n  cursor: pointer;\r\n  margin: 0 auto;\r\n  margin-bottom: 0px;\r\n  font-family: \"IRSans\";\r\n}\r\n\r\n.foodmoodpicture {\r\n  width: 55%;\r\n  display: inline-block;\r\n}\r\n\r\n.foodmoodpicture-img {\r\n  float: left;\r\n  width: 100%;\r\n  max-width: 590px;\r\n  height: 520px;\r\n  border-radius: 3px 0 0 3px;\r\n}\r\n\r\n.foodmoodcontent::-webkit-scrollbar {\r\n  margin: 5px;\r\n  width: 6px;\r\n  height: 2px;\r\n}\r\n\r\n.foodmoodcontent::-webkit-scrollbar-track {\r\n  background: #bbc7d3;\r\n  border-radius: 5px;\r\n}\r\n\r\n.foodmoodcontent::-webkit-scrollbar-thumb {\r\n  background: #a4b4c4;\r\n  border-radius: 5px;\r\n  width: 2px;\r\n}\r\n\r\n@media (max-width: 768px) {\r\n  .foodmoodcontent {\r\n    overflow-y: hidden;\r\n  }\r\n  .foodmoodform {\r\n    width: 100%;\r\n  }\r\n  .foodmoodpicture {\r\n    width: 100%;\r\n    text-align: center;\r\n  }\r\n  .foodmoodpicture img {\r\n    float: none;\r\n    text-align: center;\r\n    height: auto;\r\n    display: none;\r\n  }\r\n  .vodio-caption {\r\n    display: none;\r\n  }\r\n}\r\n\r\n@media (min-width: 768px) {\r\n  .container {\r\n    width: 750px;\r\n  }\r\n}\r\n\r\n@media (min-width: 992px) {\r\n  .container {\r\n    width: 970px;\r\n  }\r\n}\r\n\r\n@media (min-width: 1200px) {\r\n  .container {\r\n    width: 1170px;\r\n  }\r\n}\r\n\r\n.register-panel {\r\n  font: 0.8em \"IRSans\";\r\n}\r\n\r\n.register-button {\r\n  width: 80px;\r\n  height: 50px;\r\n  border-radius: 5px;\r\n  color: #7d1d65;\r\n  font: 17px \"IRSans\";\r\n  cursor: pointer;\r\n}\r\n\r\ninput::-webkit-input-placeholder {\r\n  color: #9b989ac7 !important;\r\n}\r\n\r\ninput:-moz-placeholder {\r\n  /* Firefox 18- */\r\n  color: #9b989ac7 !important;\r\n}\r\n\r\ninput::-moz-placeholder {\r\n  /* Firefox 19+ */\r\n  color: #9b989ac7 !important;\r\n}\r\n\r\ninput:-ms-input-placeholder {\r\n  color: #9b989ac7 !important;\r\n}\r\n\r\n.vodio-caption {\r\n  width: 55%;\r\n  height: 70px;\r\n  position: absolute;\r\n  bottom: 0;\r\n}\r\n\r\n.pointer {\r\n  float: left;\r\n  background: url(static/img/pointer.png) no-repeat;\r\n  margin-top: 27px;\r\n  width: 15px;\r\n  background-size: contain;\r\n  margin-left: 27px;\r\n}\r\n\r\n.wrong-code {\r\n  display: none;\r\n  text-align: center;\r\n  font-size: 13px;\r\n  color: #24a59c;\r\n  direction:rtl;\r\n}\r\n\r\n.mobile-number {\r\n  width: -webkit-fit-content;\r\n  width: -moz-fit-content;\r\n  width: fit-content;\r\n  position: absolute;\r\n  left: 20px;\r\n  top: 25px;\r\n  color: white;\r\n  font-size: 12px;\r\n  cursor: pointer;\r\n}\r\n";
+})();
+
+/***/ }),
+
+/***/ "./styles/slick-theme.css":
+/***/ (function(module, exports) {
+
+;
+
+(function () {
+  "use strict";
+
+  module.exports = "@charset 'UTF-8';\n/* Slider */\n.slick-loading .slick-list\n{\n    background: #fff url('./ajax-loader.gif') center center no-repeat;\n}\n/* Arrows */\n.slick-prev,\n.slick-next\n{\n    font-size: 0;\n    line-height: 0;\n\n    position: absolute;\n    top: 50%;\n\n    display: block;\n\n    width: 20px;\n    height: 20px;\n    padding: 0;\n    -webkit-transform: translate(0, -50%);\n    transform: translate(0, -50%);\n\n    cursor: pointer;\n\n    color: transparent;\n    border: none;\n    outline: none;\n    background: transparent;\n}\n.slick-prev:hover,\n.slick-prev:focus,\n.slick-next:hover,\n.slick-next:focus\n{\n    color: transparent;\n    outline: none;\n    background: transparent;\n}\n.slick-prev:hover:before,\n.slick-prev:focus:before,\n.slick-next:hover:before,\n.slick-next:focus:before\n{\n    opacity: 1;\n}\n.slick-prev.slick-disabled:before,\n.slick-next.slick-disabled:before\n{\n    opacity: .25;\n}\n.slick-prev:before,\n.slick-next:before\n{\n    font-size: 20px;\n    line-height: 1;\n\n    opacity: .75;\n    color: white;\n\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n}\n.slick-prev\n{\n    left: -25px;\n}\n[dir='rtl'] .slick-prev\n{\n    right: -25px;\n    left: auto;\n}\n.slick-prev:before\n{\n    content: '←';\n}\n[dir='rtl'] .slick-prev:before\n{\n    content: '→';\n}\n.slick-next\n{\n    right: -25px;\n}\n[dir='rtl'] .slick-next\n{\n    right: auto;\n    left: -25px;\n}\n.slick-next:before\n{\n    content: '→';\n}\n[dir='rtl'] .slick-next:before\n{\n    content: '←';\n}\n/* Dots */\n.slick-dotted.slick-slider\n{\n    margin-bottom: 30px;\n}\n.slick-dots\n{\n    position: absolute;\n    bottom: -25px;\n\n    display: block;\n\n    width: 100%;\n    padding: 0;\n    margin: 0;\n\n    list-style: none;\n\n    text-align: center;\n}\n.slick-dots li\n{\n    position: relative;\n\n    display: inline-block;\n\n    width: 20px;\n    height: 20px;\n    margin: 0 5px;\n    padding: 0;\n\n    cursor: pointer;\n}\n.slick-dots li button\n{\n    font-size: 0;\n    line-height: 0;\n\n    display: block;\n\n    width: 20px;\n    height: 20px;\n    padding: 5px;\n\n    cursor: pointer;\n\n    color: transparent;\n    border: 0;\n    outline: none;\n    background: transparent;\n}\n.slick-dots li button:hover,\n.slick-dots li button:focus\n{\n    outline: none;\n}\n.slick-dots li button:hover:before,\n.slick-dots li button:focus:before\n{\n    opacity: 1;\n}\n.slick-dots li button:before\n{\n    font-size: 6px;\n    line-height: 20px;\n\n    position: absolute;\n    top: 0;\n    left: 0;\n\n    width: 20px;\n    height: 20px;\n\n    content: '•';\n    text-align: center;\n\n    opacity: .25;\n    color: black;\n\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n}\n.slick-dots li.slick-active button:before\n{\n    opacity: .75;\n    color: black;\n}\n";
+})();
+
+/***/ }),
+
+/***/ "./styles/slick.css":
+/***/ (function(module, exports) {
+
+;
+
+(function () {
+  "use strict";
+
+  module.exports = "\n\n/* Slider */\n.slick-slider\n{\n    position: relative;\n\n    display: block;\n    box-sizing: border-box;\n\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n\n    -webkit-touch-callout: none;\n    -khtml-user-select: none;\n    touch-action: pan-y;\n    -webkit-tap-highlight-color: transparent;\n}\n.slick-list\n{\n    position: relative;\n\n    display: block;\n    overflow: hidden;\n\n    margin: 0;\n    padding: 0;\n}\n.slick-list:focus\n{\n    outline: none;\n}\n.slick-list.dragging\n{\n    cursor: pointer;\n    cursor: hand;\n}\n.slick-slider .slick-track,\n.slick-slider .slick-list\n{\n    -webkit-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n}\n.slick-track\n{\n    position: relative;\n    top: 0;\n    left: 0;\n\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n.slick-track:before,\n.slick-track:after\n{\n    display: table;\n\n    content: '';\n}\n.slick-track:after\n{\n    clear: both;\n}\n.slick-loading .slick-track\n{\n    visibility: hidden;\n}\n.slick-slide\n{\n    display: none;\n    float: left;\n\n    height: 100%;\n    min-height: 1px;\n}\n[dir='rtl'] .slick-slide\n{\n    float: right;\n}\n.slick-slide img\n{\n    display: block;\n}\n.slick-slide.slick-loading img\n{\n    display: none;\n}\n.slick-slide.dragging img\n{\n    pointer-events: none;\n}\n.slick-initialized .slick-slide\n{\n    display: block;\n}\n.slick-loading .slick-slide\n{\n    visibility: hidden;\n}\n.slick-vertical .slick-slide\n{\n    display: block;\n\n    height: auto;\n\n    border: 1px solid transparent;\n}\n.slick-arrow.slick-hidden {\n    display: none;\n}\n";
+})();
+
+/***/ }),
+
+/***/ "./styles/style.css":
+/***/ (function(module, exports) {
+
+;
+
+(function () {
+  "use strict";
+
+  module.exports = "@font-face {\r\n\tfont-family: IRSans;\r\n\tfont-style: normal;\r\n\tfont-weight: 500;\r\n\tsrc: url('/static/font/IRANSansWeb_Light.eot');\r\n\tsrc: url('/static/font/IRANSansWeb_Light.eot?#iefix') format('embedded-opentype'), /* IE6-8 */\r\n\turl('/static/font/IRANSansWeb_Light.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/\r\n\turl('/static/font/IRANSansWeb_Light.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/\r\n\turl('/static/font/IRANSansWeb_Light.ttf') format('truetype');\r\n}\r\n\r\n@font-face {\r\n\tfont-family: IRSansBold;\r\n\tfont-style: normal;\r\n\tfont-weight: 500;\r\n\tsrc: url('/static/font/IRANSansWeb_Medium.eot');\r\n\tsrc: url('/static/font/IRANSansWeb_Medium.eot?#iefix') format('embedded-opentype'), /* IE6-8 */\r\n\turl('/static/font/IRANSansWeb_Medium.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/\r\n\turl('/static/font/IRANSansWeb_Medium.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/\r\n\turl('/static/font/IRANSansWeb_Medium.ttf') format('truetype');\r\n}\r\n\r\n* {\n  margin: 0;\n  padding: 0;\n  font-family: \"IRSans\";\n}\r\n\r\na {\n  text-decoration: none;\n}\r\n\r\na img {\n  border: none;\n}\r\n\r\nbody, html {\n  width: 100%;\n  height: 100%;\n}\r\n\r\ninput:focus, textarea:focus, button:focus, select:focus {\n  outline: none;\n}\r\n\r\nbody {\n  overflow-x: hidden;\n}\r\n\r\n.max-width {\n  margin: auto;\n}\r\n\r\n/*\n\n>> HEADER\n\n*/\r\n\r\nheader#header {\n  width: 100% !important;\n  height: 100px;\n  z-index: 100;\n}\r\n\r\n.mobile-search {\n  padding-right: 50px;\n  padding-left: 50px;\n  background: white;\n}\r\n\r\n.header-inner {\n  margin-left: 50px;\n  margin-right: 50px;\n  height: 100px;\n  position: relative;\n}\r\n\r\n.vodio-logo {\n  width: 80px;\n  height: 50px;\n  margin-top: 25px;\n  float: right;\n  cursor: pointer;\n}\r\n\r\n.header-inner .logo {\n  height: 55px;\n  float: right;\n  margin-top: 20px;\n}\r\n\r\n.header-left {\n  float: left;\n}\r\n\r\n.header-left-meta {\n  float: left;\n  height: 45px;\n  margin-top: 35px;\n  padding-right: 20px;\n}\r\n\r\n.header-bag, .header-login-win, .header-search, .header-login {\n  width: 35px;\n  height: 35px;\n  float: left;\n  margin-right: 10px;\n}\r\n\r\n.header-login-win, .header-bg-show, .header-search-show {\n  width: 35px;\n  height: 35px;\n  border-radius: 50%;\n  cursor: pointer;\n  transition: all 0.3s cubic-bezier(0, 0, 0.68, -0.07);\n}\r\n\r\n.header-bg-drop-down {\n  display: none;\n  width: 300px;\n  overflow: hidden;\n  background: #fff;\n  position: absolute;\n  left: 0;\n  z-index: 10000000000000000;\n  box-shadow: rgba(0, 0, 0, 0.2) 0 15px 30px;\n  border-radius: 5px;\n  padding: 20px;\n  box-sizing: border-box;\n}\r\n\r\n.header-bag-product {\n  width: 100%;\n  height: 90px;\n  margin-bottom: 10px;\n  padding-bottom: 10px;\n  border-bottom: solid 1px #eee;\n}\r\n\r\n.header-bag-product-right {\n  float: right;\n  margin-left: 10px;\n}\r\n\r\n.header-bag-product-title {\n  display: block;\n  font: 500 0.8em/27px \"IRSans\", Sans-serif;\n  color: #464646;\n}\r\n\r\n.header-bag-product-title a {\n  color: #464646;\n}\r\n\r\n.header-bag-product-cost {\n  display: block;\n  font: 500 0.75em/27px \"IRSans\", Sans-serif;\n  color: #00a69c;\n}\r\n\r\n.header-bag-link-to-page {\n  display: block;\n  width: 100%;\n  height: 50px;\n  border-radius: 5px;\n  background: #00a69c;\n  color: #fff;\n  font: 500 0.8em/50px \"IRSans\", Sans-serif;\n  margin: 10px auto 0;\n  text-align: center;\n  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);\n  transition: all 0.2s ease-out;\n  border: none;\n  cursor: pointer;\n}\r\n\r\n.header-bag-link-to-page:hover {\n  background-color: #fff;\n  color: #00a69c;\n  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);\n}\r\n\r\n.header-bg-show {\n  background: url(static/img/header-meta-icons.png) no-repeat top;\n}\r\n\r\n.header-login-win {\n  background: url(static/img/login.svg) no-repeat;\n  background-position: center;\n}\r\n\r\n.header-search-show {\n  background: url(static/img/header-meta-icons.png) 0 -90px;\n}\r\n\r\n.header-login-win:hover, .header-bg-show:hover, .header-search-show:hover {\n  background-color: #e2e2e2;\n}\r\n\r\n.header-search-drop {\n  display: none;\n  width: 290px;\n  height: 50px;\n  position: absolute;\n  left: 0;\n  z-index: 100;\n  top: 25px;\n  overflow: hidden;\n  background: #fff;\n  padding-right: 5px;\n  border-radius: 2px;\n}\r\n\r\n.header-search-close {\n  width: 45px;\n  height: 45px;\n  left: 0;\n  top: 0;\n  background: url(\"static/img/header-meta-icons.png\") no-repeat bottom;\n}\r\n\r\n.header-search-close:hover {\n  background-color: #ffe7e7;\n}\r\n\r\n.header-search-close, .search-header-submit {\n  border-radius: 50%;\n  cursor: pointer;\n  position: absolute;\n  transition: all 0.3s cubic-bezier(0, 0, 0.68, -0.07);\n}\r\n\r\n.search-dropdown-content {\n  background-color: #f9f9f9;\n  overflow: auto;\n  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);\n  z-index: 21;\n  top: 75px;\n  border-bottom-left-radius: 5px;\n  border-bottom-right-radius: 5px;\n  width: 100%;\n}\r\n\r\n.search-header-input {\n  width: calc(100% - 40px);\n  height: 40px;\n  float: right;\n  box-sizing: border-box;\n  border: none;\n  background: none;\n  font-size: 11px;\n  color: #eb0089;\n  border-radius: 0px;\n  transition: width 0.5s;\n  text-align: right;\n  padding-right: 15px;\n}\r\n\r\n.search-container {\n  margin-top: 33px;\n  margin-left: 20px;\n  width: 340px;\n  height: 40px;\n  -webkit-transition: width 0.5s;\n  border-radius: 20px;\n  background: #eee;\n  z-index: 90;\n}\r\n\r\n.search-header-input::-webkit-input-placeholder {\n  color: #eb0089;\n}\r\n\r\n.search-header-input:-moz-placeholder {\n  color: #eb0089;\n}\r\n\r\n.search-header-submit {\n  width: 45px;\n  height: 45px;\n  float: left;\n  border: none;\n  background: url(\"static/img/header-meta-icons.png\") 0 -90px;\n}\r\n\r\n.search-header-submit:hover {\n  background-color: #e2e2e2;\n}\r\n\r\n.closemainmenu {\n  width: 30px;\n  float: left;\n  height: 45px;\n  border-radius: 45px;\n  background: url(\"static/img/header-meta-icons.png\") no-repeat bottom;\n  cursor: pointer;\n  display: none;\n}\r\n\r\n.hcdmmi-icon {\n  display: block;\n  width: 100%;\n  height: 40px;\n  text-align: center;\n  font-size: 1.3em;\n}\r\n\r\n.hcdmmi-icon:before {\n  line-height: 65px;\n}\r\n\r\n.header-login-win-show {\n  display: none;\n  position: absolute;\n  width: 310px;\n  height: 300px;\n  background: #fff;\n  box-shadow: 0 70px 100px rgba(0, 0, 0, 0.5);\n  left: 0;\n  top: 100px;\n  z-index: 100000;\n  border-top: solid 2px #eb0089;\n  border-bottom-left-radius: 5px;\n  border-bottom-right-radius: 5px;\n}\r\n\r\n.header-login-win-show:after {\n  bottom: 100%;\n  left: 77px;\n  border: solid transparent;\n  content: \" \";\n  height: 0;\n  width: 0;\n  position: absolute;\n  border-bottom: 6px #eb0089;\n  margin-left: -6px;\n}\r\n\r\n.header-menu {\n  display: inline-block;\n  height: 45px;\n  margin-top: 27px;\n  margin-left: 20px;\n}\r\n\r\n.header-menu ul li {\n  display: block;\n  float: right;\n  margin-right: 20px;\n}\r\n\r\n.header-menu ul li a {\n  display: block;\n  height: 45px;\n  font: 300 0.75em/45px \"IRSans\", Sans-serif;\n  color: #eb0089;\n  border-radius: 45px;\n  transition: all 0.3s cubic-bezier(0, 0, 0.68, -0.07);\n  padding-left: 15px;\n}\r\n\r\n.header-menu ul li a:hover {\n  background-color: #e2e2e2;\n}\r\n\r\n.header-menu ul li a span {\n  width: 45px;\n  height: 45px;\n  float: right;\n}\r\n\r\n.home-icon-img {\n  background: url(static/img/header-menu-icons.png) no-repeat top;\n}\r\n\r\n.traking-icon-img {\n  background: url(static/img/header-menu-icons.png) 0 -45px;\n}\r\n\r\n.help-icon-img {\n  background: url(static/img/header-menu-icons.png) 0 -90px;\n}\r\n\r\n.ask-movie-icon-img {\n  background: url(static/img/header-menu-icons.png) 0 -135px;\n}\r\n\r\n.contact-icon-img {\n  background: url(static/img/header-menu-icons.png) 0 -180px;\n}\r\n\r\n.single-pages-header-border {\n  width: 100%;\n  height: 2px;\n  background: #f2f2f2;\n  margin-bottom: 20px;\n}\r\n\r\n.single-pages-header-border-left {\n  width: 300px;\n  height: 2px;\n  background: #eb0089;\n  float: left;\n}\r\n\r\n/*\n\n>> TOP MOVIEZ\n\n*/\r\n\r\n.top-moviez-post-inner {\n  display: block;\n  position: relative;\n  height: 100%;\n  width: -moz-fit-content;\n}\r\n\r\n.top-moviez-post-image {\n  width: 100%;\n}\r\n\r\n.top-moviez-post-top-layer {\n  direction: rtl;\n  position: absolute;\n  top: 0;\n  left: 0;\n  z-index: 5;\n  width: 100%;\n  height: 100%;\n  color: #e9e9e9;\n  transition: all 0.1s ease-in;\n}\r\n\r\n.top-moviez-post-top-layer:hover {\n  background: rgba(235, 0, 139, 0.7);\n  color: #fff;\n}\r\n\r\n.top-moviez-post-top-layer:hover .top-moviez-post-add {\n  opacity: 1;\n}\r\n\r\n.top-moviez-post-top-layer:hover .top-moviez-post-meta {\n  background: none;\n}\r\n\r\n.top-moviez-post-add {\n  display: block;\n  font: 300 0.75em/40px \"IRSans\", Sans-serif;\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  font-size: 1.2em;\n  color: #fff;\n  background: rgba(255, 255, 255, 0.1);\n  opacity: 0;\n  transition: all 0.1s ease-in;\n}\r\n\r\n.top-moviez-post-add li {\n  font: 300 0.65em/30px \"IRSans\", Sans-serif;\n  padding: 0 10px;\n  text-align: right;\n  border-bottom: 1px solid rgba(255, 255, 255, 0.2);\n}\r\n\r\n.top-moviez-post-add ul {\n  bottom: 0px;\n  position: absolute;\n  width: 100%;\n  margin-bottom: 0px !important;\n}\r\n\r\n.top-moviez-post-add-btn {\n  display: block;\n  width: 150px;\n  height: 50px;\n  border-radius: 5px;\n  background: transparent;\n  color: #fff;\n  margin: 10px auto 0;\n  text-align: center;\n  transition: all 0.2s ease-out;\n  border-color: #fff;\n  box-shadow: 0px !important;\n}\r\n\r\n.top-moviez-post-add:before {\n  line-height: 60px;\n}\r\n\r\n.top-moviez-post-meta {\n  position: absolute;\n  width: 100%;\n  height: 70px;\n  bottom: 0;\n  left: 0;\n  background: linear-gradient( to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 9%, rgba(0, 0, 0, 0.26) 28%, rgba(0, 0, 0, 0.7) 60%, rgba(0, 0, 0, 1) 100%);\n  transition: all 0.1s ease-in;\n}\r\n\r\n.top-moviez-post-meta-center {\n  width: 90%;\n  margin: auto;\n}\r\n\r\n.top-moviez-post-meta-center p {\n  float: left;\n  font: 300 0.75em/40px \"IRSans\", Sans-serif;\n  margin-top: 25px;\n}\r\n\r\n.score-icon {\n  font-size: 1.2em;\n  color: #f0c000;\n}\r\n\r\n.top-moviez-post-meta-center p strong {\n  padding: 0 5px;\n  font-weight: 300;\n}\r\n\r\n.top-moviez-post-meta-center p strong span {\n  color: #7d1d65;\n}\r\n\r\n.spacail-products {\n  margin-bottom: 30px;\n}\r\n\r\n.spacail-products-header {\n  width: 100%;\n  height: 90px;\n}\r\n\r\n.spacail-products-icon {\n  display: block;\n  width: 50px;\n  height: 50px;\n  border-radius: 15%;\n  text-align: center;\n  font-size: 1em;\n  color: #ffffff;\n  background: #eb0089;\n  float: right;\n  margin-top: 20px;\n  margin-left: 15px;\n}\r\n\r\n.spacail-products-icon:before {\n  line-height: 50px;\n}\r\n\r\n.spacail-products-title {\n  display: inline-block;\n  float: right;\n  height: 50px;\n  margin-top: 20px;\n  font: 500 1em/50px \"IRSans\", Sans-serif;\n  color: #767676;\n}\r\n\r\n.spacail-products-control {\n  width: 120px;\n  height: 50px;\n  float: left;\n  margin-top: 20px;\n}\r\n\r\n.spacail-products-control a {\n  display: block;\n  width: 50px;\n  height: 50px;\n  float: left;\n  margin-right: 10px;\n  border-radius: 50%;\n  text-align: center;\n  font-size: 1.2em;\n  color: #eb0089;\n  transition: all 0.3s cubic-bezier(0, 0, 0.68, -0.07);\n}\r\n\r\n.spacail-products-control a:hover {\n  background: #e2e2e2;\n}\r\n\r\n.spacail-products-control a span {\n  display: block;\n  width: 50px;\n  height: 50px;\n}\r\n\r\n.spacail-products-control a span:before {\n  line-height: 50px;\n}\r\n\r\n.spacail-products .spacail-products-inner {\n  margin: 0;\n  padding: 0;\n  display: block;\n}\r\n\r\n.spacail-products .spacail-products-inner .spacail-product {\n  width: 300px;\n  overflow: hidden;\n  padding: 0;\n  display: block;\n  float: left;\n  position: relative;\n}\r\n\r\n.spacail-products .spacail-products-inner .spacail-product, .spacail-product-inner {\n  height: 390px;\n}\r\n\r\n.spacail-product-inner {\n  width: 285px;\n  background: #f2f2f2;\n  position: absolute;\n  padding-top: 30px;\n}\r\n\r\n.product-movie-inner {\n  width: 60%;\n  margin: auto;\n  min-width: 160px;\n  min-height: 250px;\n}\r\n\r\n.spi-movie-dvd-cover img {\n  display: block;\n  width: 104px;\n  height: 151px;\n  position: absolute;\n  left: 6px;\n  top: 2px;\n  border-radius: 0 1px 1px 1px;\n}\r\n\r\n.spi-music-cover img {\n  display: block;\n  width: 126px;\n  height: 125px;\n  position: absolute;\n  left: 13px;\n  top: 9px;\n}\r\n\r\n.spacail-product-title {\n  width: 95%;\n  height: 40px;\n  text-align: center;\n  font: 500 0.98em/40px \"IRSans\", Sans-serif;\n  margin: 20px auto auto;\n  letter-spacing: -0.3px;\n}\r\n\r\n.spacail-product-title a {\n  color: #464646;\n}\r\n\r\n.spacail-product-meta {\n  width: 100%;\n  height: 30px;\n  text-align: center;\n  font: 300 0.75em/30px \"IRSans\", Sans-serif;\n  color: #898989;\n}\r\n\r\n.spacail-product-meta a {\n  color: #898989;\n}\r\n\r\n.spacail-product-meta span {\n  padding: 0 5px;\n}\r\n\r\n.spacail-product-meta span.green a {\n  color: #10c469;\n}\r\n\r\n.spacail-product-meta span.blue a {\n  color: #6356bf;\n}\r\n\r\n.spacail-product-meta span.red a {\n  color: #ff5b5b;\n}\r\n\r\n.spacail-product-price {\n  width: 100%;\n  height: 30px;\n  text-align: center;\n  font: 0.9em/30px \"IRSans\", Sans-serif;\n}\r\n\r\n.price-value {\n  font-weight: 500;\n  color: #00a69c;\n}\r\n\r\n.off-price {\n  padding-left: 10px;\n  text-decoration: line-through;\n  font-size: 0.8em;\n}\r\n\r\n.spacail-product-add {\n  display: block;\n  width: 150px;\n  height: 50px;\n  border-radius: 5px;\n  background: #00a69c;\n  color: #fff;\n  font: 500 0.8em/50px \"IRSans\", Sans-serif;\n  margin: 10px auto 0;\n  text-align: center;\n  transition: all 0.2s ease-out;\n}\r\n\r\n.spacail-product-add:hover {\n  background-color: #fff;\n  color: #00a69c;\n}\r\n\r\n/*\n\n>> LAST CONTENT\n\n*/\r\n\r\n.last-content-container {\n  height: 390px;\n  margin-bottom: 30px;\n}\r\n\r\n.last-content-right-tabs {\n  width: 220px;\n  height: 390px;\n  background: url(static/img/last-content-shadow.png) no-repeat center left;\n  float: right;\n}\r\n\r\n.last-content-right-tabs ul {\n  width: 200px;\n  float: right;\n}\r\n\r\n.last-content-right-tabs ul li {\n  display: block;\n  list-style: none;\n}\r\n\r\n.last-content-right-tabs ul li a {\n  display: block;\n  width: 100%;\n  height: 65px;\n  border-right: 3px solid #f2f2f2;\n  color: #b3b3b3;\n}\r\n\r\n.last-content-right-tabs ul .current a {\n  color: #eb0089;\n}\r\n\r\n.last-content-right-tabs ul li a span {\n  display: block;\n  width: 50px;\n  height: 65px;\n  font-size: 1.3em;\n  text-align: left;\n  float: right;\n  margin-left: 10px;\n}\r\n\r\n.last-content-right-tabs ul li a span:before {\n  line-height: 65px;\n}\r\n\r\n.last-content-right-tabs ul li a strong {\n  font: 300 0.85em/65px \"IRSans\", Sans-serif;\n  letter-spacing: -0.1px;\n}\r\n\r\n.last-content-tabs {\n  width: 980px;\n  overflow: hidden;\n  float: left;\n}\r\n\r\n.last-content-tab {\n  width: 100%;\n  overflow: hidden;\n  display: none;\n}\r\n\r\n.last-content-post {\n  width: 230px;\n  height: 390px;\n  float: right;\n  border: solid 1px #eee;\n  border-radius: 5px;\n  margin-left: 20px;\n  box-sizing: border-box;\n}\r\n\r\n.last-content-post-movie-cover img {\n  display: block;\n  width: 117px;\n  height: 170px;\n  position: absolute;\n  top: 2px;\n  left: 7px;\n  border-bottom-left-radius: 3px;\n}\r\n\r\n.last-content-post-title {\n  width: 95%;\n  height: 40px;\n  text-align: center;\n  font: 500 0.9em/40px \"IRSans\", Sans-serif;\n  margin: 10px auto auto;\n  letter-spacing: -0.3px;\n}\r\n\r\n.last-content-post-title a {\n  color: #464646;\n}\r\n\r\n.last-content-post-meta {\n  height: 25px;\n  line-height: 25px;\n}\r\n\r\n.last-content-post-add {\n  display: block;\n  width: 45px;\n  height: 45px;\n  border-radius: 45px;\n  background: #00a69c;\n  color: #fff;\n  font: 500 1.4em/40px \"IRSans\", Sans-serif;\n  margin: 10px auto 0;\n  text-align: center;\n  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);\n  transition: all 0.3s cubic-bezier(0, 0, 0.55, 1.21);\n}\r\n\r\n.last-content-post-add span:before {\n  line-height: 45px;\n}\r\n\r\n.last-content-post-add:hover {\n  background: #fff;\n  color: #00a69c;\n  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);\n}\r\n\r\n.last-content-post-music-cover img {\n  display: block;\n  width: 122px;\n  height: 121px;\n  position: absolute;\n  left: 13px;\n  top: 9px;\n}\r\n\r\n/*\n\n>> INDEX > CONTENT\n\n*/\r\n\r\n.content-container {\n  overflow: hidden;\n  margin-bottom: 30px;\n  margin: 20px;\n  margin-top: 0px;\n}\r\n\r\n.content-inner {\n  width: 100%;\n  float: right;\n}\r\n\r\n.index-news-container {\n  width: 100%;\n  border: solid 1px #eee;\n  border-radius: 5px;\n  padding: 20px 0 3px;\n  margin-bottom: 20px;\n  box-sizing: border-box;\n}\r\n\r\n.index-news-center {\n  width: 100%;\n  margin: auto;\n  padding: 0 20px;\n  box-sizing: border-box;\n}\r\n\r\n.index-news-header {\n  width: 100%;\n  height: 30px;\n  margin-bottom: 20px;\n}\r\n\r\n.index-news-header-icon {\n  display: block;\n  width: 30px;\n  height: 30px;\n  float: right;\n  font-size: 1.3em;\n  text-align: center;\n  color: #ffdb7a;\n  margin-right: 0;\n  margin-left: 10px;\n}\r\n\r\n.index-news-header-icon:before {\n  line-height: 30px;\n}\r\n\r\n.index-news-header-title {\n  display: block;\n  height: 25px;\n  float: right;\n  font: 500 0.9em/30px \"IRSans\", Sans-serif;\n  color: #464646;\n}\r\n\r\n.index-news-header-see-more {\n  display: block;\n  float: left;\n  font: 500 0.75em/30px \"IRSans\", Sans-serif;\n  color: #eb0089;\n}\r\n\r\n.index-news-header-see-more span {\n  transition: all 0.1s ease-out;\n}\r\n\r\n.index-news-header-see-more:hover span {\n  padding-right: 5px;\n}\r\n\r\n.index-news-post {\n  width: 100%;\n  overflow: hidden;\n  margin-bottom: 17px;\n}\r\n\r\n.index-news-post-img {\n  display: block;\n  width: 200px;\n  height: 120px;\n  float: right;\n  position: relative;\n}\r\n\r\n.index-news-post-img img {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  border-radius: 5px;\n}\r\n\r\n.index-news-post-inner {\n  width: 620px;\n  overflow: hidden;\n  float: left;\n}\r\n\r\n.index-news-post-title {\n  width: 100%;\n  font: 500 0.9em/30px \"IRSans\", Sans-serif;\n  margin-bottom: 5px;\n}\r\n\r\n.index-news-post-title a {\n  color: #464646;\n}\r\n\r\n.index-news-post-details {\n  width: 100%;\n  clear: both;\n  font: 300 0.75em/26px \"IRSans\", Sans-serif;\n  color: #737373;\n  margin-bottom: 5px;\n  text-align: justify;\n}\r\n\r\n.index-news-post-meta {\n  width: 100%;\n  height: 30px;\n}\r\n\r\n.index-news-post-meta p {\n  height: 30px;\n  float: right;\n  margin-left: 15px;\n  color: #eb0089;\n}\r\n\r\n.index-news-post-meta p a {\n  color: #eb0089;\n}\r\n\r\n.index-news-post-meta p span {\n  display: block;\n  height: 30px;\n  float: right;\n  font-size: 0.75em;\n  text-align: center;\n  margin-left: 10px;\n}\r\n\r\n.index-news-post-meta p span:before {\n  line-height: 30px;\n}\r\n\r\n.index-news-post-meta p strong {\n  font: 300 0.75em/30px \"IRSans\", Sans-serif;\n}\r\n\r\n.index-content-timeline-contanier {\n  width: 100%;\n  overflow: hidden;\n  margin-bottom: 10px;\n}\r\n\r\n.product-post-vetical {\n  width: 280px;\n  overflow: hidden;\n  border: solid 1px #eee;\n  float: right;\n  border-radius: 5px;\n  margin-left: 20px;\n  box-sizing: border-box;\n  padding-bottom: 20px;\n  margin-bottom: 20px;\n}\r\n\r\n.product-post-horizonal .product-post-cover {\n  float: right;\n  margin-top: 20px;\n  margin-right: 20px;\n  margin-left: 20px;\n}\r\n\r\n.product-post-vetical .product-post-cover img, .product-post-horizonal .product-post-cover img {\n  display: block;\n  width: 131px;\n  height: 189px;\n  position: absolute;\n  left: 7px;\n  top: 3px;\n  border-radius: 0 1px 1px 1px;\n}\r\n\r\n.product-post-vetical .product-post-title {\n  width: 95%;\n  height: 40px;\n  text-align: center;\n  font: 500 0.98em/40px \"IRSans\", Sans-serif;\n  margin: 20px auto auto;\n  letter-spacing: -0.3px;\n}\r\n\r\n.product-post-horizonal .product-post-title {\n  width: 100%;\n  height: 40px;\n  text-align: right;\n  font: 500 0.98em/40px \"IRSans\", Sans-serif;\n  margin: 20px 0 0;\n  letter-spacing: -0.3px;\n}\r\n\r\n.product-post-vetical .product-post-title a, .product-post-horizonal .product-post-title a {\n  color: #464646;\n}\r\n\r\n.product-post-vetical .product-post-meta {\n  width: 100%;\n  height: 30px;\n  text-align: center;\n  font: 300 0.75em/30px \"IRSans\", Sans-serif;\n  color: #898989;\n}\r\n\r\n.product-post-horizonal .product-post-meta {\n  width: 100%;\n  height: 30px;\n  text-align: right;\n  font: 300 0.75em/30px \"IRSans\", Sans-serif;\n  color: #898989;\n}\r\n\r\n.product-post-vetical .product-post-meta a, .product-post-horizonal .product-post-meta a {\n  color: #898989;\n}\r\n\r\n.product-post-vetical .product-post-meta span, .product-post-horizonal .product-post-meta span {\n  padding: 0 5px;\n}\r\n\r\n.product-post-vetical .product-quality {\n  width: 100%;\n  height: 25px;\n  margin-top: 10px;\n  text-align: center;\n}\r\n\r\n.product-post-horizonal .product-quality {\n  width: 100%;\n  height: 25px;\n  margin-top: 10px;\n  text-align: right;\n}\r\n\r\n.product-post-vetical .product-quality .product-quality-type, .product-post-horizonal .product-quality .product-quality-type {\n  display: inline-block;\n  height: 25px;\n  font: 300 0.75em/27px \"IRSans\", Sans-serif;\n  color: #fff;\n  background: #b3b3b3;\n  border-radius: 3px;\n  padding: 0 10px;\n}\r\n\r\n.product-post-vetical .product-quality .product-quality-codec, .product-post-horizonal .product-quality .product-quality-codec {\n  display: inline-block;\n  height: 25px;\n  font: 300 0.75em/27px \"IRSans\", Sans-serif;\n  color: #ff8e8e;\n  background: #ffe7e7;\n  border-radius: 3px;\n  padding: 0 10px;\n  margin-right: 10px;\n}\r\n\r\n.product-quality-dub {\n  display: inline-block;\n  height: 25px;\n  font: 300 0.72em/27px \"IRSans\", Sans-serif;\n  color: #1c85ec;\n  background: #e6f3ff;\n  border-radius: 3px;\n  padding: 0 10px;\n  margin-right: 10px;\n}\r\n\r\n.product-post-vetical .product-post-bottom {\n  width: 100%;\n  height: 45px;\n  padding: 20px;\n  box-sizing: border-box;\n}\r\n\r\n.product-post-horizonal .product-post-bottom {\n  width: 620px;\n  height: 45px;\n  position: absolute;\n  left: 20px;\n  bottom: 20px;\n}\r\n\r\n.product-post-vetical .product-post-bottom .product-post-bottom-price, .product-post-horizonal .product-post-bottom .product-post-bottom-price {\n  font: 500 0.9em/45px \"IRSans\", Sans-serif;\n  color: #00a69c;\n  float: right;\n}\r\n\r\n.product-post-horizonal .product-post-bottom .product-post-bottom-price {\n  font: 500 1em/45px \"IRSans\", Sans-serif;\n}\r\n\r\n.product-post-vetical .product-post-bottom .product-post-add, .product-post-horizonal .product-post-bottom .product-post-add {\n  display: block;\n  width: 45px;\n  height: 45px;\n  border-radius: 45px;\n  background: #00a69c;\n  color: #fff;\n  font: 500 1.4em/40px \"IRSans\", Sans-serif;\n  text-align: center;\n  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);\n  transition: all 0.3s cubic-bezier(0, 0, 0.55, 1.21);\n  float: left;\n  margin-right: 10px;\n}\r\n\r\n.product-post-vetical .product-post-bottom .product-post-add:hover, .product-post-horizonal .product-post-bottom .product-post-add:hover {\n  background: #fff;\n  color: #00a69c;\n  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);\n}\r\n\r\n.product-post-vetical .product-post-bottom .product-post-add span, .product-post-horizonal .product-post-bottom .product-post-add span {\n  display: block;\n  width: 45px;\n  height: 45px;\n  text-align: center;\n}\r\n\r\n.product-post-vetical .product-post-bottom .product-post-add span:before, .product-post-horizonal .product-post-bottom .product-post-add span:before {\n  line-height: 45px;\n}\r\n\r\n.product-post-vetical .product-post-bottom .product-post-bottom-score, .product-post-horizonal .product-post-bottom .product-post-bottom-score {\n  display: block;\n  float: left;\n  height: 45px;\n  border-radius: 45px;\n  background: #7d1d65;\n  color: #464646;\n  font: 300 0.75em/47px \"IRSans\", Sans-serif;\n  padding: 0 15px 0 10px;\n}\r\n\r\n.product-post-vetical .product-post-bottom .product-post-bottom-score span, .product-post-horizonal .product-post-bottom .product-post-bottom-score span {\n  float: left;\n  margin-right: 5px;\n}\r\n\r\n.product-post-vetical .product-post-bottom .product-post-bottom-score span:before, .product-post-horizonal .product-post-bottom .product-post-bottom-score span:before {\n  line-height: 45px;\n}\r\n\r\n.product-post-vetical .spi-music-cover {\n  margin-top: 50px;\n  margin-bottom: 55px;\n}\r\n\r\n.product-post-horizonal .spi-music-cover {\n  float: right;\n  margin-top: 15px;\n  margin-right: 20px;\n}\r\n\r\n.product-post-horizonal {\n  width: 100%;\n  float: none;\n  overflow: hidden;\n  margin-left: 0;\n  margin-bottom: 20px;\n  border-radius: 5px;\n  border: solid 1px #eee;\n  position: relative;\n  padding-bottom: 20px;\n  box-sizing: border-box;\n}\r\n\r\n.space-between-content {\n  width: 100%;\n  height: 10px;\n  background: url(static/img/space.png);\n  margin-bottom: 30px;\n}\r\n\r\n.right-content-block {\n  width: 100%;\n  overflow: hidden;\n  padding: 20px 0;\n  border: solid 1px #eee;\n  border-radius: 5px;\n  box-sizing: border-box;\n}\r\n\r\n.right-content-block-center {\n  width: 100%;\n  padding: 0 20px;\n  box-sizing: border-box;\n}\r\n\r\n.shop-rules-title {\n  width: 100%;\n  display: block;\n  height: 30px;\n  font: 500 0.9em/30px \"IRSans\", Sans-serif;\n  color: #464646;\n  margin-bottom: 10px;\n}\r\n\r\n.shop-rules-text {\n  color: #808080;\n}\r\n\r\n.shop-rules-text p {\n  width: 100%;\n  font: 500 0.8em/40px \"IRSans\", Sans-serif;\n}\r\n\r\n/*\n\n>> WIDGET > LEFT\n\n*/\r\n\r\n.widget-left {\n  width: 300px;\n  float: left;\n}\r\n\r\n.shop-option {\n  width: 100%;\n  height: 60px;\n  border: solid 1px #eee;\n  border-radius: 5px;\n  margin-bottom: 10px;\n  box-sizing: border-box;\n}\r\n\r\n.shop-option-icon {\n  display: block;\n  width: 60px;\n  height: 60px;\n  font-size: 1.5em;\n  float: right;\n  text-align: center;\n}\r\n\r\n.shop-option-icon:before {\n  line-height: 60px;\n}\r\n\r\n.shop-option-text {\n  float: right;\n  font: 500 0.75em/60px \"IRSans\", Sans-serif;\n  letter-spacing: -0.3px;\n}\r\n\r\n.shop-options .green {\n  color: #6356bf;\n}\r\n\r\n.shop-options .blue {\n  color: #5ab0fc;\n}\r\n\r\n.shop-options .red {\n  color: #ff5b5b;\n}\r\n\r\n.shop-options {\n  margin-bottom: 20px;\n}\r\n\r\n.widget-ad {\n  margin-bottom: 20px;\n}\r\n\r\n.widget-ad img {\n  max-width: 100%;\n}\r\n\r\n.widget-box-office {\n  width: 100%;\n  margin-bottom: 20px;\n}\r\n\r\n.widget-box-office-header {\n  width: 100%;\n  height: 25px;\n}\r\n\r\n.widget-box-office-title {\n  display: block;\n  height: 25px;\n  float: right;\n  font: 500 0.9em/25px \"IRSans\", Sans-serif;\n  color: #464646;\n}\r\n\r\n.widget-box-office-date {\n  float: left;\n  font: 300 0.7em/25px \"IRSans\", Sans-serif;\n  color: #acacac;\n}\r\n\r\n.widget-box-office-moviez {\n  margin-top: 20px;\n}\r\n\r\n.widget-box-office-movie {\n  display: block;\n  width: 100%;\n  border-radius: 5px;\n  padding: 10px 0;\n  overflow: hidden;\n  transition: all 0.1s ease-in;\n}\r\n\r\n.widget-box-office-movie:hover {\n  background: #f2f2f2;\n}\r\n\r\n.widget-box-office-movie:hover .widget-box-office-movie-image-top-layer {\n  opacity: 1;\n}\r\n\r\n.widget-box-office-movie-image {\n  width: 100px;\n  height: 159px;\n  float: left;\n  margin-left: 10px;\n  position: relative;\n}\r\n\r\n.widget-box-office-movie-image img {\n  display: block;\n  position: relative;\n  width: 100%;\n  height: 100%;\n  border-radius: 5px;\n}\r\n\r\n.widget-box-office-movie-image-top-layer {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  border-radius: 5px;\n  background: linear-gradient( to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(251, 43, 91, 0.6) 100%);\n  margin-right: 10px;\n  opacity: 0;\n  transition: all 0.1s ease-in;\n}\r\n\r\n.widget-box-office-movie-image-top-layer span {\n  display: block;\n  width: 30px;\n  height: 30px;\n  font-size: 1.1em;\n  text-align: center;\n  border-radius: 50%;\n  border: solid 2px #fff;\n  margin: 65px auto;\n  color: #fff;\n}\r\n\r\n.widget-box-office-movie-image-top-layer span:before {\n  line-height: 30px;\n}\r\n\r\n.widget-box-office-movie-meta {\n  width: 170px;\n  float: right;\n  direction: rtl;\n  margin-right: 10px;\n  padding-top: 10px;\n}\r\n\r\n.widget-box-office-movie-meta-title {\n  width: 100%;\n  font: 500 0.8em/20px \"IRSans\", Sans-serif;\n  color: #464646;\n}\r\n\r\n.widget-box-office-movie-meta-gener {\n  width: 100%;\n  font: 300 0.6em/20px \"IRSans\", Sans-serif;\n  color: #999999;\n  margin-top: 5px;\n}\r\n\r\n.widget-box-office-movie-meta-score {\n  display: block;\n  width: 30px;\n  height: 30px;\n  color: #464646;\n  font: 500 0.56em/35px \"IRSans\", Sans-serif;\n  text-align: center;\n  background: #7d1d65;\n  border-radius: 50%;\n  margin-top: 10px;\n  margin-bottom: 20px;\n}\r\n\r\n.widget-box-office-movie-meta-value {\n  width: 100%;\n  font: 500 0.8em/20px \"IRSans\", Sans-serif;\n  color: #464646;\n}\r\n\r\n.widget-box-office-see-more {\n  display: block;\n  font: 500 0.75em/30px \"IRSans\", Sans-serif;\n  color: #eb0089;\n  margin-top: 10px;\n}\r\n\r\n.widget-box-office-see-more span {\n  transition: all 0.1s ease-out;\n}\r\n\r\n.widget-box-office-see-more:hover span {\n  padding-right: 5px;\n}\r\n\r\n.widget-left .widget {\n  width: 100%;\n  margin-bottom: 20px;\n  padding-top: 10px;\n}\r\n\r\n.widget-header {\n  width: 100%;\n  height: 10px;\n  background: url(static/img/space.png);\n}\r\n\r\n.widget-header-title {\n  display: inline-block;\n  height: 30px;\n  background: #fff;\n  padding-left: 10px;\n  font: 500 0.9em/30px \"IRSans\", Sans-serif;\n  color: #464646;\n  position: absolute;\n  margin-top: -20px;\n}\r\n\r\n.widget-content {\n  width: 100%;\n  margin-top: 30px;\n}\r\n\r\n.wiget-trailer-first {\n  display: block;\n  width: 100%;\n  height: 150px;\n  border-radius: 5px;\n  overflow: hidden;\n  position: relative;\n  background: #000;\n}\r\n\r\n.wiget-trailer-first img {\n  display: block;\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  right: 0;\n}\r\n\r\n.wiget-trailer-first-bg {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  right: 0;\n  background: linear-gradient( to bottom, rgba(255, 255, 255, 0.4) 0%, rgba(252, 252, 252, 0.2) 1%, rgba(0, 0, 0, 0.2) 100%);\n}\r\n\r\n.wiget-trailer-first-bg:hover span {\n  border-color: #eb0089;\n  background: rgba(0, 0, 0, 0.6);\n  color: #fff;\n}\r\n\r\n.wiget-trailer-first-bg span {\n  display: block;\n  width: 40px;\n  height: 42px;\n  font-size: 1.5em;\n  text-align: center;\n  border-radius: 50%;\n  border: solid 2px #fff;\n  margin: 55px auto;\n  color: #fff;\n  transition: all 0.1s ease-out;\n  padding-left: 2px;\n}\r\n\r\n.wiget-trailer-first-bg span:before {\n  line-height: 42px;\n}\r\n\r\n.wiget-trailer-first-meta {\n  position: absolute;\n  width: 100%;\n  height: 50px;\n  bottom: 0;\n  right: 0;\n  background: linear-gradient( to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);\n}\r\n\r\n.wiget-trailer-first-meta strong {\n  position: absolute;\n  display: block;\n  width: 100%;\n  height: 35px;\n  bottom: 0;\n  right: 0;\n  direction: ltr;\n  font: 500 0.8em/35px \"IRSans\", sans-serif;\n  color: #fff;\n  text-align: center;\n}\r\n\r\n.wiget-trailers {\n  width: 100%;\n  margin-top: 20px;\n}\r\n\r\n.wiget-trailer {\n  display: block;\n  width: 100%;\n  padding: 10px 0;\n  border-radius: 5px;\n  overflow: hidden;\n  transition: all 0.1s ease-in;\n}\r\n\r\n.wiget-trailer:hover {\n  background: #f2f2f2;\n}\r\n\r\n.wiget-trailer-img {\n  width: 75px;\n  height: 50px;\n  border-radius: 5px;\n  overflow: hidden;\n  margin-right: 10px;\n  position: relative;\n  float: right;\n}\r\n\r\n.wiget-trailer-img img {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\r\n\r\n.wiget-trailer:hover .wiget-trailer-img-bg {\n  opacity: 1;\n}\r\n\r\n.wiget-trailer-img-bg {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  right: 0;\n  background: linear-gradient( to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(251, 43, 91, 0.6) 100%);\n  opacity: 0;\n  transition: all 0.1s ease-in;\n}\r\n\r\n.wiget-trailer-img-bg span {\n  display: block;\n  width: 20px;\n  height: 20px;\n  font-size: 0.8em;\n  text-align: center;\n  border-radius: 50%;\n  border: solid 2px #fff;\n  margin: 15px auto;\n  color: #fff;\n}\r\n\r\n.wiget-trailer-img-bg span:before {\n  line-height: 20px;\n}\r\n\r\n.wiget-trailer-title {\n  display: block;\n  width: 190px;\n  float: left;\n  margin-left: 10px;\n  font: 500 0.8em/20px \"IRSans\", Sans-serif;\n  color: #464646;\n}\r\n\r\n.widget-movie {\n  display: block;\n  width: 100%;\n  padding: 10px 0;\n  border-radius: 5px;\n  transition: all 0.1s ease-in;\n  overflow: hidden;\n}\r\n\r\n.widget-movie:hover {\n  background: #f2f2f2;\n}\r\n\r\n.widget-movie-cover img {\n  display: block;\n  position: absolute;\n  width: 59px;\n  height: 85px;\n  top: 1px;\n  left: 3px;\n}\r\n\r\n.widget-movie-content {\n  width: 180px;\n  float: left;\n  margin-left: 10px;\n}\r\n\r\n.widget-movie-content-title {\n  display: block;\n  width: 100%;\n  font: 500 0.8em/20px \"IRSans\", Sans-serif;\n  color: #464646;\n}\r\n\r\n.widget-movie-content-meta {\n  width: 100%;\n  height: 30px;\n  margin-top: 10px;\n  margin-bottom: 5px;\n}\r\n\r\n.widget-movie-content-meta-score {\n  display: block;\n  width: 30px;\n  height: 30px;\n  color: #464646;\n  font: 500 0.56em/30px \"IRSans\", Sans-serif;\n  text-align: center;\n  background: #7d1d65;\n  border-radius: 50%;\n  float: right;\n  margin-left: 10px;\n}\r\n\r\n.widget-movie-content-meta-quality {\n  font: 300 0.75em/30px \"IRSans\", Sans-serif;\n  color: #898989;\n  float: right;\n}\r\n\r\n.widget-movie-content-meta-quality .blue {\n  color: #3492e3;\n}\r\n\r\n.widget-movie-content-meta-quality .red {\n  color: #ff5b5b;\n}\r\n\r\n.widget-movie-content-meta-quality .green {\n  color: #10c469;\n}\r\n\r\n.widget-movie-content-price {\n  display: block;\n  width: 100%;\n  height: 25px;\n  font: 500 0.75em/25px \"IRSans\", Sans-serif;\n  color: #00a69c;\n}\r\n\r\n/*\n\n>> SINGLE PRODUCT\n\n*/\r\n\r\n.single-product-container {\n  width: 100%;\n  border-top-left-radius: 15px;\n  direction: rtl;\n  overflow: hidden;\n  box-sizing: border-box;\n  position: relative;\n  border-top-right-radius: 15px;\n}\r\n\r\n.single-product-container-center {\n  width: 75%;\n  margin: auto;\n  box-sizing: border-box;\n  overflow: hidden;\n  display: -webkit-flex;\n  flex-wrap: wrap;\n  display: flex;\n}\r\n\r\n.single-product-right {\n  overflow: hidden;\n  float: right;\n}\r\n\r\n.single-product-right-img img {\n  display: block;\n  position: absolute;\n  width: 195px;\n  height: 282px;\n  top: 5px;\n  left: 12px;\n  border-bottom-left-radius: 4px;\n}\r\n\r\n.single-product-left {\n  width: 300px;\n  float: right;\n}\r\n\r\n.single-product-title {\n  width: 100%;\n  margin: auto;\n  font: 20px \"IRSansBold\", Sans-serif;\n  letter-spacing: -0.3px;\n  color: white;\n}\r\n\r\n.single-product-title span {\n  font: 20px \"IRSansBold\";\n}\r\n\r\n.single-product-header-meta {\n  width: 100%;\n  font: 15px \"IRSans\", Sans-serif;\n  color: #898989;\n  margin-bottom: 0px;\n  position: relative;\n  padding-top: 15px;\n  overflow-x: auto;\n}\r\n\r\n.single-product-category {\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  color: #898989;\n  border: solid 1px #eee;\n  border-radius: 20px;\n  padding: 4px 7px !important;\n  font-size: 12px;\n  margin-left: 5px;\n  margin-right: 5px;\n  float: right;\n  margin-top: 5px !important;\n}\r\n\r\n.single-product-category:hover {\n  background: rgba(235, 0, 137, 0.1);\n  color: black;\n}\r\n\r\n.single-product-category a {\n  color: white;\n}\r\n\r\n.single-product-category a:hover {\n  color: rgba(235, 0, 137, 0.7);\n  cursor: pointer;\n}\r\n\r\n.single-product-header-meta .single-product-add-to-watched {\n  display: block;\n  float: left;\n  height: 30px;\n  padding: 0 15px;\n  border: solid 1px #eb0089;\n  color: #eb0089;\n  border-radius: 5px;\n  font-weight: 500;\n  line-height: 30px;\n  margin-top: 5px;\n  transition: all 0.3s cubic-bezier(0, 0, 0.68, -0.07);\n}\r\n\r\n.single-product-header-meta .single-product-add-to-watched:hover {\n  color: #fff;\n  background: #eb0089;\n}\r\n\r\n.single-product-add-to-watched:hover span {\n  visibility: visible;\n}\r\n\r\n.single-product-add-to-watched span {\n  display: block;\n  height: 30px;\n  background: rgba(0, 0, 0, 0.8);\n  color: #fff;\n  position: absolute;\n  border-radius: 5px;\n  padding: 0 10px;\n  left: 0;\n  top: -35px;\n  visibility: hidden;\n}\r\n\r\n.single-product-add-to-watched span:after {\n  top: 100%;\n  left: 30px;\n  content: \" \";\n  height: 0;\n  width: 0;\n  position: absolute;\n  border: 3px solid rgba(136, 183, 213, 0);\n  border-top-color: rgba(0, 0, 0, 0.8);\n  margin-left: -3px;\n}\r\n\r\n.single-product-score {\n  width: 100%;\n  height: 50px;\n  margin-bottom: 10px;\n}\r\n\r\n.single-product-score span {\n  display: block;\n  width: 40px;\n  color: white;\n  height: 40px;\n  background: #7d1d65;\n  border-radius: 50%;\n  font: 20px \"IRSans\", Sans-serif;\n  text-align: center;\n  float: right;\n  margin-left: 10px;\n  padding-top: 5px;\n  padding-left: 2.5px;\n  padding-right: 2.5px;\n}\r\n\r\n.single-product-score p {\n  display: block;\n  height: 40px;\n  float: right;\n  font: 14px \"IRSans\", Sans-serif;\n  color: white;\n  padding-top: 10px;\n}\r\n\r\n.single-product-price {\n  width: 100%;\n  height: 40px;\n  font: 500 1em/40px \"IRSans\", Sans-serif;\n  color: #00a69c;\n  margin-bottom: 15px;\n}\r\n\r\n.single-product-order-options {\n  width: 100%;\n  overflow: hidden;\n  padding: 20px;\n  box-sizing: border-box;\n  background: #f2f2f2;\n  border-radius: 5px;\n  margin-bottom: 20px;\n}\r\n\r\n.single-product-order-options strong {\n  width: 100%;\n  height: 30px;\n  font: 500 0.8em/30px \"IRSans\", Sans-serif;\n  color: #464646;\n}\r\n\r\n.single-product-order-options p {\n  width: 100%;\n  height: 30px;\n  font: 500 0.75em/30px \"IRSans\", Sans-serif;\n  color: #737373;\n}\r\n\r\n.single-product-order-options p span {\n  display: inline-block;\n  color: #464646;\n}\r\n\r\n.single-product-order-options p input[type=\"checkbox\"] {\n  display: block;\n  float: right;\n  margin-left: 5px;\n  width: 15px;\n  height: 15px;\n  margin-top: 7px;\n}\r\n\r\n.single-product-order-option-season {\n  width: 100%;\n  overflow: hidden;\n  background: #e0e0e0;\n  border-radius: 5px;\n  transition: all 0.2s ease-in;\n  margin: 5px 0 10px;\n}\r\n\r\n.single-product-order-option-season-header {\n  width: 100%;\n  padding: 0 20px;\n  box-sizing: border-box;\n  height: 50px;\n  color: #737373;\n  cursor: pointer;\n}\r\n\r\n.single-product-order-option-season:hover {\n  background: #d9d9d9;\n}\r\n\r\n.single-product-order-option-season-header span {\n  display: block;\n  height: 50px;\n  font-size: 1em;\n  text-align: right;\n  float: right;\n  margin-left: 5px;\n}\r\n\r\n.single-product-order-option-season-header span:before {\n  line-height: 50px;\n}\r\n\r\n.single-product-order-option-season-header strong {\n  display: block;\n  width: auto;\n  height: 50px;\n  float: right;\n  font: 500 0.8em/50px \"IRSans\", Sans-serif;\n}\r\n\r\n.single-product-order-option-season-filds {\n  display: none;\n  width: 100%;\n  overflow: hidden;\n  padding: 20px;\n  box-sizing: border-box;\n}\r\n\r\n.purchase-button-container {\n  display: inline-block;\n  height: 50px;\n  border-radius: 5px;\n  background: #00a69c;\n  color: #fff;\n  font: 500 0.8em/50px \"IRSans\", Sans-serif;\n  width: 150px;\n  cursor: pointer;\n}\r\n\r\n.download-button-container {\n  display: inline-block;\n  height: 50px;\n  border-radius: 5px;\n  background: #7d1d65;\n  color: #fff;\n  font: 500 0.8em/50px \"IRSans\", Sans-serif;\n  width: 150px;\n  cursor: pointer;\n}\r\n\r\n.button-container {\n  width: 100%;\n  margin-bottom: 10px;\n  margin-top: 20px;\n}\r\n\r\n.single-product-add {\n  display: inline-block;\n  height: 50px;\n  border-radius: 5px;\n  background: #eb0089;\n  color: #fff;\n  font: 500 0.8em/50px \"IRSans\", Sans-serif;\n  width: 200px;\n  box-shadow: 1px 2px 26px -2px black;\n}\r\n\r\n.single-product-add:hover {\n  text-decoration: none;\n  color: #fff;\n  cursor: pointer;\n}\r\n\r\n.single-product-add span {\n  display: block;\n  width: 45px;\n  height: 50px;\n  text-align: left;\n  font-size: 30px;\n  float: right;\n  margin-left: 10px;\n}\r\n\r\n.single-product-add span:before {\n  line-height: 50px;\n}\r\n\r\n.single-product-add-strong {\n  font-size: 20px;\n  text-align: center;\n  float: left;\n  width: calc(100% - 45px);\n  background: #00a69c;\n  border-top-left-radius: 5px;\n  border-bottom-left-radius: 5px;\n  border-right: 1px white dotted;\n}\r\n\r\n.single-product-gallery {\n  width: 100%;\n  height: 80px;\n  margin-top: 20px;\n}\r\n\r\n.single-product-gallery-img {\n  float: right;\n  margin-left: 10px;\n  overflow: hidden;\n  border-radius: 5px;\n}\r\n\r\n.single-product-gallery-img, .single-product-gallery-img img {\n  display: block;\n  width: 67px;\n  height: 67px;\n}\r\n\r\n.single-product-dec {\n  width: 100%;\n  overflow: hidden;\n  margin-bottom: 20px;\n  background: #f6f6f6;\n  box-sizing: border-box;\n  border-top: 1px solid #eb0089;\n}\r\n\r\n.single-product-dec-header {\n  width: 100%;\n  height: 40px;\n  background: #1c1c1c;\n}\r\n\r\n.single-product-dec-header ul {\n  background: #1c1c1c;\n  width: 75%;\n  height: 40px;\n  margin-left: 12.5%;\n}\r\n\r\n.single-product-dec-header ul li {\n  display: block;\n  float: right;\n  height: 30px;\n  list-style: none;\n  font-family: irsansbold;\n  font-size: 15px;\n  margin-top: 7px;\n}\r\n\r\n.single-product-dec-header ul li a {\n  display: block;\n  padding-left: 20px;\n  color: #737373;\n}\r\n\r\n.single-product-dec-header ul .current a {}\r\n\r\n.single-product-dec-content {\n  width: 75%;\n  padding-top: 20px;\n  box-sizing: border-box;\n  padding-right: 12.5%\n}\r\n\r\n.single-product-dec-content-text {\n  width: calc(50% - 20px);\n  margin-left: 20px;\n  overflow: hidden;\n  font: 14px \"IRSans\", Sans-serif;\n  color: #737373;\n  line-height: 2.5;\n  font-size: 0.9em;\n  margin-bottom: 15px;\n}\r\n\r\n.single-product-dec-content-text strong {\n  color: wheat;\n}\r\n\r\n.single-product-dec-content-text a {\n  color: white;\n}\r\n\r\n.single-product-dec-content-text h1, .single-product-dec-content-text h2, .single-product-dec-content-text h3, .single-product-dec-content-text h4, .single-product-dec-content-text h5, .single-product-dec-content-text h6 {\n  font-weight: 500;\n}\r\n\r\n.single-product-rewards {\n  width: 100%;\n  padding: 20px;\n  box-sizing: border-box;\n  border-radius: 5px;\n  background: #7d1d65;\n  margin: 20px 0;\n  font-weight: 500;\n  color: #464646;\n}\r\n\r\n.single-product-moviez-popular {\n  width: 100%;\n  overflow: hidden;\n  position: relative;\n}\r\n\r\n.single-product-moviez-popular-header {\n  width: 100%;\n  height: 50px;\n}\r\n\r\n.single-product-moviez-popular-inner {\n  width: 100%;\n  overflow: hidden;\n  padding-top: 20px;\n}\r\n\r\n.single-product-movie-popular {\n  display: inline-block;\n  background: #fff;\n  position: relative;\n  padding: 0;\n  min-width: 250px;\n}\r\n\r\n.single-product-movie-popular-inner {\n  min-width: 290px;\n  min-height: 450px;\n  background: #f2f2f2;\n  padding: 10px;\n}\r\n\r\n.spmp-left {\n  padding-left: 10px;\n}\r\n\r\n.spmp-right {\n  float: right;\n}\r\n\r\n.spmp-center {\n  float: none;\n  margin: auto;\n}\r\n\r\n.single-product-news-letter {\n  width: 100%;\n  overflow: hidden;\n  border-radius: 5px;\n  border: solid 2px #eee;\n  box-sizing: border-box;\n  margin-top: 5px;\n}\r\n\r\n.single-product-news-letter-header {\n  width: 100%;\n  height: 56px;\n  cursor: pointer;\n}\r\n\r\n.single-product-news-letter-icon {\n  width: 30px;\n  height: 30px;\n  display: block;\n  border-radius: 50%;\n  background: #eb0089;\n  font-size: 1em;\n  text-align: center;\n  color: #fff;\n  float: right;\n  margin-top: 13px;\n  margin-right: 13px;\n  margin-left: 13px;\n}\r\n\r\n.single-product-news-letter-icon:before {\n  line-height: 30px;\n}\r\n\r\n.single-product-news-letter-title {\n  display: block;\n  height: 56px;\n  float: right;\n  font: 500 0.8em/56px \"IRSans\", Sans-serif;\n  color: #737373;\n}\r\n\r\n.single-product-news-letter-arrow {\n  display: block;\n  width: 36px;\n  height: 20px;\n  float: left;\n  color: #b7b7b7;\n  text-align: right;\n  font-size: 1.3em;\n  margin-top: 17px;\n}\r\n\r\n.single-product-news-letter-arrow:before {\n  line-height: 20px;\n}\r\n\r\n.single-product-news-letter-content {\n  width: 100%;\n  overflow: hidden;\n  padding: 20px;\n  box-sizing: border-box;\n  display: none;\n}\r\n\r\n.single-product-news-letter-content form {\n  width: 100%;\n}\r\n\r\n.single-product-news-letter-content form p {\n  font: 500 0.75em/30px \"IRSans\", Sans-serif;\n  color: #737373;\n}\r\n\r\n.single-product-news-letter-content p {\n  height: 30px;\n  overflow: hidden;\n}\r\n\r\n.single-product-news-letter-content p input[type=\"checkbox\"] {\n  display: block;\n  float: right;\n  margin-left: 5px;\n  width: 15px;\n  height: 15px;\n  margin-top: 7px;\n}\r\n\r\n.single-product-newsletter-fild {\n  width: 100%;\n  height: 45px;\n  overflow: hidden;\n  margin-top: 10px;\n  margin-bottom: 10px;\n}\r\n\r\n.single-product-newsletter-fild input[type=\"text\"] {\n  display: block;\n  width: 100%;\n  height: 45px;\n  color: #737373;\n  border: none;\n  box-sizing: border-box;\n  border-bottom: solid 2px #eee;\n  font: 500 0.7em/50px \"IRSans\", Sans-serif;\n}\r\n\r\n.single-product-newsletter-submit {\n  display: block;\n  width: 100%;\n  height: 45px;\n  background: #eb0089;\n  color: #fff;\n  text-align: center;\n  font: 500 0.8em/50px \"IRSans\", Sans-serif;\n  border: none;\n  margin-top: 10px;\n  border-radius: 5px;\n  cursor: pointer;\n}\r\n\r\n.single-product-video-title {\n  margin-bottom: 10px;\n}\r\n\r\n.trailers-single-product-list-header {\n  width: 100%;\n  height: 60px;\n  margin-bottom: 30px;\n}\r\n\r\n.trailers-single-product-list-header strong {\n  font-size: 1.2em;\n}\r\n\r\n.trailers-single-product-list {\n  width: 100%;\n  overflow: hidden;\n}\r\n\r\n.trailers-single-product {\n  width: 266px;\n  height: 170px;\n  float: right;\n  border-radius: 5px;\n  margin-left: 20px;\n  overflow: hidden;\n  position: relative;\n}\r\n\r\n.trailers-single-product img {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  right: 0;\n}\r\n\r\n.trailers-single-product-top-layer {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  right: 0;\n  background: linear-gradient( to bottom, rgba(216, 216, 216, 0.4) 0%, rgba(0, 0, 0, 0.5) 100%);\n}\r\n\r\n.trailers-single-product-top-layer span {\n  display: block;\n  width: 40px;\n  height: 42px;\n  font-size: 1.8em;\n  text-align: center;\n  border-radius: 50%;\n  border: solid 2px #fff;\n  margin: 64px auto;\n  color: #fff;\n  transition: all 0.1s ease-out;\n  padding-left: 2px;\n}\r\n\r\n.trailers-single-product-top-layer span:before {\n  line-height: 42px;\n}\r\n\r\n.trailers-single-product-top-layer:hover span {\n  background: rgba(0, 0, 0, 0.6);\n  color: #fff;\n  border-color: #eb0089;\n}\r\n\r\n.single-product-tv-show-status {\n  width: 100%;\n  overflow: hidden;\n}\r\n\r\n.single-product-tv-show-status p {\n  width: 100%;\n  font: 500 0.8em/30px \"IRSans\", Sans-serif;\n  color: #737373;\n}\r\n\r\n.single-product-tv-show-status p span {\n  font-weight: 300;\n}\r\n\r\n.single-product-tv-show-status p span.red {\n  color: #ff5b5b;\n}\r\n\r\n.single-product-tv-show-status p span.blue {\n  color: #5ab0fc;\n}\r\n\r\n.single-product-tv-show-status p span.green {\n  color: #00a69c;\n}\r\n\r\n/*\n\n>> COMMENTS\n\n*/\r\n\r\n#comments {\n  width: 100%;\n  overflow: hidden;\n}\r\n\r\n#comments h2 {\n  font: 1em \"IRSans\";\n  font-weight: 500;\n  line-height: 35px;\n  color: #464646;\n  margin-top: 20px;\n}\r\n\r\n.commentlist {\n  width: 100%;\n  overflow: hidden;\n  margin-top: 20px;\n}\r\n\r\n.commentlist .comment {\n  width: 100%;\n  overflow: hidden;\n  margin-bottom: 25px;\n  color: #737373;\n  font-family: \"IRSans\", Sans-serif, serif;\n}\r\n\r\n.commentlist .comment .avatar {\n  display: block;\n  width: 30px;\n  height: 30px;\n  border-radius: 100%;\n  float: right;\n  margin-left: 10px;\n  margin-top: 10px;\n}\r\n\r\n.commentlist .comment .meta {\n  line-height: 30px;\n}\r\n\r\n.commentlist .comment .meta strong {\n  font-size: 0.9em;\n  font-weight: 500;\n  line-height: 30px;\n  color: #464646;\n}\r\n\r\n.commentlist .comment .meta time {\n  font-size: 0.7em;\n  font-weight: 200;\n  line-height: 30px;\n}\r\n\r\n.commentlist .comment .meta span {\n  font-weight: 200;\n  font-size: 0.7em;\n  line-height: 30px;\n  color: #caa7c1;\n}\r\n\r\n.commentlist .comment .description {\n  font-size: 0.8em;\n  font-weight: 200;\n  line-height: 25px;\n}\r\n\r\n#review_form .comment-form {\n  width: 100%;\n  overflow: hidden;\n  margin-top: 10px;\n  padding-bottom: 70px;\n}\r\n\r\n#review_form h3 {\n  font: 1em \"IRSans\";\n  font-weight: 500;\n  line-height: 35px;\n  color: #464646;\n}\r\n\r\n#review_form .comment-text-box {\n  display: block;\n  width: 500px;\n  border-radius: 5px;\n  padding-right: 15px;\n  margin-bottom: 5px;\n  margin-top: 5px;\n  font: 0.73em \"IRSans\";\n  font-weight: 500;\n  line-height: 25px;\n  padding-top: 15px;\n  transition: all 0.3s ease-out;\n  overflow: hidden;\n  box-sizing: content-box;\n  border: solid 2px #eee;\n}\r\n\r\n#review_form .name-email {\n  display: inline-block;\n  width: 257px;\n  height: 50px;\n  border-radius: 5px;\n  padding-right: 15px;\n  margin-bottom: 5px;\n  margin-top: 5px;\n  font: 0.73em \"IRSans\";\n  font-weight: 500;\n  line-height: 30px;\n  transition: all 0.3s ease-out;\n  box-sizing: border-box;\n  border: solid 2px #eee;\n  margin-left: 5px;\n}\r\n\r\n#review_form .submit {\n  position: absolute;\n  display: inline-block;\n  padding: 0 30px;\n  height: 45px;\n  border-radius: 5px;\n  border: none;\n  cursor: pointer;\n  font: 0.73em \"IRSans\";\n  font-weight: 500;\n  line-height: 40px;\n  margin-top: 5px;\n  margin-bottom: 5px;\n  transition: all 0.3s ease-out;\n  text-align: center;\n  color: #fff;\n  background: #00a69c;\n}\r\n\r\n/*\n\n>> MUSIC SINGLE\n\n*/\r\n\r\n.spi-music-cover-large img {\n  display: block;\n  width: 185px;\n  height: 185px;\n  position: absolute;\n  left: 20px;\n  top: 14px;\n}\r\n\r\n.spi-music-cover-large-top-layer {\n  display: block;\n  width: 185px;\n  height: 185px;\n  position: absolute;\n  left: 20px;\n  top: 14px;\n  z-index: 9;\n  background: linear-gradient( to bottom, rgba(205, 205, 205, 0.6) 0%, rgba(205, 205, 205, 0) 100%);\n}\r\n\r\n/*\n\n>> MUSIC VIDEO SINGLE\n\n*/\r\n\r\n.music-video-list {\n  width: 100%;\n  height: 40px;\n  margin-top: 10px;\n  margin-bottom: 10px;\n}\r\n\r\n.music-video-list span {\n  display: block;\n  width: 25px;\n  height: 25px;\n  float: right;\n  font: 500 0.7em/25px \"IRSans\", Sans-serif;\n  color: #737373;\n  text-align: center;\n  margin-left: 10px;\n  border-radius: 50%;\n  background: #f2f2f2;\n  margin-top: 7px;\n}\r\n\r\n.music-video-list strong {\n  display: block;\n  float: right;\n  font: 500 0.8em/40px \"IRSans\", Sans-serif;\n  color: #737373;\n}\r\n\r\n/*\n\n>> GAME SINGLE\n\n*/\r\n\r\n.game-details {\n  font: 300 0.73em/20px \"IRSans\", Sans-serif;\n  color: #737373;\n}\r\n\r\n.game-details p {\n  direction: rtl;\n}\r\n\r\n.game-details strong {\n  font-weight: 500;\n}\r\n\r\n/*\n\n>> LOGIN AND REGISTER\n\n*/\r\n\r\n.right-login-side {\n  width: 35%;\n  float: right;\n}\r\n\r\n.right-login-side a {\n  font: 300 0.85em/30px \"IRSans\", Sans-serif;\n  color: #3492e3;\n}\r\n\r\n.left-register-side {\n  width: 65%;\n  float: left;\n  padding-right: 5%;\n  box-sizing: border-box;\n}\r\n\r\n.login-register-meta-details {\n  width: 100%;\n  font: 300 0.85em/30px \"IRSans\", Sans-serif;\n  color: #737373;\n  text-align: justify;\n  margin-bottom: 20px;\n}\r\n\r\n.login-form-container {\n  display: block;\n  width: 100%;\n  padding: 20px;\n  box-sizing: border-box;\n  border-radius: 5px;\n  background: #f2f2f2;\n  margin-bottom: 20px;\n}\r\n\r\n.login-form-container input[type=\"text\"], .login-form-container input[type=\"email\"], .login-form-container input[type=\"password\"] {\n  display: block;\n  width: 100%;\n  height: 50px;\n  border: none;\n  font: 500 0.75em/50px \"IRSans\", Sans-serif;\n  color: #898989;\n  background: none;\n  border-bottom: solid 2px #e6e6e6;\n  box-sizing: border-box;\n  transition: all 0.3s cubic-bezier(0, 0, 0.55, 1.21);\n  margin-bottom: 20px;\n}\r\n\r\n.login-form-container input[type=\"text\"]:focus, .login-form-container input[type=\"email\"]:focus, .login-form-container input[type=\"password\"]:focus {\n  border-color: #999999;\n}\r\n\r\n.login-submit-btn {\n  display: block;\n  width: 100%;\n  height: 50px;\n  border-radius: 50px;\n  background: #00a69c;\n  color: #fff;\n  font: 500 0.8em/50px \"IRSans\", Sans-serif;\n  margin: 10px auto 0;\n  text-align: center;\n  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);\n  transition: all 0.2s ease-out;\n  border: none;\n  cursor: pointer;\n}\r\n\r\n.login-submit-btn:hover {\n  background-color: #fff;\n  color: #00a69c;\n  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);\n}\r\n\r\n.login-form-container p {\n  display: block;\n  height: 40px;\n  width: 100%;\n  font: 500 0.85em/40px \"IRSans\", Sans-serif;\n  color: #737373;\n  cursor: pointer;\n  margin-bottom: 10px;\n}\r\n\r\n.login-form-container p label {\n  display: block;\n}\r\n\r\n.login-form-container p input[type=\"checkbox\"] {\n  display: block;\n  float: right;\n  margin-left: 10px;\n  width: 15px;\n  height: 15px;\n  margin-top: 12px;\n}\r\n\r\n.register-form-container {\n  width: 500px;\n  margin: 0 auto 20px;\n  background: #fff;\n}\r\n\r\n/*\n\n>> CART\n\n*/\r\n\r\n.shop-table-cart {\n  width: 100%;\n  display: block;\n  overflow: hidden;\n  margin-bottom: 20px;\n}\r\n\r\n.shop-table-cart thead {\n  display: block;\n  width: 100%;\n  height: 50px;\n}\r\n\r\n.shop-table-cart thead th {\n  padding: 0;\n  margin: 0;\n  text-align: right;\n  font: 500 0.85em/50px \"IRSans\", Sans-serif;\n  color: #464646;\n}\r\n\r\n.shop-table-cart thead tr {\n  display: block;\n  width: 100%;\n  height: 45px;\n  vertical-align: baseline;\n}\r\n\r\n.shop-table-cart thead .product-thumbnail {\n  width: 124px;\n}\r\n\r\n.shop-table-cart thead .product-name {\n  width: 400px;\n}\r\n\r\n.shop-table-cart .cart_item .product-name {\n  width: 400px;\n  padding-right: 20px;\n  box-sizing: border-box;\n}\r\n\r\n.shop-table-cart thead .product-price {\n  width: 240px;\n}\r\n\r\n.shop-table-cart .cart_item .product-price {\n  width: 240px;\n}\r\n\r\n.shop-table-cart thead .product-quantity {\n  width: 100px;\n}\r\n\r\n.shop-table-cart .cart_item .product-quantity {\n  width: 100px;\n}\r\n\r\n.shop-table-cart thead .product-subtotal {\n  width: 240px;\n}\r\n\r\n.shop-table-cart .cart_item .product-subtotal {\n  width: 240px;\n}\r\n\r\n.shop-table-cart thead .product-remove {\n  width: 45px;\n}\r\n\r\n.shop-table-cart .cart_item .product-remove {\n  width: 45px;\n}\r\n\r\n.shop-table-cart th {\n  text-transform: uppercase;\n}\r\n\r\n.shop-table-cart tbody {\n  display: block;\n  width: 100%;\n  overflow: hidden;\n  font: 500 0.8em/50px \"IRSans\", Sans-serif;\n  color: #737373;\n  text-align: right;\n}\r\n\r\n.shop-table-cart tbody tr {\n  display: block;\n  width: 100%;\n  height: 90px;\n  margin-bottom: 20px;\n  border-bottom: solid 1px #eee;\n  padding-bottom: 20px;\n}\r\n\r\n.shop-table-cart .product-thumbnail {\n  width: 124px;\n}\r\n\r\n.shop-table-cart .product-thumbnail img {\n  max-width: 100px;\n  max-height: 100px;\n}\r\n\r\n.shop-table-cart .cart_item .quantity input[type=\"number\"] {\n  display: inline-block;\n  width: 40px;\n  height: 45px;\n  border-radius: 5px;\n  padding-right: 15px;\n  font: 0.8em \"IRSans\";\n  font-weight: 500;\n  margin: auto;\n  border: solid 2px #eee;\n}\r\n\r\n.shop-table-cart .cart_item .product-price, .shop-table-cart .cart_item .product-subtotal {\n  text-align: right;\n}\r\n\r\n.shop-table-cart .cart_item .product-name a {\n  transition: all 0.2s ease-out;\n  color: #737373;\n}\r\n\r\n.shop-table-cart .cart_item .product-remove a {\n  font-size: 1.7em;\n  text-align: center;\n  color: #ff5b5b;\n}\r\n\r\n.spi-music-cover-cart img {\n  display: block;\n  width: 78px;\n  height: 78px;\n  position: absolute;\n  left: 8px;\n  top: 6px;\n}\r\n\r\n.final-options {\n  width: 100%;\n  overflow: hidden;\n  padding: 20px;\n  box-sizing: border-box;\n  border-radius: 5px;\n  background: #f7f7f7;\n}\r\n\r\n.coupon-form {\n  display: block;\n  width: 300px;\n  height: 50px;\n  float: right;\n}\r\n\r\n.coupon-form input[type=\"text\"] {\n  display: block;\n  float: right;\n  height: 50px;\n  width: 200px;\n  background: none;\n  border: none;\n  border-bottom: solid 2px #e6e6e6;\n  box-sizing: border-box;\n  transition: all 0.3s cubic-bezier(0, 0, 0.55, 1.21);\n  color: #898989;\n  font: 500 0.75em/50px \"IRSans\", Sans-serif;\n}\r\n\r\n.coupon-form input[type=\"text\"]:focus {\n  border-color: #999999;\n}\r\n\r\n.coupon-form input[type=\"submit\"] {\n  display: block;\n  width: 90px;\n  height: 50px;\n  text-align: center;\n  font: 500 0.75em/50px \"IRSans\", Sans-serif;\n  color: #898989;\n  background: #e6e6e6;\n  float: left;\n  border-radius: 50px;\n  border: none;\n  cursor: pointer;\n}\r\n\r\n.finish-shopping {\n  display: inline-block;\n  float: left;\n  padding: 0 30px;\n  height: 50px;\n  border-radius: 50px;\n  background: #00a69c;\n  color: #fff;\n  font: 500 0.8em/50px \"IRSans\", Sans-serif;\n  text-align: center;\n  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);\n  transition: all 0.2s ease-out;\n  border: none;\n  cursor: pointer;\n  margin-right: 20px;\n}\r\n\r\n.finish-shopping:hover {\n  background-color: #fff;\n  color: #00a69c;\n  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);\n}\r\n\r\n.final-cost {\n  display: inline-block;\n  float: left;\n  height: 50px;\n  margin-right: 20px;\n  font: 500 1em/50px \"IRSans\", Sans-serif;\n  color: #00a69c;\n}\r\n\r\n.packing-type {\n  display: inline-block;\n  height: 50px;\n  float: left;\n  font: 500 0.8em/50px \"IRSans\", Sans-serif;\n  color: #464646;\n}\r\n\r\n.packing-type select {\n  border: solid 2px #e6e6e6;\n  height: 50px;\n  padding: 0 10px;\n  color: #464646;\n  border-radius: 5px;\n  background: none;\n}\r\n\r\n/*\n\n>> FINAL CODES > 01\n\n*/\r\n\r\n.left-five {\n  left: 5px;\n}\r\n\r\n.right-five {\n  right: 5px;\n}\r\n\r\n/* Mobile Search*/\r\n\r\n.mobile-search-icon {\n  width: 35px;\n  height: 35px;\n  position: absolute;\n  left: 20px;\n  border-top-left-radius: 5px;\n  border-bottom-left-radius: 5px;\n  background: url(static/img/search.svg) no-repeat center;\n}\r\n\r\n.mobile-search-icon:hover {\n  cursor: pointer;\n}\r\n\r\n.mobile-search-dropdown-content {\n  position: absolute;\n  background-color: #f9f9f9;\n  overflow: auto;\n  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);\n  z-index: 21;\n  top: 145px;\n  border-bottom-left-radius: 5px;\n  border-bottom-right-radius: 5px;\n  right: 20px;\n  left: 20px;\n}\r\n\r\n.mobile-search-dropdown-content a {\n  color: black;\n  text-decoration: none;\n  display: block;\n  text-align: right;\n}\r\n\r\n.mobile-search-dropdown-content a:hover {\n  color: black;\n  cursor: pointer;\n}\r\n\r\n.mobile-search-result-li {\n  display: inline-block;\n  border-bottom: 1px solid;\n  border-color: rgba(0, 0, 0, 0.1);\n  width: 100%;\n}\r\n\r\n.mobile-search-result-li div {\n  width: 100%;\n}\r\n\r\n.mobile-search-result-li {\n  display: inline-block;\n  border-bottom: 1px solid;\n  border-color: rgba(0, 0, 0, 0.2);\n}\r\n\r\n.mobile-search-result-li div {\n  display: inline-block;\n}\r\n\r\n.mobile-search-result-li img {\n  width: 20%;\n  float: right;\n}\r\n\r\n.mobile-search-result-li span {\n  display: inline-block;\n  width: 70%;\n  padding-right: 5px;\n}\r\n\r\n.mobile-search-result-li span div {\n  padding-bottom: 6px;\n  font-size: 18px;\n}\r\n\r\n.mobile-search-result-li span span {\n  font-size: 12px;\n}\r\n\r\n.mobile-search-result {\n  width: 100%;\n  max-height: 600px;\n}\r\n\r\n.mobile-search {\n  padding-bottom: 10px;\n  display: none;\n}\r\n\r\n.dropdown {\n  position: relative;\n  display: inline-block;\n}\r\n\r\n.dropdown-content {\n  display: none;\n  position: absolute;\n  background-color: #f9f9f9;\n  min-width: 100px;\n  overflow: auto;\n  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);\n  z-index: 1;\n  top: 73px;\n  left: 0px;\n  border-radius: 5px;\n  font-size: 11px;\n  z-index: 4;\n}\r\n\r\n.dropdown-content a {\n  color: #eb0089;\n  padding: 12px 16px;\n  text-decoration: none;\n  display: block;\n  text-align: center;\n}\r\n\r\n.dropdown-content a:hover {\n  background-color: #eb0089;\n  color: white;\n  cursor: pointer;\n}\r\n\r\n.movie-list {\n  display: inline-block;\n  padding-right: 40px;\n  padding-left: 40px;\n  width: calc(100% - 80px);\n  direction: rtl;\n}\r\n\r\n/*\n\n>> RESPONSIVE >> 1240px\n\n*/\r\n\r\n@media all and (max-width: 1240px) {\n  .top-moviez {\n    width: 980px;\n  }\n  .header-menu ul li {\n    margin-right: 10px;\n  }\n  .header-menu ul li a span {\n    display: none;\n  }\n  .header-menu ul li a {\n    padding-right: 15px;\n  }\n  .header-bag, .header-login-win, .header-login, .header-search {\n    margin-right: 5px;\n  }\n  .header-search-drop {\n    width: 290px;\n  }\n  .spacail-products .spacail-products-inner .spacail-product {\n    width: 326px;\n  }\n  .spacail-product-inner {\n    width: 100%;\n    box-sizing: border-box;\n    border-right: 5px solid #fff;\n    border-left: 5px solid #fff;\n  }\n  .left-five {\n    left: auto;\n  }\n  .right-five {\n    right: auto;\n  }\n  /* >> LAST CONTENT  */\n  .last-content-container {\n    height: auto;\n    overflow: hidden;\n  }\n  .last-content-tabs {\n    width: 100%;\n    float: none;\n  }\n  .last-content-right-tabs {\n    float: none;\n    width: 100%;\n    background: none;\n    height: 65px;\n    margin-bottom: 20px;\n  }\n  .last-content-right-tabs ul {\n    float: none;\n    width: 100%;\n  }\n  .last-content-right-tabs ul li {\n    float: right;\n    width: 16.6666666666667%;\n  }\n  .last-content-right-tabs ul li a {\n    border-right: none;\n    border-bottom: 3px solid #f2f2f2;\n  }\n  .last-content-right-tabs ul li a strong {\n    font-size: 0.75em;\n    word-spacing: -1px;\n  }\n  /* >> CONTENT */\n  .content-inner {\n    width: 100%;\n    box-sizing: border-box;\n  }\n  .index-news-post-inner {\n    width: 400px;\n  }\n  .product-post-vetical {\n    width: 206px;\n  }\n  .product-post-vetical .product-post-cover, .product-post-horizonal .product-post-cover {\n    width: 160px;\n    height: 160px;\n  }\n  .product-post-vetical .product-post-cover img, .product-post-horizonal .product-post-cover img {\n    width: 103px;\n    height: 150px;\n  }\n  .product-post-vetical .product-post-title {\n    font-size: 0.85em;\n  }\n  .product-post-vetical .product-post-meta {\n    font-size: 0.7em;\n  }\n  .product-post-vetical .product-post-bottom .product-post-bottom-price, .product-post-horizonal .product-post-bottom .product-post-bottom-price {\n    font-size: 0.8em;\n  }\n  .product-post-vetical .product-post-bottom .product-post-bottom-score, .product-post-horizonal .product-post-bottom .product-post-bottom-score {\n    display: none;\n  }\n  .spi-music-cover {\n    width: 170px;\n    height: 123px;\n    padding-bottom: 0;\n  }\n  .spi-music-cover img, .spi-music-cover-top-layer {\n    width: 106px;\n    height: 105px;\n    left: 12px;\n    top: 8px;\n  }\n  .product-post-vetical .spi-music-cover {\n    margin-bottom: 38px;\n  }\n  .product-post-horizonal .product-post-bottom {\n    width: 435px;\n  }\n  .single-product-right {\n    width: 250px;\n  }\n  .single-product-right-img {\n    width: 250px;\n    height: 250px;\n  }\n  .single-product-right-img img {\n    width: 163px;\n    height: 235px;\n    top: 4px;\n    left: 10px;\n  }\n  .single-product-gallery-img, .single-product-gallery-img img {\n    width: 55px;\n    height: 55px;\n  }\n  .spi-music-cover-large {\n    width: 250px;\n    height: 182px;\n  }\n  .spi-music-cover-large img, .spi-music-cover-large-top-layer {\n    width: 153px;\n    height: 153px;\n    left: 17px;\n    top: 12px;\n  }\n  .single-product-left {\n    width: 300px;\n  }\n  .single-product-news-letter-title {\n    font-size: 0.7em;\n    letter-spacing: -0.1px;\n  }\n  .single-product-title {\n    font-size: 1em;\n  }\n  .single-product-movie-popular-inner {\n    width: 100%;\n    border-right: 10px solid #fff;\n    border-left: 10px solid #fff;\n    box-sizing: border-box;\n  }\n  .trailers-single-product {\n    margin-bottom: 20px;\n  }\n  /* >> BLOG */\n  .archive-wp-post-img {\n    width: 250px;\n    height: 158px;\n  }\n  .archive-wp-post-inner {\n    width: 350px;\n  }\n  .archive-wp-post-inner-title {\n    font: 500 0.85em/30px \"IRSans\", Sans-serif;\n  }\n  .archive-wp-post-inner-short-text {\n    font: 300 0.75em/25px \"IRSans\", Sans-serif;\n  }\n  .single-pages-header-border-left {\n    display: none;\n  }\n}\r\n\r\n/*\n\n>> RESPONSIVE >> 1000px\n\n*/\r\n\r\n.show-main-menu-btn {\n  display: none;\n  width: 45px;\n  height: 45px;\n  border-radius: 50%;\n  color: #eb0089;\n  margin-top: 27px;\n  float: right;\n  cursor: pointer;\n  margin-left: 20px;\n  font-size: 1em;\n  text-align: center;\n  transition: all 0.3s cubic-bezier(0, 0, 0.68, -0.07);\n}\r\n\r\n.show-main-menu-btn:before {\n  line-height: 45px;\n}\r\n\r\n.show-main-menu-btn:hover {\n  background-color: #e2e2e2;\n}\r\n\r\n@media all and (max-width: 1000px) {\n  .top-moviez {\n    width: 800px;\n  }\n  /* >> HEADER */\n  .header-menu {\n    display: inline-block;\n  }\n  .show-main-menu-btn {\n    display: none;\n  }\n  .header-menu {\n    display: none;\n    width: 250px;\n    position: absolute;\n    height: auto;\n    z-index: 999999999999999999;\n    background: #fff;\n    right: 10%;\n    top: 100px;\n    margin: 0;\n    box-shadow: rgba(0, 0, 0, 0.2) 0 15px 30px;\n    border-radius: 5px;\n    overflow: hidden;\n  }\n  .header-menu ul li {\n    float: none;\n    margin-right: 0;\n    margin-left: 0;\n    width: 100%;\n  }\n  .header-menu ul li a {\n    border-radius: 0;\n  }\n  .header-menu ul li a:hover {\n    background: #eb0089;\n    color: #fff;\n  }\n  /* >> CONTENT */\n  .widget-left {\n    display: none;\n  }\n  .content-inner {\n    float: none;\n    width: 100%;\n  }\n  .spacail-products .spacail-products-inner .spacail-product {\n    width: 400px;\n  }\n  .last-content-right-tabs ul li a span {\n    display: none;\n  }\n  .last-content-right-tabs ul li a strong {\n    display: block;\n    font-size: 0.8em;\n    text-align: center;\n    width: 100%;\n    float: none;\n  }\n  .last-content-post {\n    width: 185px;\n    height: 350px;\n  }\n  .last-content-post-movie-cover {\n    width: 140px;\n    height: 140px;\n  }\n  .last-content-post-movie-cover img {\n    width: 92px;\n    height: 132px;\n    left: 5px;\n  }\n  .last-content-post-music-cover {\n    width: 170px;\n    height: 123px;\n    margin-top: 40px;\n  }\n  .last-content-post-music-cover img, .last-content-post-music-cover-top-layer {\n    width: 107px;\n    height: 107px;\n    left: 11px;\n    top: 8px;\n  }\n  .last-content-post-title {\n    font-size: 0.75em;\n  }\n  .spacail-product-meta {\n    font-size: 0.7em;\n  }\n  .spacail-product-price {\n    font-size: 0.8em;\n  }\n  .index-news-post-inner {\n    width: 540px;\n  }\n  .product-post-vetical {\n    width: 253px;\n  }\n  .product-post-horizonal .product-post-bottom {\n    width: 576px;\n  }\n  .single-product-left {\n    width: 300px;\n  }\n  /* >> BLOG */\n  .archive-wp-post-inner {\n    width: 490px;\n  }\n  /* >> LOGIN _ REGISTER */\n  .register-form-container {\n    width: 100%;\n  }\n}\r\n\r\n/*\n\n>> RESPONSIVE >> 840px\n\n*/\r\n\r\n@media all and (max-width: 840px) {\n  .top-moviez {\n    width: 700px;\n  }\n  .mobile-search {\n    display: block;\n  }\n  .search-container {\n    display: none;\n  }\n  /* >> CONTENT */\n  .top-moviez-post-add {\n    top: 99px;\n  }\n  .spacail-products .spacail-products-inner .spacail-product {\n    width: 350px;\n  }\n  .last-content-post {\n    border-radius: 0;\n    background: #f7f7f7;\n    margin-left: 0;\n    width: 350px;\n    border: solid 10px #fff;\n    height: 370px;\n  }\n  .index-news-post-inner {\n    width: 440px;\n  }\n  .product-post-vetical {\n    width: 213px;\n  }\n  .single-product-left {\n    width: 300px;\n  }\n  .product-post-horizonal .product-post-bottom {\n    width: 150px;\n  }\n  /* >> BLOG */\n  .archive-wp-post-inner {\n    width: 390px;\n  }\n  /* >> CART */\n  .coupon-form {\n    width: 200px;\n  }\n  .coupon-form input[type=\"text\"] {\n    width: 110px;\n  }\n  .finish-shopping, .final-cost {\n    margin-right: 15px;\n  }\n  .packing-type select {\n    width: 100px;\n  }\n}\r\n\r\n/*\n\n>> RESPONSIVE >> 750px\n\n*/\r\n\r\n@media all and (max-width: 750px) {\n  .header-inner {\n    margin-left: 20px;\n    margin-right: 20px;\n  }\n  .mobile-search {\n    padding-right: 20px;\n    padding-left: 20px;\n  }\n  .movie-list {\n    padding-right: 5px;\n    padding-left: 5px;\n    width: calc(100% - 10px);\n  }\n  .top-moviez {\n    width: 500px;\n  }\n  /* >> HEADER */\n  .header-inner .logo, .header-inner .logo img {\n    max-width: 130px;\n  }\n  .header-bag, .header-login-win, .header-login, .header-search {\n    margin-right: 2px;\n  }\n  /* >> CONTENT */\n  .spacail-products .spacail-products-inner .spacail-product {\n    width: 250px;\n  }\n  .spacail-product-title {\n    font-size: 0.8em;\n  }\n  .last-content-right-tabs ul li a {\n    border-bottom: none;\n    border-radius: 5px;\n    background: #f7f7f7;\n  }\n  .last-content-right-tabs ul li {\n    width: 33.3333333333333%;\n    margin-bottom: 10px;\n    padding: 0 5px;\n    box-sizing: border-box;\n  }\n  .last-content-right-tabs ul .current a {\n    color: #fff;\n    background: #eb0089;\n  }\n  .last-content-post {\n    width: 250px;\n    border: 5px #fff solid;\n  }\n  .index-news-post-img {\n    display: none;\n  }\n  .index-news-post-img {\n    float: none;\n    width: 100%;\n  }\n  .product-post-vetical {\n    width: 250px;\n    margin-left: 0;\n    margin-bottom: 0;\n    border-radius: 0;\n  }\n  .single-product-left {\n    width: 100%;\n    float: none;\n  }\n  .single-product-right {\n    float: none;\n    width: 100%;\n    margin-bottom: 20px;\n  }\n  .single-product-right-img {\n    margin: auto;\n  }\n  .single-product-gallery {\n    width: 250px;\n    margin: 20px auto 0;\n  }\n  .single-product-news-letter-title {\n    font-size: 0.8em;\n  }\n  .single-product-movie-popular-inner {\n    border-right: solid 5px #fff;\n    border-left: solid 5px #fff;\n  }\n  /* >> BLOG */\n  .archive-wp-post-img {\n    width: 180px;\n    height: 114px;\n  }\n  .archive-wp-post-inner {\n    width: 260px;\n  }\n  .archive-wp-post-inner-title {\n    font-size: 0.75em;\n  }\n  .archive-wp-post-inner-short-text {\n    font-size: 0.65em;\n    line-height: 20px;\n  }\n  .archive-wp-post-inner-meta p span {\n    font-size: 0.7em;\n  }\n  .archive-wp-post-inner-meta p strong {\n    font-size: 0.7em;\n  }\n  /* >> LOGIN _ REGISTER */\n  .right-login-side {\n    width: 100%;\n    float: none;\n    margin-bottom: 20px;\n  }\n  .left-register-side {\n    width: 100%;\n    float: none;\n    padding-right: 0;\n  }\n  /* >> COMMENTS */\n  #review_form .comment-text-box {\n    width: 100%;\n    box-sizing: border-box;\n  }\n}\r\n\r\n/*\n\n>> RESPONSIVE >> 520px\n\n*/\r\n\r\n@media all and (max-width: 520px) {\n  .top-moviez {\n    width: 380px;\n  }\n  .header-category {\n    margin-top: 10px;\n    right: calc(50% - 60px);\n    position: absolute;\n    margin-right: 0px;\n  }\n  .mobile-search-dropdown-content {\n    top: 105px;\n    right: 10px;\n  }\n  /* >> HEADER */\n  header#header, .header-inner {\n    height: 65px;\n  }\n  .vodio-logo {\n    margin-top: 7px;\n  }\n  .header-inner .logo {\n    display: block;\n    float: right;\n    margin: 0 auto 0;\n    padding-top: 0px;\n  }\n  .header-menu {\n    right: 5px;\n    top: 135px;\n  }\n  .header-inner .logo, .header-inner .logo img {\n    max-width: 130px;\n  }\n  .header-left {\n    width: 100%;\n    float: none;\n    display: block;\n  }\n  .header-bag, .header-login-win, .header-login, .header-search {\n    margin-right: 5px;\n  }\n  .header-left-meta {\n    padding-right: 10px;\n    margin-top: 10px;\n  }\n  .show-main-menu-btn {\n    margin-top: 10px;\n    float: right;\n  }\n  /* >> CONTENT */\n  .style-posts-change {\n    display: none;\n  }\n  .content-container {\n    margin: 5px;\n  }\n  .top-moviez-post-add {\n    top: 110px;\n  }\n  .spacail-products .spacail-products-inner .spacail-product {\n    width: 380px;\n    border: none;\n  }\n  .last-content-post {\n    width: 100%;\n    border: none;\n    margin-bottom: 10px;\n  }\n  .index-news-post-inner {\n    width: 100%;\n  }\n  .product-post-vetical {\n    width: 100%;\n    border-bottom: solid 1px #eee;\n  }\n  .product-post-vetical .product-post-cover, .product-post-horizonal .product-post-cover {\n    width: 200px;\n    height: 200px;\n  }\n  .product-post-vetical .product-post-cover img, .product-post-horizonal .product-post-cover img {\n    width: 131px;\n    height: 189px;\n  }\n  .product-post-vetical .product-post-title {\n    font-size: 0.95em;\n  }\n  .spi-music-cover {\n    width: 200px;\n    height: 145px;\n  }\n  .spi-music-cover img, .spi-music-cover-top-layer {\n    width: 126px;\n    height: 125px;\n    left: 13px;\n    top: 9px;\n  }\n  .single-product-order-option-season-header strong {\n    font-size: 0.75em;\n    letter-spacing: -0.2px;\n  }\n  /* >> BLOG */\n  .archive-wp-post-img {\n    width: 340px;\n    height: 215px;\n    float: none;\n    margin-bottom: 20px;\n  }\n  .archive-wp-post-inner {\n    float: none;\n    width: 100%;\n  }\n  .content-page-title {\n    height: auto;\n    overflow: hidden;\n  }\n}\r\n\r\n/*\n\n>> RESPONSIVE >> 400px\n\n*/\r\n\r\n@media all and (max-width: 414px) {\n  .header-inner {\n    margin-left: 0px;\n    margin-right: 0px;\n  }\n  .movie-list {\n    padding-right: 0px;\n    padding-left: 0px;\n    width: 100%;\n  }\n  .mobile-search {\n    padding-right: 0px;\n    padding-left: 0px;\n  }\n  .header-search-drop {\n    top: 65px;\n    width: 100%;\n  }\n  .search-dropdown-content {\n    top: 113px;\n    width: 100%;\n  }\n  .header-search-close, .search-header-submit {\n    width: 15%;\n  }\n  .top-moviez {\n    width: 320px;\n  }\n  /* >> HEADER */\n  .header-bag, .header-login-win, .header-login, .header-search {\n    margin-right: 0;\n  }\n  .header-left-meta {\n    padding-right: 5px;\n    margin-top: 10px;\n  }\n  .show-main-menu-btn {\n    margin-top: 10px;\n    margin-left: 5px;\n  }\n  /* >> CONTENT */\n  .top-moviez-post-add {\n    top: 88px;\n  }\n  .last-content-right-tabs ul li a strong {\n    font-size: 0.75em;\n  }\n  .spacail-products .spacail-products-inner .spacail-product {\n    width: 320px;\n    border: none;\n  }\n  .single-product-header-meta .single-product-add-to-watched {\n    display: none;\n  }\n  .single-product-dec-header ul li {\n    font-size: 0.7em;\n  }\n  .single-product-dec-header ul li a {\n    padding: 0 10px;\n  }\n  /* >> BLOG */\n  .archive-wp-post-img {\n    width: 280px;\n    height: 177px;\n  }\n}\r\n\r\n/*\n\n>> FINAL CODES > 02\n\n*/\r\n\r\n.margin-left-none {\n  margin-left: 0;\n  left: 0;\n}\r\n\r\n.margin-right-none {\n  margin-right: 0;\n  right: 0;\n}\r\n\r\n.space-between {\n  height: 10px;\n  background: url(static/img/space.png);\n  margin-bottom: 30px;\n}\r\n\r\n.home-menu-title {\n  display: inline;\n}\r\n\r\n#tab-detail {\n  cursor: pointer;\n}\r\n\r\n#tab-comment {\n  cursor: pointer;\n}\r\n\r\n.inline-class {\n  display: inline !important;\n  color: white;\n}\r\n\r\n.header-menu-ul {\n  align-items: center;\n}\r\n\r\n.top-moviez-post {\n  overflow: hidden;\n  border-radius: 10px;\n}\r\n\r\n.header-login-drop {\n  display: none;\n  width: 290px;\n  height: 50px;\n  position: absolute;\n  left: 0;\n  z-index: 100;\n  top: 25px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 2px;\n}\r\n\r\n.header-login-close {\n  width: 45px;\n  height: 45px;\n  left: 0;\n  top: 0;\n  background: url(\"static/img/header-meta-icons.png\") no-repeat bottom;\n}\r\n\r\n.header-login-close:hover {\n  background-color: #ffe7e7;\n}\r\n\r\n.header-login-close, .login-header-submit {\n  border-radius: 50%;\n  cursor: pointer;\n  position: absolute;\n  transition: all 0.3s cubic-bezier(0, 0, 0.68, -0.07);\n}\r\n\r\n.header-login-drop-form {\n  display: block;\n  width: 240px;\n  height: 50px;\n  position: absolute;\n  right: 0;\n  top: 0;\n}\r\n\r\n.login-header-input {\n  display: block;\n  width: 190px;\n  height: 45px;\n  float: right;\n  box-sizing: border-box;\n  border: none;\n  background: none;\n  font: 500 0.7em/50px \"IRSans\", Sans-serif;\n  color: #464646;\n  border-bottom: solid 2px #e2e2e2;\n  text-align: center;\n  margin-right: 5px;\n}\r\n\r\n.login-header-input::-webkit-input-placeholder {\n  color: #eb0089;\n}\r\n\r\n.login-header-input:-moz-placeholder {\n  color: #eb0089;\n}\r\n\r\n.login-header-input-disabled {\n  display: block;\n  width: 190px;\n  height: 45px;\n  float: right;\n  box-sizing: border-box;\n  border: none;\n  background: none;\n  font: 500 0.7em/50px \"IRSans\", Sans-serif;\n  color: #464646;\n  border-bottom: solid 2px #e2e2e2;\n}\r\n\r\n.login-header-input-disabled::-webkit-input-placeholder {\n  color: lightgray;\n}\r\n\r\n.login-header-input-disabled:-moz-placeholder {\n  color: lightgray;\n}\r\n\r\n.login-header-submit {\n  width: 45px;\n  height: 45px;\n  float: left;\n  border: none;\n  background: url(\"static/img/header-meta-icons.png\") 0 -45px;\n}\r\n\r\n.login-header-submit:hover {\n  background-color: #e2e2e2;\n}\r\n\r\n.loader {\n  border: 2px solid #f3f3f3;\n  border-top: 2px solid #eb0089;\n  border-radius: 50%;\n  width: 25px;\n  height: 25px;\n  -webkit-animation: spin 1s linear infinite;\n          animation: spin 1s linear infinite;\n  margin-top: 10px;\n  margin-right: 10px;\n}\r\n\r\n.header-sign-out-panel {\n  width: 45px;\n  height: 45px;\n  float: left;\n  left: 0;\n  top: 0;\n  border-radius: 50%;\n  cursor: pointer;\n  transition: all 0.3s cubic-bezier(0, 0, 0.68, -0.07);\n  background: url(static/img/loged-in.svg) no-repeat;\n  background-size: 30px;\n  background-position: center;\n}\r\n\r\n.header-sign-out {\n  width: 45px;\n  height: 45px;\n  float: left;\n  left: 0;\n  top: 0;\n  border-radius: 50%;\n  cursor: pointer;\n  transition: all 0.3s cubic-bezier(0, 0, 0.68, -0.07);\n  background: url(static/img/loged-in.svg) no-repeat;\n  background-size: 30px;\n  background-position: center;\n}\r\n\r\n.header-sign-out:hover {\n  background-color: #e2e2e2;\n}\r\n\r\n.loader-container {\n  float: left;\n  display: none;\n  width: 45px;\n  height: 45px;\n}\r\n\r\n@-webkit-keyframes spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n  }\n}\r\n\r\n@keyframes spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n  }\n}\r\n\r\n.validation-error {\n  color: red;\n  position: absolute;\n  display: none;\n  font: 500 0.7em/50px \"IRSans\", Sans-serif;\n  right: 150px;\n  margin-top: 5px;\n}\r\n\r\n.comment-date {\n  font: 500 1em/50px \"IRSans\", Sans-serif !important;\n}\r\n\r\n/*List*/\r\n\r\n.row-header {\n  margin: 0px;\n  padding: 0px;\n  display: block;\n  margin-left: 15px;\n  margin-right: 15px;\n  background: #7a2365;\n  border-top-left-radius: 5px;\n  border-top-right-radius: 5px;\n}\r\n\r\n.header_title {\n  display: inline-block;\n  font-weight: bold;\n  font-size: 15px;\n  color: white;\n  font: 17px \"IRSans\", Sans-serif;\n  padding: 5px;\n}\r\n\r\n.list-content-header {\n  display: inline-block;\n  margin: 0 auto;\n  width: 100%;\n  padding-top: 10px;\n}\r\n\r\n.movie-list-item {\n  box-sizing: border-box;\n}\r\n\r\n.movie-list-item-img {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n}\r\n\r\n.movie-list-item-cover {\n  z-index: 2;\n  width: 100%;\n  padding-top: 145%;\n  background-color: #fff;\n  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);\n  background-repeat: no-repeat;\n  background-position: top center;\n  background-size: cover;\n  display: block;\n  position: relative;\n  overflow: hidden;\n  box-sizing: border-box;\n}\r\n\r\n.movie-list-item-title {\n  display: block;\n  width: 100%;\n  text-overflow: ellipsis;\n  overflow: hidden;\n  white-space: nowrap;\n  margin-top: 10px;\n  color: #000;\n  font-size: 12px;\n  font-weight: bold;\n  box-sizing: border-box;\n}\r\n\r\n.movie-list-item-title-persian {\n  line-height: 1.5;\n  color: #393939;\n  font-size: 13px;\n  display: block;\n  width: 100%;\n  text-overflow: ellipsis;\n  overflow: hidden;\n  white-space: nowrap;\n  box-sizing: border-box;\n  padding-bottom: 30px;\n  text-align: center;\n}\r\n\r\n.movie-list-item-title-english {\n  font-weight: normal;\n  text-align: right;\n  line-height: 1.3;\n  margin-top: 5px;\n  color: #aaa;\n  font-size: 11px;\n  display: block;\n  width: 100%;\n  text-overflow: ellipsis;\n  overflow: hidden;\n  white-space: nowrap;\n  box-sizing: border-box;\n  direction: ltr;\n}\r\n\r\n.movie-list-item-link {\n  position: relative;\n  display: block;\n  text-decoration: none;\n  color: #444;\n  cursor: pointer;\n}\r\n\r\n.movie-list-item-link:hover {\n  text-decoration: none;\n}\r\n\r\n.box {\n  position: relative;\n  min-height: 1px;\n  padding-left: 15px;\n  padding-right: 15px;\n  width: 12.5%;\n  float: right;\n}\r\n\r\n.main-holder {\n  margin-left: 0px;\n  margin-right: 0px;\n}\r\n\r\n@media (max-width: 1400px) {\n  .box {\n    width: 14.28%;\n  }\n}\r\n\r\n@media (max-width: 1200px) {\n  .box {\n    width: 16.6%;\n  }\n}\r\n\r\n@media (max-width: 1000px) {\n  .box {\n    width: 25%;\n  }\n}\r\n\r\n@media (max-width: 600px) {\n  .box {\n    width: 33.33333333333333%;\n    padding-left: 5px;\n    padding-right: 5px;\n  }\n  .main-holder {\n    margin-left: 0px;\n    margin-right: 0px;\n  }\n}\r\n\r\n.slide-overlay {\n  display: block;\n  position: relative;\n}\r\n\r\n.slide-prev-container {\n  margin-left: 20px;\n  display: block;\n  position: absolute;\n  z-index: 2;\n  pointer-events: none;\n  top: 50%;\n  width: 40px;\n  height: 40px;\n  pointer-events: visible;\n  background-size: cover;\n  background-position: center;\n  left: 0px;\n  background-color: #eb0089;\n  border-radius: 20px;\n}\r\n\r\n.slide-next-container {\n  display: block;\n  position: absolute;\n  z-index: 2;\n  pointer-events: none;\n  top: 50%;\n  width: 40px;\n  height: 40px;\n  background-color: #eb0089;\n  border-radius: 20px;\n  right: 20px;\n  pointer-events: visible;\n  background-size: cover;\n  background-position: center;\n}\r\n\r\n.slide-next-container-featured {\n  display: block;\n  position: absolute;\n  z-index: 2;\n  pointer-events: none;\n  top: 50%;\n  width: 40px;\n  height: 40px;\n  border-radius: 20px;\n  right: calc(12.5% - 40px);\n  pointer-events: visible;\n  background-size: cover;\n  background-position: center;\n}\r\n\r\n.slide-prev-container-featured {\n  display: block;\n  position: absolute;\n  z-index: 2;\n  pointer-events: none;\n  top: 50%;\n  width: 40px;\n  height: 40px;\n  pointer-events: visible;\n  background-size: cover;\n  background-position: center;\n  left: calc(12.5% - 40px);\n  border-radius: 20px;\n}\r\n\r\n.featured-title-container {\n  position: relative;\n  height: 33px;\n  display: inline-flex;\n  width: 100%;\n}\r\n\r\n.featured-container {\n  background: #1c1c1c;\n  padding-top: 30px;\n  padding-bottom: 30px;\n}\r\n\r\n.featured-container-title-h {\n  font-weight: normal;\n  display: block;\n  font-size: 16px;\n  height: 30px;\n  font-family: irsansbold;\n  width: intrinsic;\n  width: -moz-max-content;\n  width: -webkit-max-content;\n  padding-right: 5px;\n  padding-left: 10px;\n  float: right;\n  z-index: 19;\n  position: absolute;\n  top: 4px;\n  font-size: 18px;\n  right: calc(12.5% + 20px);\n  background: transparent;\n  color: white;\n}\r\n\r\n@media all and (max-width:750px) {\n  .featured-container {\n    background: #1c1c1c;\n    padding-top: 6px;\n    padding-bottom: 20px;\n  }\n  .featured-container-title-h {\n    font-size: 14px;\n    top: 7px;\n  }\n}\r\n\r\n.slide-prev {\n  background: url(static/img/prev.png) no-repeat center;\n  margin: 0 auto;\n  width: 24px;\n  height: 30px;\n  margin: 6px;\n}\r\n\r\n.slide-prev:hover {\n  background: url(static/img/prevHover.png) no-repeat center;\n}\r\n\r\n.slide-next:hover {\n  background: url(static/img/nextHover.png) no-repeat center;\n}\r\n\r\n.slide-prev-featured {\n  background: url(static/img/prev.png) no-repeat center;\n  margin: 0 auto;\n  width: 24px;\n  height: 30px;\n  margin: 6px;\n}\r\n\r\n.slide-prev-featured:hover {\n  background: url(static/img/prevHoverFeatured.png) no-repeat center;\n}\r\n\r\n.slide-next-featured:hover {\n  background: url(static/img/nextHoverFeatured.png) no-repeat center;\n}\r\n\r\n.slide-next-featured {\n  background: url(static/img/next.png) no-repeat center;\n  margin: 0 auto;\n  width: 32px;\n  height: 30px;\n  margin: 6px;\n}\r\n\r\n.slide-next {\n  background: url(static/img/next.png) no-repeat center;\n  margin: 0 auto;\n  width: 32px;\n  height: 30px;\n  margin: 6px;\n}\r\n\r\n.slide-next-container:hover {\n  background: rgba(255, 255, 255, 0.3);\n  border-radius: 25px;\n}\r\n\r\n.slide-prev-container:hover {\n  background: rgba(255, 255, 255, 0.3);\n  border-radius: 25px;\n}\r\n\r\n.top-moviez-slide-title-background {\n  background: #eb0089;\n  height: 1px;\n  position: absolute;\n  top: 50%;\n  left: 5px;\n  right: 20px;\n  z-index: 0;\n}\r\n\r\n.top-moviez-slide-title {\n  font-weight: normal;\n  display: block;\n  font-size: 16px;\n  background: white;\n  height: 30px;\n  font-family: irsansbold;\n  width: intrinsic;\n  width: -moz-max-content;\n  width: -webkit-max-content;\n  padding-right: 5px;\n  padding-left: 10px;\n  float: right;\n  z-index: 19;\n  position: absolute;\n  right: 22px;\n  top: 6px;\n}\r\n\r\n.single-product-left {\n  margin-right: 20px;\n}\r\n\r\n.show {\n  display: block;\n}\r\n\r\n.search-dropdown {\n  position: relative;\n  display: inline-block;\n}\r\n\r\n.search-result {\n  max-height: 600px;\n}\r\n\r\n.search-result ul {\n  margin-bottom: 0px;\n}\r\n\r\n.search-dropdown-content a {\n  color: black;\n  text-decoration: none;\n  display: block;\n  text-align: right;\n}\r\n\r\n.search-dropdown-content a:hover {\n  color: black;\n  cursor: pointer;\n}\r\n\r\n.search-result-li {\n  display: inline-block;\n  padding: 5px;\n  border-bottom: 1px solid;\n  border-color: #eb0089;\n  width: calc(100% - 10px);\n  position: relative;\n}\r\n\r\n.search-result-item {\n  right: 0;\n  top: 0;\n  width: 100%;\n  position: absolute;\n  height: 100%;\n}\r\n\r\n.search-result-li div {\n  display: inline-block;\n}\r\n\r\n.search-result-li img {\n  width: 20%;\n  float: right;\n}\r\n\r\n.search-result-li span {\n  display: inline-block;\n  width: 70%;\n  padding-right: 5px;\n}\r\n\r\n.search-result-li span div {\n  padding-bottom: 6px;\n  font-size: 18px;\n}\r\n\r\n.search-result-li span span {\n  font-size: 12px;\n}\r\n\r\n@-webkit-keyframes shake {\n  10%, 90% {\n    -webkit-transform: translate3d(-1px, 0, 0);\n            transform: translate3d(-1px, 0, 0);\n  }\n  20%, 80% {\n    -webkit-transform: translate3d(2px, 0, 0);\n            transform: translate3d(2px, 0, 0);\n  }\n  30%, 50%, 70% {\n    -webkit-transform: translate3d(-4px, 0, 0);\n            transform: translate3d(-4px, 0, 0);\n  }\n  40%, 60% {\n    -webkit-transform: translate3d(4px, 0, 0);\n            transform: translate3d(4px, 0, 0);\n  }\n}\r\n\r\n@keyframes shake {\n  10%, 90% {\n    -webkit-transform: translate3d(-1px, 0, 0);\n            transform: translate3d(-1px, 0, 0);\n  }\n  20%, 80% {\n    -webkit-transform: translate3d(2px, 0, 0);\n            transform: translate3d(2px, 0, 0);\n  }\n  30%, 50%, 70% {\n    -webkit-transform: translate3d(-4px, 0, 0);\n            transform: translate3d(-4px, 0, 0);\n  }\n  40%, 60% {\n    -webkit-transform: translate3d(4px, 0, 0);\n            transform: translate3d(4px, 0, 0);\n  }\n}\r\n\r\n.no-input-shake {\n  -webkit-animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;\n          animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;\n  -webkit-transform: translate3d(0, 0, 0);\n          transform: translate3d(0, 0, 0);\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n  -webkit-perspective: 1000px;\n          perspective: 1000px;\n}\r\n\r\n.cover-page {\n  background: rgba(0, 0, 0, 0.4);\n  position: fixed;\n  z-index: 20;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n  display: none;\n}\r\n\r\n.search-cover-page {\n  background: rgba(0, 0, 0, 0.4);\n  position: fixed;\n  z-index: 20;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n  display: none;\n}\r\n\r\n.login-cover-page {\n  background: rgba(0, 0, 0, 0.4);\n  position: fixed;\n  z-index: 20;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n  display: none;\n}\r\n\r\n.movie-main-content-detail {\n  margin-top: 40px;\n  width: 51%;\n  display: inline-flex;\n}\r\n\r\n.movie-main-content-story-line {\n  width: 50%;\n  line-height: 2;\n  font-size: 0.9em;\n}\r\n\r\n.movie-main-content-info {\n  padding-top: 40px;\n  width: 25%;\n  margin-right: 2%;\n}\r\n\r\n.movie-main-content-poster {\n  width: 20%;\n  margin-top: 40px;\n  margin-left: 0px;\n  margin-bottom: 30px;\n}\r\n\r\n.movie-main-content-image {\n  width: 70%;\n  border-radius: 5px;\n}\r\n\r\n.movie-main-content-detail-lineheight {\n  line-height: 1.8;\n}\r\n\r\n.send-again {\n  text-align: center;\n  color: white;\n  width: 100%;\n  margin-top: 15px;\n  font-size: 11px;\n}\r\n\r\n.send-again:hover {\n  color: #caa7c1;\n  cursor: pointer;\n}\r\n\r\n.search-img-button {\n  width: 45px;\n  height: 45px;\n  padding: 10px;\n}\r\n\r\n.search-img-button:hover {\n  cursor: pointer;\n}\r\n\r\n.hd-image {\n  width: 30px;\n  height: 24px;\n  fill: #24a59c;\n  float: right;\n  margin-top: 6px;\n}\r\n\r\n.faq {\n  border: 1px solid lightgray;\n  border-radius: 5px;\n  padding: 50px;\n  direction: rtl;\n  margin: 50px;\n}\r\n\r\n.faq-question-title {\n  padding-right: 10px;\n  color: #00a69c;\n}\r\n\r\n.faq-answer {\n  padding-right: 30px;\n  margin-top: 10px;\n  text-align: justify;\n}\r\n\r\n.faq-question-email {\n  height: 40px;\n  border-radius: 3px;\n  border: solid 1px lightgray;\n  width: calc(100% - 10px);\n  padding-right: 10px;\n}\r\n\r\n.faq-name {\n  width: 50%;\n}\r\n\r\n.faq-question-text {\n  width: calc(100% - 20px);\n  margin-top: 5px;\n  border-radius: 3px;\n  height: 200px;\n  border: 1px solid lightgray;\n  padding: 10px;\n}\r\n\r\ninput[type=\"email\"]::-webkit-input-placeholder {\n  /* Chrome/Opera/Safari */\n  color: black;\n}\r\n\r\ninput[type=\"email\"]::-moz-placeholder {\n  /* Firefox 19+ */\n  color: black;\n}\r\n\r\ninput[type=\"email\"]:-ms-input-placeholder {\n  /* IE 10+ */\n  color: black;\n}\r\n\r\ninput[type=\"email\"]:-moz-placeholder {\n  /* Firefox 18- */\n  color: black;\n}\r\n\r\n.faq-send-button {\n  padding: 10px 15px;\n  background: #00a69c;\n  border: 1px solid white;\n  border-radius: 5px;\n  color: white;\n}\r\n\r\n.faq-send-button:active {\n  -webkit-transform: translateY(1px);\n          transform: translateY(1px);\n}\r\n\r\n@media all and (max-width: 750px) {\n  .faq-question-email {\n    width: calc(100% - 30px);\n  }\n  .faq-question-text {\n    width: calc(100% - 40px);\n  }\n  .faq {\n    padding: 10px;\n    margin: 20px;\n    padding-left: 20px;\n  }\n}\r\n\r\n.contact-us-container {\n  border: 1px solid lightgray;\n  margin: 50px;\n  border-radius: 5px;\n  padding: 20px;\n  direction: rtl;\n}\r\n\r\n@media all and (max-width: 520px) {\n  .contact-us-container {\n    margin: 20px;\n    padding: 10px;\n  }\n}\r\n\r\n@media all and (max-width: 414px) {\n  .contact-us-container {\n    margin: 10px;\n    padding: 0px;\n  }\n}\r\n\r\n/*\n\n>> FOOTER\n\n*/\r\n\r\nfooter#footer {\n  width: 100%;\n  padding-bottom: 60px;\n  background: #f2f2f2;\n  direction: rtl;\n  margin-top: 70px;\n}\r\n\r\n.float-top-header {\n  display: block;\n  width: 40px;\n  height: 40px;\n  border-radius: 50%;\n  background: #eb0089;\n  position: absolute;\n  left: 50%;\n  -webkit-transform: translateX(-50%);\n          transform: translateX(-50%);\n  margin-top: -18px;\n  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);\n  color: #fff;\n  transition: all 0.3s cubic-bezier(0, 0, 0.55, 1.21);\n}\r\n\r\n.float-top-header:hover {\n  background: #fff;\n  color: #eb0089;\n}\r\n\r\n.float-top-header span {\n  display: block;\n  position: relative;\n  width: 100%;\n  height: 100%;\n  text-align: center;\n  font-size: 18px;\n}\r\n\r\n.float-top-header span:before {\n  line-height: 40px;\n}\r\n\r\n.footer-content {\n  padding-top: 60px;\n  overflow: hidden;\n  display: inline-block;\n  width: calc(75%);\n  margin-right: calc(12.5%);\n}\r\n\r\n.footer-links {\n  float: right;\n  width: 15%;\n}\r\n\r\n.footer-title {\n  display: block;\n  width: 100%;\n  font: 500 1.1em/40px \"IRSans\", Sans-serif;\n  color: #808080;\n}\r\n\r\n.footer-links ul li {\n  list-style: url(static/img/footer-list-style.png);\n  margin-right: 15px;\n  font: 500 0.75em/40px \"IRSans\", Sans-serif;\n}\r\n\r\n.footer-links ul li a {\n  color: #898989;\n  transition: all 0.1s ease-out;\n}\r\n\r\n.footer-links ul li a:hover {\n  color: #eb0089;\n}\r\n\r\n.footer-contact {\n  width: 25%;\n  float: right;\n  margin-left: 5%;\n}\r\n\r\n.footer-contact-content, .footer-url-finder-download-content, .footer-news-letter-content {\n  width: 100%;\n  font: 500 0.75em/30px \"IRSans\", Sans-serif;\n  color: #898989;\n}\r\n\r\n.footer-contact-content-socail {\n  width: 100%;\n  overflow: hidden;\n  margin-top: 14px;\n}\r\n\r\n.footer-contact-content-socail a {\n  display: block;\n  width: 50px;\n  height: 50px;\n  background: #e6e6e6;\n  float: right;\n  border-radius: 50%;\n  margin-left: 20px;\n  color: #898989;\n  transition: all 0.3s cubic-bezier(0, 0, 0.55, 1.21);\n}\r\n\r\n.footer-contact-content-socail a span {\n  display: block;\n  width: 50px;\n  height: 50px;\n  font-size: 1.1em;\n  text-align: center;\n}\r\n\r\n.footer-contact-content-socail a span:before {\n  line-height: 50px;\n}\r\n\r\n.footer-contact-content-socail .facebook:hover, .footer-contact-content-socail .twitter:hover, .footer-contact-content-socail .instagram:hover, .footer-contact-content-socail .telegram:hover {\n  color: #fff;\n}\r\n\r\n.footer-contact-content-socail .facebook:hover {\n  background: #3350ae;\n}\r\n\r\n.footer-contact-content-socail .twitter:hover {\n  background: #00c4fc;\n}\r\n\r\n.footer-contact-content-socail .instagram:hover {\n  background: #ab835c;\n}\r\n\r\n.footer-contact-content-socail .telegram:hover {\n  background: #23a9fe;\n}\r\n\r\n.footer-url-finder-download {\n  width: calc(30% - 40px);\n  float: right;\n  padding-left: 40px;\n}\r\n\r\n.footer-url-finder-download-content {\n  margin-bottom: 10px;\n}\r\n\r\n.footer-url-finder-download-btn {\n  display: block;\n  width: 170px;\n  height: 50px;\n  background: #7d1d65;\n  border-radius: 50px;\n  color: #fff;\n  margin-bottom: 20px;\n  transition: all 0.3s cubic-bezier(0, 0, 0.55, 1.21);\n}\r\n\r\n.footer-url-finder-download-btn:hover {\n  color: #7d1d65;\n  background: #fff;\n}\r\n\r\n.footer-url-finder-download-btn span {\n  display: block;\n  width: 50px;\n  height: 50px;\n  font-size: 1em;\n  text-align: center;\n  float: right;\n}\r\n\r\n.footer-url-finder-download-btn span:before {\n  line-height: 50px;\n}\r\n\r\n.footer-url-finder-download-btn strong {\n  float: right;\n  font: 500 0.8em/50px \"IRSans\", Sans-serif;\n}\r\n\r\n.footer-news-letter {\n  width: 25%;\n  float: left;\n  overflow: hidden;\n}\r\n\r\n.footer-news-letter-content {\n  margin-bottom: 10px;\n}\r\n\r\n.footer-news-letter-form {\n  width: 100%;\n  height: 50px;\n}\r\n\r\n.footer-news-letter-form-input-bg {\n  width: 300px;\n  height: 50px;\n  position: relative;\n  overflow: hidden;\n}\r\n\r\n.footer-news-letter-form-input-bg .text-input {\n  display: block;\n  position: absolute;\n  width: 240px;\n  height: 50px;\n  border: none;\n  font: 500 0.75em/50px \"IRSans\", Sans-serif;\n  color: #898989;\n  background: none;\n  border-bottom: solid 2px #e6e6e6;\n  box-sizing: border-box;\n  transition: all 0.3s cubic-bezier(0, 0, 0.55, 1.21);\n}\r\n\r\n.footer-news-letter-form-input-bg .text-input:focus {\n  border-color: #999999;\n}\r\n\r\n.footer-news-letter-form-input-bg .submit {\n  display: block;\n  width: 50px;\n  height: 50px;\n  position: absolute;\n  border-radius: 50%;\n  left: 0;\n  top: 0;\n  color: #a1a1a1;\n  background: #e6e6e6;\n  border: none;\n  cursor: pointer;\n  transition: all 0.3s cubic-bezier(0, 0, 0.55, 1.21);\n}\r\n\r\n.footer-news-letter-form-input-bg .submit:hover {\n  background: #555555;\n  color: #fff;\n}\r\n\r\n.footer-news-letter-form-input-bg .submit span {\n  display: block;\n  width: 50px;\n  height: 50px;\n  text-align: center;\n  font-size: 1.1em;\n}\r\n\r\n.footer-news-letter-form-input-bg .submit span:before {\n  line-height: 50px;\n}\r\n\r\n.footer-copyright {\n  width: 100%;\n  height: 40px;\n  text-align: center;\n  font: 300 0.8em/40px \"IRSans\", Sans-serif;\n  color: #959595;\n  padding-top: 50px;\n}\r\n\r\n.odinstudio {\n  display: block;\n  width: 146px;\n  height: 17px;\n  margin: 20px auto 10px;\n  opacity: 0.4;\n  transition: all 0.3s cubic-bezier(0, 0, 0.55, 1.21);\n}\r\n\r\n.odinstudio:hover {\n  opacity: 0.8;\n}\r\n\r\n.vodio-container {\n  padding-top: 100px;\n  width: 1220px;\n  margin-left: calc(50% - 610px);\n  text-align: justify;\n  direction: rtl;\n}\r\n\r\n.question-container {\n  display: flex;\n}\r\n\r\n.faq-question-name {\n  margin-left: 10px;\n  width: calc(100% - 20px);\n}\r\n\r\n.invoice-container {\n  display: inline-flex;\n  width: 100%;\n  border: 1px solid #f3f3f3;\n  border-radius: 5px;\n  position: relative;\n  background: #eee;\n}\r\n\r\n.invoice-detail-container {\n  width: 100%;\n  margin-right: 10px;\n}\r\n\r\n.invoice-title {\n  font-family: irsansbold;\n  font-size: 25px;\n  margin-top: 10px;\n}\r\n\r\n.invoice-price {\n  font-size: 16px;\n  color: #eb0089;\n  margin-top: 8px;\n  font-family: irsansbold;\n}\r\n\r\n.invoice-purchase {\n  position: absolute;\n  left: 10px;\n  bottom: 10px;\n  display: inline-flex;\n}\r\n\r\n.invoice-purchase-btn {\n  font-size: 15px;\n  text-align: center;\n  float: left;\n  background: #00a69c;\n  border-radius: 5px;\n  color: white;\n  border: 0px;\n  margin-top: 15px;\n  cursor: pointer;\n  padding: 9px;\n  display: inline-flex;\n}\r\n\r\n.invoice-description {\n  font-size: 14px;\n  padding-left: 10px;\n  margin-top: 8px;\n}\r\n\r\n@media screen and (max-width: 1350px) {\n  .vodio-container {\n    width: calc(100% - 180px);\n    margin-left: 90px;\n  }\n  .footer-links {\n    width: 20%;\n  }\n  .footer-contact {\n    width: 35%;\n    margin-left: 0px;\n  }\n  .footer-url-finder-download {\n    width: 45%;\n    margin-top: 0px;\n    padding-left: 0px;\n  }\n  .footer-news-letter {\n    width: 45%;\n    margin-top: 0px;\n  }\n}\r\n\r\n/*\n\n>> RESPONSIVE >> 840px\n\n*/\r\n\r\n@media all and (max-width: 1000px) {\n  .vodio-container {\n    width: 580px;\n    margin-left: calc(50% - 260px);\n  }\n  .invoice-purchase {\n    position: absolute;\n    margin-left: 10px;\n    margin-bottom: 10px;\n    display: inline-flex;\n    float: left;\n  }\n  .footer-links {\n    width: 50%;\n  }\n  .footer-contact {\n    width: 50%;\n    margin-left: 0;\n  }\n  .footer-url-finder-download {\n    width: 100%;\n    margin-top: 20px;\n  }\n  .footer-news-letter {\n    width: 100%;\n  }\n}\r\n\r\n/*\n\n>> RESPONSIVE >>750px\n\n*/\r\n\r\n@media all and (max-width: 750px) {\n  .footer-content {\n    width: 500px;\n    margin-right: calc(50% - 235px);\n  }\n  .faq-name {\n    width: 100%;\n  }\n  .faq-question-name {\n    width: calc(100% - 30px);\n    margin-left: 0px;\n    margin-bottom: 5px;\n  }\n  .question-container {\n    display: block;\n  }\n  .vodio-container {\n    width: 80%;\n    margin-left: 10%;\n  }\n  .footer-links {\n    width: 30%;\n  }\n  .footer-contact {\n    width: 70%;\n  }\n  .footer-url-finder-download {\n    width: 100%;\n  }\n  .footer-news-letter {\n    width: 100%;\n  }\n}\r\n\r\n/*\n\n>> RESPONSIVE >> 520px\n\n*/\r\n\r\n@media screen and (max-width: 520px) {\n  .footer-content {\n    width: calc(100% - 20px);\n    margin-right: 10px;\n  }\n  .vodio-container {\n    width: 90%;\n    margin-left: 5%;\n  }\n  .footer-links {\n    width: 100%;\n  }\n  .footer-contact {\n    width: 100%;\n  }\n  .footer-url-finder-download {\n    width: 100%;\n  }\n  .footer-news-letter {\n    width: 100%;\n  }\n  .invoice-purchase {\n    position: inherit;\n    display: block;\n    margin-right: 10px;\n    margin-left: 10px;\n    width: calc(100% - 20px);\n  }\n  .invoice-price {\n    font-size: 18px;\n    color: #eb0089;\n    margin-top: 8px;\n    font-family: irsansbold;\n  }\n  .invoice-purchase-btn {\n    width: 100%;\n    padding-right: calc(50% - 100px);\n    margin-top: 15px;\n  }\n}\r\n\r\n.download-panel {\n  width: 260px;\n  position: absolute;\n  background: white;\n  display: block;\n  border-radius: 5px;\n  z-index: 2;\n  color: black;\n  right: calc(50% - 140px);\n  padding: 10px;\n}\r\n\r\n.download-item {\n  text-align: center;\n  margin-left: 10px;\n  border-bottom: 1px solid white;\n  border-radius: 5px;\n  border: 1px black solid;\n  margin: 10px;\n  padding: 10px;\n}\r\n\r\n.download-background {\n  display: none;\n  background: rgba(0, 0, 0, 0.2);\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  right: 0;\n  top: 0;\n  z-index: 100;\n}\r\n\r\n.download-button-container-item {\n  display: inline-block;\n  height: 50px;\n  border-radius: 5px;\n  background: #7d1d65;\n  color: white;\n  font: 500 0.8em/50px \"IRSans\", Sans-serif;\n  width: 100%;\n  margin-top: 5px;\n}\r\n\r\n.selected {\n  background: rgba(0, 0, 0, 0.2);\n}\r\n\r\n@media screen and (max-width: 1600px) {\n  .movie-main-content-detail {\n    margin-top: 80px;\n    width: 50%;\n  }\n  .single-product-dec-content {\n    width: 90%;\n    padding-right: 5%;\n  }\n  .movie-main-content-detail-lineheight {\n    line-height: 1.8;\n  }\n  .movie-main-content-image {\n    width: 80%;\n  }\n  .movie-main-content-info {\n    padding-top: 85px;\n    width: 25%;\n    margin-right: 0px;\n  }\n  .single-product-container-center {\n    width: 85%;\n    margin: auto;\n    box-sizing: border-box;\n    overflow: hidden;\n    display: -webkit-flex;\n    flex-wrap: wrap;\n    display: flex;\n  }\n  .movie-main-content-poster {\n    width: 20%;\n    margin-left: 0px;\n  }\n  .button-container {\n    margin-top: 10px;\n  }\n  .single-product-dec-header ul {\n    width: 90%;\n    margin-left: 5%;\n  }\n  .movie-main-content-story-line {\n    width: 50%;\n    line-height: 1.6;\n    font-size: 0.9em;\n    margin-top: 0px;\n  }\n  .footer-content {\n    width: 90%;\n    margin-right: 5%;\n  }\n  .single-product-container-center {\n    width: 90%;\n  }\n}\r\n\r\n@media screen and (max-width: 1340px) {\n  .single-product-container-center {\n    width: 92%;\n  }\n  .single-product-dec-content {\n    width: 92%;\n    padding-right: 4%;\n  }\n  .movie-main-content-info {\n    padding-top: 85px;\n    width: 20%;\n    margin-right: 0px;\n  }\n  .movie-main-content-detail {\n    margin-top: 80px;\n    width: 50%;\n    margin-right: 3%;\n  }\n  .movie-main-content-story-line {\n    width: 50%;\n    line-height: 1.6;\n    font-size: 0.9em;\n    margin-top: 0px;\n  }\n  .single-product-dec-content-text {\n    width: 50%;\n    overflow: hidden;\n    font: 14px \"IRSans\", Sans-serif;\n    color: #737373;\n    line-height: 2.5;\n    font-size: 0.9em;\n  }\n  .single-product-dec-header ul {\n    width: 92%;\n    margin-left: 4%;\n  }\n  .footer-content {\n    width: 92%;\n    margin-right: 4%;\n  }\n}\r\n\r\n@media screen and (max-width: 1220px) {\n  .movie-main-content-poster {\n    width: 20%;\n  }\n  .movie-main-content-info {\n    padding-top: 30px;\n    width: 20%;\n    margin-right: 0px;\n  }\n  .movie-main-content-detail {\n    margin-top: 30px;\n    width: 50%;\n    margin-right: 3%;\n  }\n  .single-product-add {\n    display: inline-block;\n    height: 50px;\n    border-radius: 5px;\n    background: #eb0089;\n    color: #fff;\n    font: 500 0.8em/50px \"IRSans\", Sans-serif;\n    width: 170px;\n    box-shadow: 1px 2px 26px -2px black;\n  }\n  .single-product-dec-content-text {\n    width: 50%;\n    overflow: hidden;\n    font: 14px \"IRSans\", Sans-serif;\n    color: #737373;\n    line-height: 2.5;\n    font-size: 0.9em;\n    margin-left: 27px;\n  }\n}\r\n\r\n@media screen and (max-width: 980px) {\n  .single-product-add {\n    display: inline-block;\n    height: 50px;\n    border-radius: 5px;\n    background: #eb0089;\n    color: #fff;\n    font: 500 0.8em/50px \"IRSans\", Sans-serif;\n    width: 150px;\n    box-shadow: 1px 2px 26px -2px black;\n  }\n  .single-product-dec-content-text {\n    width: 100%;\n    overflow: hidden;\n    font: 14px \"IRSans\", Sans-serif;\n    color: #737373;\n    line-height: 2.5;\n    font-size: 0.9em;\n    margin-left: 27px;\n  }\n  .movie-main-content-detail {\n    padding-top: 0px;\n  }\n  .movie-main-content-story-line {\n    width: 100%;\n    line-height: 1.6;\n    font-size: 0.9em;\n    margin-top: 7px;\n    margin-bottom: 20px;\n  }\n  .movie-main-content-info {\n    padding-top: 20px;\n    width: 20%;\n    margin-right: 0px;\n  }\n  .movie-main-content-detail {\n    width: 50%;\n    margin-right: 3%;\n    display: block;\n  }\n}\r\n\r\n@media screen and (max-width: 850px) {\n  .movie-main-content-info {\n    padding-top: 38px;\n    width: 48%;\n    margin-right: 0px;\n  }\n  .movie-main-content-detail {\n    margin-top: 0px;\n    width: 100%;\n    margin-right: 0px;\n    display: block;\n  }\n  .movie-main-content-info {\n    padding-top: 38px;\n    width: 65%;\n    margin-right: 0px;\n  }\n}\r\n\r\n@media screen and (max-width: 800px) {\n  .movie-main-content-detail {\n    width: 100%;\n  }\n  .movie-main-content-info {\n    width: 60%;\n  }\n  .movie-main-content-poster {\n    width: 30%;\n  }\n}\r\n\r\n@media screen and (max-width: 600px) {\n  .movie-main-content-detail {\n    width: 100%;\n  }\n  .movie-main-content-info {\n    width: 60%;\n    padding-right: 0px;\n  }\n  .movie-main-content-poster {\n    width: 40%;\n  }\n  .list-content-header {\n    width: calc(100% - 20px);\n    padding-left: 10px;\n    padding-right: 10px;\n  }\n}\r\n\r\n@media screen and (max-width: 500px) {\n  .movie-main-content-info {\n    width: 100%;\n    padding: 0px;\n    padding-top: 10px;\n    margin-right: 10%;\n    margin-left: 10%;\n  }\n  .movie-main-content-image {\n    width: 65%;\n  }\n  .movie-main-content-poster {\n    width: 100%;\n    margin-right: 10%;\n  }\n  .movie-main-content-detail {\n    width: 100%;\n    padding-top: 10px;\n    margin-right: 10%;\n    margin-left: 10%;\n  }\n  .movie-main-content-poster {\n    width: 100%;\n    text-align: center;\n    margin-right: 0;\n  }\n  .single-product-header-meta {\n    margin-top: 0px;\n    padding-top: 0px;\n  }\n  .single-product-title {\n    padding-bottom: 0px;\n  }\n  .single-product-category {\n    margin-top: 10px;\n    margin-right: 0px;\n  }\n}\r\n\r\n.banner-text-container {\n  position: absolute;\n  z-index: 1;\n  right: 4%;\n  bottom: 12.5%;\n  color: white;\n  font-family: irsansbold;\n  font-size: 25px;\n  direction: rtl;\n}\r\n\r\n.banner-text-container span {\n  font-family: irsansbold;\n}\r\n\r\n.banner-container-icon {\n  width: 20px !important;\n  height: 20px;\n  margin-top: 8px;\n  margin-left: 8px;\n  font-family: irsansbold;\n}\r\n\r\n.banner-container-description {\n  font-size: 14px;\n  font-family: irsansbold;\n  margin-right: 30px;\n}\r\n\r\n@media all and (max-width:750px) {\n  .banner-text-container {\n    font-size: 17px;\n  }\n  .banner-container-icon {\n    width: 15px !important;\n    height: 15px;\n    margin-top: 5px;\n  }\n  .banner-container-description {\n    font-size: 11px;\n  }\n}\r\n\r\n.slick-dots {\n  bottom: 0px !important;\n}\r\n\r\n.slick-dots li button:before {\n  width: 12px !important;\n  height: 12px !important;\n  border: 2px solid white !important;\n  border-radius: 10px !important;\n  opacity: 1 !important;\n  color: transparent !important;\n}\r\n\r\n.slick-dots li.slick-active button:before {\n  opacity: 1 !important;\n  background: white !important;\n  color: transparent !important;\n}\r\n\r\n.max-width-banner {\n  width: 100%;\n}\r\n\r\n.slick-track {\n  display: flex !important;\n}\r\n\r\n.featured-slider {\n  width: 75%;\n  margin-left: 12.5%;\n}\r\n\r\n.agent-title {\n  font-family: irsansbold;\n  direction: rtl;\n  text-align: center;\n  width: 100%;\n}\r\n\r\n.agent-title span {\n  font-family: irsansbold;\n}\r\n\r\n.search-filter {\n  background: lightgray;\n  width: 80px;\n  text-align: center;\n  border-radius: 45px;\n  font-size: 13px;\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  padding: 1px;\n  font-family: irsansbold;\n  margin-right: 5px;\n  margin-top: 5px;\n  float: right;\n  cursor: pointer;\n}\r\n\r\n.search-filter-active {\n  color: white;\n  background: #eb0089;\n}\r\n\r\n.featured-movie-box {\n  width: 20%;\n}";
+})();
+
+/***/ }),
+
 /***/ "./util/RequestHandler.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MainUrl; });
+
+
 // export const MainUrl = "http://localhost:58583";
 var MainUrl = "http://app.vodio.ir";
 // export const MainUrl = "http://185.105.238.196:9000";
@@ -7125,6 +7330,8 @@ var MainUrl = "http://app.vodio.ir";
 /* unused harmony export logException */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_ga__ = __webpack_require__("react-ga");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_ga___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react_ga__);
+
+
 
 
 var initGA = function initGA() {
@@ -7165,6 +7372,8 @@ var logException = function logException() {
 /* harmony export (immutable) */ __webpack_exports__["b"] = latinToPersian;
 /* harmony export (immutable) */ __webpack_exports__["c"] = persianToLatin;
 /* harmony export (immutable) */ __webpack_exports__["a"] = convertSecondToString;
+
+
 function latinToPersian(string) {
   var latinNumbers = [/1/g, /2/g, /3/g, /4/g, /5/g, /6/g, /7/g, /8/g, /9/g, /0/g];
   var latinToPersianMap = ["۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹", "۰"];
@@ -7201,7 +7410,7 @@ function convertSecondToString(second) {
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/movie.js");

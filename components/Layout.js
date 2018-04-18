@@ -7,7 +7,11 @@ import Login from './login/Login'
 import { MainUrl } from "../util/RequestHandler";
 import { latinToPersian, persianToLatin } from "../util/util";
 import Loading from "./loading/Loading";
-import '../css/style.css'
+
+import stylesheet from 'styles/style.css'
+import iconStylesheet from 'styles/icons.css'
+import fontStylesheet from 'styles/font.css'
+
 
 @inject("session")
 @observer
@@ -137,6 +141,9 @@ export default class Layout extends React.Component {
     render() {
         return (
             <div>
+                <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
+                <style dangerouslySetInnerHTML={{ __html: fontStylesheet }} />                
+                <style dangerouslySetInnerHTML={{ __html: iconStylesheet }} />
                 <Header></Header>
                 {this.props.children}
                 <Footer></Footer>

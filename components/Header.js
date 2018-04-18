@@ -85,11 +85,13 @@ export default class Header extends React.Component {
             <header id="header" style={{ background: "white" }}>
                 <div className="header-inner max-width">
                     <Link href="/">
-                        <img
-                            className="vodio-logo"
-                            src='/static/Vodio-Logo.svg'
-                            alt="وودیو"
-                        />
+                        <a>
+                            <img
+                                className="vodio-logo"
+                                src='/static/img/Vodio-Logo.svg'
+                                alt="وودیو"
+                            />
+                        </a>
                     </Link>
                     <span className="show-main-menu-btn icon-menu-1" />
                     {this.props.session.categories != null && <Category categories={this.props.session.categories} />}
@@ -119,7 +121,7 @@ export default class Header extends React.Component {
                                 direction: "rtl"
                             }}
                         >
-                            <Search />
+                            {/* <Search /> */}
                             <div className="header-left-meta">
                                 {this.props.session.session != null &&
                                     this.props.session.session != "" ? (

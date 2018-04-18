@@ -1,9 +1,8 @@
 import React from "react";
-import "../../css/infinite.css";
+import infiniteSS from "styles/infinite.css";
 import Link from 'next/link'
 import { inject, observer } from "mobx-react";
 import { MainUrl } from "../../util/RequestHandler";
-import clboard from '../../img/clapperboard.png'
 
 @inject("session", "search")
 @observer
@@ -68,23 +67,25 @@ export default class SearchList extends React.Component {
             return (
               <div id={"element" + l} className="box movie-list-item" style={{ paddingRight: '5px', paddingLeft: '5px' }} key={l}>
                 <Link href={"/movie/" + element.id}>
-                  <div className="movie-list-item-link">
-                    <span className="movie-list-item-cover">
-                      <img
-                        className={"movie-list-item-img"}
-                        src={
-                          MainUrl +
-                          "/image.ashx?file=" +
-                          element.thumbnail.url +
-                          "&width=" +
-                          width +
-                          "&height=" +
-                          height
-                        }
-                      />
-                    </span>
-                    <div style={{ height: '15px' }}></div>
-                  </div>
+                  <a>
+                    <div className="movie-list-item-link">
+                      <span className="movie-list-item-cover">
+                        <img
+                          className={"movie-list-item-img"}
+                          src={
+                            MainUrl +
+                            "/image.ashx?file=" +
+                            element.thumbnail.url +
+                            "&width=" +
+                            width +
+                            "&height=" +
+                            height
+                          }
+                        />
+                      </span>
+                      <div style={{ height: '15px' }}></div>
+                    </div>
+                  </a>
                 </Link>
               </div >
             );
@@ -96,6 +97,7 @@ export default class SearchList extends React.Component {
 
     return (
       <div className="movie-list vodio-container" style={{ paddingTop: "20px" }}>
+        <style dangerouslySetInnerHTML={{ __html: infiniteSS }} />
         <div style={{
           position: 'relative',
           height: '30px',
@@ -103,7 +105,7 @@ export default class SearchList extends React.Component {
           display: 'block',
           width: '100%'
         }}>
-          <img src='/static/clapperboard.png' style={{
+          <img src='/static/img/clapperboard.png' style={{
             width: '15px', float: 'right',
             marginTop: '5px',
             marginLeft: '10px',

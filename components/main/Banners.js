@@ -3,7 +3,7 @@ import { MainUrl } from "../../util/RequestHandler"
 import Link from 'next/link'
 import { inject, observer } from "mobx-react"
 import Slider from 'react-slick'
-import '../../css/style.css'
+import styleSS from 'styles/style.css'
 
 let dragging = false
 
@@ -153,9 +153,12 @@ export default class Banners extends React.Component {
     }
 
     return (
-      <Slider className="max-width-banner" {...settings}>
-        {components}
-      </Slider>
+      <div>
+        <style dangerouslySetInnerHTML={{ __html: styleSS }} />
+        <Slider className="max-width-banner" {...settings}>
+          {components}
+        </Slider>
+      </div>
     )
   }
 }

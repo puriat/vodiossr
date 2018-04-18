@@ -166,7 +166,7 @@ export default class Search extends React.Component {
             height: "30px",
             padding: "5px"
           }}
-          src='/static/search.svg'
+          src='/static/img/search.svg'
           onClick={this.onClick.bind(this)}
         />
 

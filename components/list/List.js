@@ -1,5 +1,5 @@
 import React from "react";
-import "../../css/infinite.css";
+import infiniteSS from "styles/infinite.css";
 import Link from 'next/link'
 import { inject, observer } from "mobx-react";
 import { MainUrl } from "../../util/RequestHandler";
@@ -71,28 +71,30 @@ export default class List extends React.Component {
               <Link
                 href={"/movie/" + element.id}
               >
-                <div className="movie-list-item-link">
-                  <span className="movie-list-item-cover">
-                    {this.state.width != 0 && this.state.height != 0 && <img
-                      className={"movie-list-item-img"}
-                      src={
-                        MainUrl +
-                        "/image.ashx?file=" +
-                        element.thumbnail.url +
-                        "&width=" +
-                        this.state.width +
-                        "&height=" +
-                        this.state.height
-                      }
-                    />}
-                  </span>
-                  <h2 className="movie-list-item-title">
-                    <span className="movie-list-item-title-persian">
-                      {latinToPersian(element.title)}
+                <a>
+                  <div className="movie-list-item-link">
+                    <span className="movie-list-item-cover">
+                      {this.state.width != 0 && this.state.height != 0 && <img
+                        className={"movie-list-item-img"}
+                        src={
+                          MainUrl +
+                          "/image.ashx?file=" +
+                          element.thumbnail.url +
+                          "&width=" +
+                          this.state.width +
+                          "&height=" +
+                          this.state.height
+                        }
+                      />}
                     </span>
-                    <span className="movie-list-item-title-english" />
-                  </h2>
-                </div>
+                    <h2 className="movie-list-item-title">
+                      <span className="movie-list-item-title-persian">
+                        {latinToPersian(element.title)}
+                      </span>
+                      <span className="movie-list-item-title-english" />
+                    </h2>
+                  </div>
+                </a>
               </Link>
             </div>
           );
@@ -102,9 +104,10 @@ export default class List extends React.Component {
 
     return (
       <div className="movie-list">
+        <style dangerouslySetInnerHTML={{ __html: infiniteSS }} />
         <div className="row-header">
           <img
-            src='/static/List.svg'
+            src='/static/img/List.svg'
             style={{
               width: "10px",
               marginRight: "10px",

@@ -1,0 +1,7 @@
+;
+
+(function () {
+  "use strict";
+
+  module.exports = "\r\n\r\n.spinner {\r\n    width: 40px;\r\n    height: 40px;\r\n    background-color: #333;\r\n  \r\n    border-radius: 100%;  \r\n    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;\r\n    animation: sk-scaleout 1.0s infinite ease-in-out;\r\n  }\r\n  \r\n  @-webkit-keyframes sk-scaleout {\r\n    0% { -webkit-transform: scale(0) }\r\n    100% {\r\n      -webkit-transform: scale(1.0);\r\n      opacity: 0;\r\n    }\r\n  }\r\n  \r\n  @keyframes sk-scaleout {\r\n    0% { \r\n      -webkit-transform: scale(0);\r\n      transform: scale(0);\r\n    } 100% {\r\n      -webkit-transform: scale(1.0);\r\n      transform: scale(1.0);\r\n      opacity: 0;\r\n    }\r\n  }";
+})();

@@ -114,39 +114,39 @@ export default class TopMovie extends React.Component {
     flag = 0
     var x = 0;
     var y = 0;
-    $("#div" + this.props.elementId).on('click auxclick contextmenu mousedown mouseup', function (e) {
-      e.preventDefault();
+    // $("#div" + this.props.elementId).on('click auxclick contextmenu mousedown mouseup', function (e) {
+    //   e.preventDefault();
 
-      if (e.type == "contextmenu") {
-        return;
-      }
-      if (e.type == "mousedown") {
-        flag = 0;
-        x = e.pageX
-        y = e.pageY
-      } else if (e.type == "mouseup") {
-        switch (e.which) {
-          case 1:
-            if (e.ctrlKey) {
-              var win = window;
-              window.open("/movie", '_blank');
-              win.focus();
+    //   if (e.type == "contextmenu") {
+    //     return;
+    //   }
+    //   if (e.type == "mousedown") {
+    //     flag = 0;
+    //     x = e.pageX
+    //     y = e.pageY
+    //   } else if (e.type == "mouseup") {
+    //     switch (e.which) {
+    //       case 1:
+    //         if (e.ctrlKey) {
+    //           var win = window;
+    //           window.open("/movie", '_blank');
+    //           win.focus();
 
-            } else {
-              var d = Math.sqrt(Math.pow(e.pageX - x, 2) + Math.pow(e.pageY - y, 2));
-              if (d < 4) {
-                e.stopPropagation();
-              }
-            }
-            break;
-          case 2:
-            return;
-            break;
-          case 3:
-            break;
-        }
-      }
-    }.bind(this));
+    //         } else {
+    //           var d = Math.sqrt(Math.pow(e.pageX - x, 2) + Math.pow(e.pageY - y, 2));
+    //           if (d < 4) {
+    //             e.stopPropagation();
+    //           }
+    //         }
+    //         break;
+    //       case 2:
+    //         return;
+    //         break;
+    //       case 3:
+    //         break;
+    //     }
+    //   }
+    // }.bind(this));
   }
 
   movieClicked(movieId) {
@@ -270,7 +270,9 @@ var Director = createReactClass({
               className="inline-class"
               to={{ pathname: "/agent/" + director.id }}
             >
-              {director.name}
+              <a>
+                {director.name}
+              </a>
             </Link>
             {this.props.directors.agents.length - 1 != l ? (
               <p className="inline-class"> , </p>

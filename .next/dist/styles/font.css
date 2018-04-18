@@ -1,0 +1,7 @@
+;
+
+(function () {
+  "use strict";
+
+  module.exports = "@font-face {\r\n\tfont-family: IRSans;\r\n\tfont-style: normal;\r\n\tfont-weight: 500;\r\n\tsrc: url('/static/font/IRANSansWeb_Light.eot');\r\n\tsrc: url('/static/font/IRANSansWeb_Light.eot?#iefix') format('embedded-opentype'), /* IE6-8 */\r\n\turl('/static/font/IRANSansWeb_Light.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/\r\n\turl('/static/font/IRANSansWeb_Light.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/\r\n\turl('/static/font/IRANSansWeb_Light.ttf') format('truetype');\r\n}\r\n\r\n@font-face {\r\n\tfont-family: IRSansBold;\r\n\tfont-style: normal;\r\n\tfont-weight: 500;\r\n\tsrc: url('/static/font/IRANSansWeb_Medium.eot');\r\n\tsrc: url('/static/font/IRANSansWeb_Medium.eot?#iefix') format('embedded-opentype'), /* IE6-8 */\r\n\turl('/static/font/IRANSansWeb_Medium.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/\r\n\turl('/static/font/IRANSansWeb_Medium.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/\r\n\turl('/static/font/IRANSansWeb_Medium.ttf') format('truetype');\r\n}";
+})();
